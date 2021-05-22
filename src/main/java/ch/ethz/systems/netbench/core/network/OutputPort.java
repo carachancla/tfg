@@ -2,6 +2,7 @@ package ch.ethz.systems.netbench.core.network;
 
 import ch.ethz.systems.netbench.core.Simulator;
 import ch.ethz.systems.netbench.core.log.PortLogger;
+import ch.ethz.systems.netbench.core.log.SimulationLogger;
 
 import java.util.Queue;
 
@@ -24,13 +25,13 @@ public abstract class OutputPort {
     // Constants
     private final int ownId;                            // Own network device identifier
     private final NetworkDevice ownNetworkDevice;       // Network device this output port is attached to
-    private final int targetId;                         // Target network device identifier
-    private final NetworkDevice targetNetworkDevice;    // Target network device
-    private final Link link;                            // Link type, defines latency and bandwidth of the medium
+    private int targetId;                         // Target network device identifier
+    protected NetworkDevice targetNetworkDevice;    // Target network device
+    protected final Link link;                            // Link type, defines latency and bandwidth of the medium
                                                         // that the output port uses
 
     // Logging utility
-    private final PortLogger logger;
+    protected final PortLogger logger;
 
     /**
      * Constructor.
@@ -59,6 +60,16 @@ public abstract class OutputPort {
 
     }
 
+    protected void disableLog(){
+        SimulationLogger.removePortLogger(logger);
+    }
+
+    protected void change_target(NetworkDevice newTarget){
+        this.targetNetworkDevice = newTarget;
+        this.targetId = this.targetNetworkDevice.getIdentifier();
+
+    }
+
     /**
      * Enqueue the given packet for sending.
      * There is no guarantee that the packet is actually sent,
@@ -80,7 +91,7 @@ public abstract class OutputPort {
         if (!isSending) {
 
             // Link is now being utilized
-            logger.logLinkUtilized(true);
+            if(logger != null)logger.logLinkUtilized(true);
 
             // Add event when sending is finished
             Simulator.registerEvent(new PacketDispatchedEvent(
@@ -95,7 +106,7 @@ public abstract class OutputPort {
         } else { // If it is still sending, the packet is added to the queue, making it non-empty
             bufferOccupiedBits += packet.getSizeBit();
             queue.add(packet);
-            logger.logQueueState(queue.size(), bufferOccupiedBits);
+            if(logger != null)logger.logQueueState(queue.size(), bufferOccupiedBits);
         }
 
     }
@@ -107,7 +118,7 @@ public abstract class OutputPort {
      *
      * @param packet    Packet instance that was being sent
      */
-    void dispatch(Packet packet) {
+    protected void dispatch(Packet packet) {
 
         // Finished sending packet, the last bit of the packet should arrive the link-delay later
         if (!link.doesNextTransmissionFail(packet.getSizeBit())) {
@@ -129,7 +140,7 @@ public abstract class OutputPort {
             // Pop from queue
             Packet packetFromQueue = queue.poll();
             decreaseBufferOccupiedBits(packetFromQueue.getSizeBit());
-            logger.logQueueState(queue.size(), bufferOccupiedBits);
+            if(logger != null)logger.logQueueState(queue.size(), bufferOccupiedBits);
 
             // Register when the packet is actually dispatched
             Simulator.registerEvent(new PacketDispatchedEvent(
@@ -144,7 +155,7 @@ public abstract class OutputPort {
         } else {
 
             // If the queue is empty, nothing will be sent for now
-            logger.logLinkUtilized(false);
+            if(logger != null)logger.logLinkUtilized(false);
 
         }
 
@@ -239,4 +250,10 @@ public abstract class OutputPort {
         assert(bufferOccupiedBits >= 0);
     }
 
+    public boolean getIsSending(){return isSending;}
+    protected void setSending(boolean b){ isSending = b;}
+
+    public Link getLink() {
+        return link;
+    }
 }

@@ -1,0 +1,170 @@
+package Wireless;
+
+import ch.ethz.systems.netbench.core.Simulator;
+import ch.ethz.systems.netbench.core.log.SimulationLogger;
+import ch.ethz.systems.netbench.core.network.*;
+import ch.ethz.systems.netbench.ext.basic.IpHeader;
+
+import java.util.Random;
+import java.util.concurrent.LinkedBlockingQueue;
+
+public class WirelessPort extends OutputPort {
+
+    private final long ecnThresholdKBits;
+    private final long maxQueueSizeBits;
+
+    private boolean waitingMedium = false;
+    private boolean waitingCollision = false;
+    private Packet waitingMediumPacket;
+    private Packet waitingCollisionPacket;
+
+    private int collisionBackoffLevel = 1;
+
+    NetworkDevice realTargetDevice;
+
+
+    WirelessPort(NetworkDevice ownNetworkDevice, NetworkDevice targetNetworkDevice, CollisionDetSwitch collisionDetection, Link link, long maxQueueSizeBytes, long ecnThresholdKBytes) {
+        super(ownNetworkDevice, targetNetworkDevice, link, new LinkedBlockingQueue<>());
+        this.maxQueueSizeBits = maxQueueSizeBytes * 8L;
+        this.ecnThresholdKBits = ecnThresholdKBytes * 8L;
+
+        this.realTargetDevice = targetNetworkDevice;
+        change_target(collisionDetection);
+
+    }
+
+    /**
+     * Enqueue the given packet.
+     * Drops it if the queue is full (tail drop).
+     *
+     * @param packet    Packet instance
+     */
+    @Override
+    public void enqueue(Packet packet) {
+        enqueue(packet,this.getTargetId());
+    }
+
+    // this to allow multiple targets on the port, targetId becomes unused.
+    public void enqueue(Packet packet, int destId) {
+
+    // Convert to IP packet
+    IpHeader ipHeader = (IpHeader) packet;
+    MacPacket macPacket = new MacPacket(packet.getFlowId(), packet.getSizeBit(), this.getOwnDevice().getIdentifier(), destId, this, packet);
+
+    // Mark congestion flag if size of the queue is too big
+    if (getBufferOccupiedBits() >= ecnThresholdKBits) {
+        ipHeader.markCongestionEncountered();
+    }
+
+
+    // Tail-drop enqueue
+    if (getBufferOccupiedBits() + ipHeader.getSizeBit() <= maxQueueSizeBits) {
+        guaranteedEnqueue(macPacket);
+    } else {
+        SimulationLogger.increaseStatisticCounter("PACKETS_DROPPED");
+        if (ipHeader.getSourceId() == this.getOwnId()) {
+            SimulationLogger.increaseStatisticCounter("PACKETS_DROPPED_AT_SOURCE");
+        }
+    }
+
+    }
+
+    @Override
+    protected void dispatch(Packet packet){ // dispatching new packets
+        CollisionDetSwitch detSwitch = (CollisionDetSwitch)super.getTargetDevice();
+        if(waitingCollision){ //wait til PacketSent()
+            waitingCollisionPacket = packet;
+        }
+        else if (!detSwitch.isMediumOccupied(this)){ //send packet start waiting for its collision
+            waitingMediumPacket = null; // we sent the packet
+            waitingCollisionPacket = null;
+            waitingMedium = false;
+            waitingCollision = true;
+            super.dispatch(packet);
+        }
+        else { // wait for medium to be free, then send
+            waitingMedium = true;
+            waitingMediumPacket = packet;
+        }
+    }
+
+    public void retryCollisionDispatch(Packet packet) { // collision happened retry collision
+        CollisionDetSwitch detSwitch = (CollisionDetSwitch) super.getTargetDevice();
+        if (!detSwitch.isMediumOccupied(this) & !link.doesNextTransmissionFail(packet.getSizeBit())) {
+            Simulator.registerEvent(
+                    new PacketArrivalEvent(
+                            link.getDelayNs(),
+                            packet,
+                            targetNetworkDevice
+                    )
+            );
+            waitingMedium =false;
+            waitingMediumPacket = null;
+        }
+        else {
+            waitingMedium = true;
+            waitingMediumPacket = packet;
+        }
+    }
+
+    public void meduimFreed(){
+        if(waitingCollision & waitingMedium){
+            retryCollisionDispatch(waitingMediumPacket);
+        }
+        if(waitingMedium) {
+            waitingMedium = false;
+            this.dispatch(waitingMediumPacket);
+        }
+    }
+
+    public void packetSent(){///check if packet waiting
+        waitingCollision = false;
+        if(waitingCollisionPacket != null)dispatch(waitingCollisionPacket);
+    }
+
+
+
+    @Override
+    public NetworkDevice getTargetDevice(){
+        //Port logger calls this method on super creator, realTargetDevice IS NOT SET YET
+        if(realTargetDevice == null) return super.getTargetDevice();
+        return realTargetDevice;
+    }
+
+    @Override
+    public int getTargetId() {
+        //Port logger calls this method on super creator, realTargetDevice IS NOT SET YET
+        if(realTargetDevice == null)return super.getTargetId();
+        return realTargetDevice.getIdentifier();
+    }
+
+    @Override
+    public int getQueueSize(){ //add waiting packet if there is one
+        if(waitingCollisionPacket != null)return super.getQueueSize() + 1;
+        return super.getQueueSize();
+    }
+
+
+    // collision handling failure
+    protected void packetCollision(MacPacket mPacket){
+        if(collisionBackoffLevel<30)++collisionBackoffLevel;
+        int backoffArc = (int) Math.pow(2,collisionBackoffLevel);
+        int roundTripTime =(int) mPacket.getSourcePort().getLink().getDelayNs();
+        int delay = (new Random().nextInt(backoffArc + 1) + 1) * roundTripTime;
+        //make sourcePort resend packet after a backoff delay
+        Simulator.registerEvent(new MacDelayEvent(delay, mPacket));
+        //System.out.println("Delay packet from " + mPacket.getSourceId() + ": " + delay);
+
+    }
+
+    // collision handling success
+    protected void successfulTransmission(MacPacket macPacket){
+        collisionBackoffLevel = 1;
+        //System.out.println("Succesfull transmission: " + macPacket.getSourceId());
+    }
+
+
+
+
+
+}

@@ -1,4 +1,4 @@
-#!/usr/bin/bash 
+#!/usr/bin/env python
 cd ..
 cd analysis
 echo "a"

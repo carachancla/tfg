@@ -1,12 +1,9 @@
 package ch.ethz.systems.netbench.core.run;
 
+import Wireless.WirelessPortGen;
 import ch.ethz.systems.netbench.core.Simulator;
 import ch.ethz.systems.netbench.core.config.exceptions.PropertyValueInvalidException;
-import ch.ethz.systems.netbench.core.run.infrastructure.IntermediaryGenerator;
-import ch.ethz.systems.netbench.core.run.infrastructure.LinkGenerator;
-import ch.ethz.systems.netbench.core.run.infrastructure.NetworkDeviceGenerator;
-import ch.ethz.systems.netbench.core.run.infrastructure.OutputPortGenerator;
-import ch.ethz.systems.netbench.core.run.infrastructure.TransportLayerGenerator;
+import ch.ethz.systems.netbench.core.run.infrastructure.*;
 import ch.ethz.systems.netbench.ext.bare.BareTransportLayerGenerator;
 import ch.ethz.systems.netbench.ext.basic.EcnTailDropOutputPortGenerator;
 import ch.ethz.systems.netbench.ext.basic.PerfectSimpleLinkGenerator;
@@ -178,6 +175,12 @@ class InfrastructureSelector {
             case "bounded_priority":
                 return new BoundedPriorityOutputPortGenerator(
                         Simulator.getConfiguration().getLongPropertyOrFail("output_port_max_queue_size_bytes")*8
+                );
+
+            case "wireless_port":
+                return new WirelessPortGen(
+                        Simulator.getConfiguration().getLongPropertyOrFail("output_port_max_queue_size_bytes"),
+                        Simulator.getConfiguration().getLongPropertyOrFail("output_port_ecn_threshold_k_bytes")
                 );
 
             case "unlimited":

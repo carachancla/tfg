@@ -67,6 +67,15 @@ public class SimulationLogger {
     }
 
     /**
+     * Remove a port logger so that it can be
+     * later called after the run is over to collect
+     * is statistics.
+     *
+     * @param logger    Port logger instance
+     */
+    public static void removePortLogger(PortLogger logger){ portLoggers.remove(logger);}
+
+    /**
      * Register a flow logger so that it
      * can be later called after the run is over to
      * collect its statistics.

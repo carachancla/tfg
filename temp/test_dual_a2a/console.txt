@@ -1,0 +1,45 @@
+Copying file "example/runs/test_dual_a2a.properties" to run folder...
+Running command "cp example/runs/test_dual_a2a.properties temp/test_dual_a2a"...
+... command has been executed (any output is shown above).
+Copying file "example/topologies/xpander/xpander_n100_d10.topology" to run folder using new file name "original_topology.txt"...
+Running command "cp example/topologies/xpander/xpander_n100_d10.topology temp/test_dual_a2a/original_topology.txt"...
+... command has been executed (any output is shown above).
+Extending topology file "example/topologies/xpander/xpander_n100_d10.topology" by adding 8 servers to each ToR.
+Writing to output topology file... done.
+Overriding property scenario_topology_file: "example/topologies/xpander/xpander_n100_d10.topology" (old) -> "temp/test_dual_a2a/extended_topology.txt" (new).
+
+INFRASTRUCTURE
+==================
+Finished creating infrastructure.
+
+ROUTING STATE
+==================
+Calculating shortest path lengths... done.
+Populating ECMP forward routing tables... 10.0%... 20.0%... 30.0%... 40.0%... 50.0%... 60.0%... 70.0%... 80.0%... 90.0%... 100.0%... done.
+Finished routing state setup.
+
+TRAFFIC
+==================
+Portion A: (n=3, p=0.26666666666666666, tot=0.8)
+Portion B: (n=97, p=0.0020618556701030924, tot=0.19999999999999996)
+Generating all-to-all dual fraction probabilities...  done.
+Creating arrival plan... 10%... 20%... 30%... 40%... 50%... 60%... 70%... 80%... 90%... 100%... done.
+Poisson Arrival plan created.
+Number of flows created: 977.
+Mean inter-arrival time: 102392 (expectation: 99999.99999999999)
+Finished generating traffic flow starts.
+
+ACTUAL RUN
+==================
+Starting simulation (total time: 100000000ns);...
+Elapsed 0.01s simulation in 0.746s real (total progress: 10.000001%).
+Elapsed 0.01s simulation in 0.667s real (total progress: 20.000005%).
+Elapsed 0.01s simulation in 0.776s real (total progress: 30.000013%).
+Elapsed 0.01s simulation in 0.784s real (total progress: 40.000015%).
+Elapsed 0.01s simulation in 0.953s real (total progress: 50.000011%).
+Elapsed 0.01s simulation in 1.0s real (total progress: 60.000005%).
+Elapsed 0.01s simulation in 0.975s real (total progress: 70.00000299999999%).
+Elapsed 0.01s simulation in 1.271s real (total progress: 80.00000299999999%).
+Elapsed 0.01s simulation in 1.243s real (total progress: 90.000005%).
+Elapsed 0.01s simulation in 1.184s real (total progress: 100.000001%).
+Simulation finished (simulated 0.1s in a real-world time of 9.6s).

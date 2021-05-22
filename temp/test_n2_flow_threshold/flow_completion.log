@@ -1,0 +1,4 @@
+FlowId     Src   Dst   Sent (byte)  Total (byte) Duration (ms)  Progress  
+0          0     1     3000         3000         0.01           100.00%
+1          0     1     3000         3000         0.01           100.00%
+2          0     1     2000         3000         0.01     (DNF) 66.67%

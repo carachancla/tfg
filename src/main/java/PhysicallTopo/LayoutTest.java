@@ -4,9 +4,10 @@ public class LayoutTest {
 
     /////////test///////
     public static void main(String Args[]) throws Exception {
-        PhysicalLayout p = new PhysicalLayout();
-        p.readGraph("./example/topologies/xpander/xpander_n100_d10.topology");
-        p.readTopologyProperties("C:\\Users\\pause\\OneDrive\\Escritorio\\tfg\\netbench-master\\example\\Layouts\\Test.layout");
+        /*PhysicalLayout p = new PhysicalLayout();
+        //p.readGraph("./example/topologies/xpander/xpander_n100_d10.topology");
+        p.readGraph("./temp/results/physicallTopo/Jellyfish_10V_4deg.topology");
+        p.readTopologyProperties("./example/Layouts/Test.layout");
         System.out.println("Vertex List:" + p.graph.getVertexList());
         System.out.println("Num tors: " + p.graphDetails.getNumTors());
         System.out.println("Max X: " + p.maxNodeX());
@@ -18,6 +19,7 @@ public class LayoutTest {
         System.out.println(p.calculateDistanceBetweenPorts(0,99));
         System.out.println(p.calculateCableLenght(0,99));
         System.out.println("Total cable: "+ p.getTotalCabling());
-
+        System.out.println("Add switch: " + p.additionalSwitchesDueToDistance(30));*/
+        System.out.println(10000/999999999);
     }
 }

@@ -1,0 +1,86 @@
+Copying file "private/runs/1_failcases/full_fat_tree_k16.properties" to run folder...
+Running command "cp private/runs/1_failcases/full_fat_tree_k16.properties temp/results/1_failcases/tiny_frac/full_fat_tree_k16_actservers_1000_flows_300000_runtime_2s_ecn_threshold_30000_intermediary_uniform_flowlet_gap_50000"...
+... command has been executed (any output is shown above).
+Copying file "private/data/topologies/fat_tree_k16.topology" to run folder using new file name "original_topology.txt"...
+Running command "cp private/data/topologies/fat_tree_k16.topology temp/results/1_failcases/tiny_frac/full_fat_tree_k16_actservers_1000_flows_300000_runtime_2s_ecn_threshold_30000_intermediary_uniform_flowlet_gap_50000/original_topology.txt"...
+... command has been executed (any output is shown above).
+Extending topology file "private/data/topologies/fat_tree_k16.topology" by adding 8 servers to each ToR.
+Writing to output topology file... done.
+Overriding property scenario_topology_file: "private/data/topologies/fat_tree_k16.topology" (old) -> "temp/results/1_failcases/tiny_frac/full_fat_tree_k16_actservers_1000_flows_300000_runtime_2s_ecn_threshold_30000_intermediary_uniform_flowlet_gap_50000/extended_topology.txt" (new).
+
+INFRASTRUCTURE
+==================
+Finished creating infrastructure.
+
+ROUTING STATE
+==================
+Calculating shortest path lengths... done.
+Populating ECMP forward routing tables... 9.970238095238097%... 19.940476190476193%... 29.910714285714285%... 39.88095238095239%... 49.851190476190474%... 59.82142857142857%... 69.79166666666666%... 79.76190476190477%... 89.73214285714286%... 99.70238095238095%... done.
+Finished routing state setup.
+
+TRAFFIC
+==================
+Reading in communication pair probabilities... done.
+Creating arrival plan... 10%... 20%... 30%... 40%... 50%... 60%... 70%... 80%... 90%... 100%... done.
+Poisson Arrival plan created.
+Number of flows created: 600117.
+Mean inter-arrival time: 3332 (expectation: 3333.3333333333335)
+Finished generating traffic flow starts.
+
+ACTUAL RUN
+==================
+Starting simulation (total time: 2000000000ns);...
+Elapsed 0.01s simulation in 23.997s real (total progress: 0.500002%).
+Elapsed 0.01s simulation in 9.061s real (total progress: 1.0000004%).
+Elapsed 0.01s simulation in 6.088s real (total progress: 1.5000006%).
+Elapsed 0.01s simulation in 7.137s real (total progress: 2.0000004%).
+Elapsed 0.01s simulation in 7.538s real (total progress: 2.500001%).
+Elapsed 0.01s simulation in 8.607s real (total progress: 3.0000006%).
+Elapsed 0.01s simulation in 9.407s real (total progress: 3.5000002%).
+Elapsed 0.01s simulation in 9.145s real (total progress: 4.0000004%).
+Elapsed 0.01s simulation in 9.428s real (total progress: 4.5000002%).
+Elapsed 0.01s simulation in 8.713s real (total progress: 5.000000200000001%).
+Elapsed 0.01s simulation in 12.027s real (total progress: 5.500001%).
+Elapsed 0.01s simulation in 11.716s real (total progress: 6.0000002%).
+Elapsed 0.01s simulation in 12.662s real (total progress: 6.5000008%).
+Elapsed 0.01s simulation in 13.74s real (total progress: 7.000001%).
+Elapsed 0.01s simulation in 11.651s real (total progress: 7.5000002%).
+Elapsed 0.01s simulation in 11.732s real (total progress: 8.0000012%).
+Elapsed 0.01s simulation in 12.583s real (total progress: 8.500000400000001%).
+Elapsed 0.01s simulation in 13.489s real (total progress: 9.0000004%).
+Elapsed 0.01s simulation in 13.356s real (total progress: 9.5000002%).
+Elapsed 0.01s simulation in 14.326s real (total progress: 10.0000012%).
+Elapsed 0.01s simulation in 13.641s real (total progress: 10.500000199999999%).
+Elapsed 0.01s simulation in 14.787s real (total progress: 11.0000006%).
+Elapsed 0.01s simulation in 15.839s real (total progress: 11.5000006%).
+Elapsed 0.01s simulation in 16.299s real (total progress: 12.0000008%).
+Elapsed 0.01s simulation in 16.995s real (total progress: 12.5000004%).
+Elapsed 0.01s simulation in 18.116s real (total progress: 13.000000400000001%).
+Elapsed 0.01s simulation in 16.531s real (total progress: 13.5000002%).
+Elapsed 0.01s simulation in 17.858s real (total progress: 14.0000012%).
+Elapsed 0.01s simulation in 19.525s real (total progress: 14.500000199999999%).
+Elapsed 0.01s simulation in 19.711s real (total progress: 15.0000004%).
+Elapsed 0.01s simulation in 20.737s real (total progress: 15.5000002%).
+Elapsed 0.01s simulation in 20.215s real (total progress: 16.0000004%).
+Elapsed 0.01s simulation in 24.047s real (total progress: 16.500000200000002%).
+Elapsed 0.01s simulation in 22.068s real (total progress: 17.000000200000002%).
+Elapsed 0.01s simulation in 24.746s real (total progress: 17.5000002%).
+Elapsed 0.01s simulation in 21.973s real (total progress: 18.0000008%).
+Elapsed 0.01s simulation in 23.727s real (total progress: 18.5000002%).
+Elapsed 0.01s simulation in 23.855s real (total progress: 19.0000002%).
+Elapsed 0.01s simulation in 26.82s real (total progress: 19.500000200000002%).
+Elapsed 0.01s simulation in 26.747s real (total progress: 20.000000200000002%).
+Elapsed 0.01s simulation in 27.009s real (total progress: 20.5000002%).
+Elapsed 0.01s simulation in 29.617s real (total progress: 21.0000002%).
+Elapsed 0.01s simulation in 32.29s real (total progress: 21.5000004%).
+Elapsed 0.01s simulation in 30.632s real (total progress: 22.0000004%).
+Elapsed 0.01s simulation in 32.416s real (total progress: 22.5000002%).
+Elapsed 0.01s simulation in 34.233s real (total progress: 23.0000004%).
+Elapsed 0.01s simulation in 32.584s real (total progress: 23.500000200000002%).
+Elapsed 0.01s simulation in 34.807s real (total progress: 24.000000399999998%).
+Elapsed 0.01s simulation in 39.165s real (total progress: 24.500000399999998%).
+Elapsed 0.01s simulation in 37.762s real (total progress: 25.0000008%).
+Elapsed 0.01s simulation in 37.978s real (total progress: 25.5000002%).
+Elapsed 0.01s simulation in 42.253s real (total progress: 26.0000006%).
+Elapsed 0.01s simulation in 40.058s real (total progress: 26.500000200000002%).
+Elapsed 0.01s simulation in 39.834s real (total progress: 27.000000200000002%).

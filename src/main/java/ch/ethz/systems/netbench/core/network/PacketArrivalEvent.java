@@ -15,7 +15,7 @@ public class PacketArrivalEvent extends Event {
      * @param packet                    Packet instance which will arrive
      * @param arrivalNetworkDevice      Network device at which the packet arrives
      */
-    PacketArrivalEvent(long timeFromNowNs, Packet packet, NetworkDevice arrivalNetworkDevice) {
+    public PacketArrivalEvent(long timeFromNowNs, Packet packet, NetworkDevice arrivalNetworkDevice) {
         super(timeFromNowNs);
         this.packet = packet;
         this.arrivalNetworkDevice = arrivalNetworkDevice;

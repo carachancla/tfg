@@ -7,9 +7,9 @@ import edu.asu.emit.algorithm.graph.Vertex;
 import org.apache.commons.lang3.math.Fraction;
 import org.apache.commons.lang3.tuple.Pair;
 
-import java.awt.*;
 import java.awt.geom.Point2D;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.util.ArrayList;
 
 /*
@@ -174,5 +174,26 @@ public class PhysicalLayout {
         return r/2;
 
     }
+
+    public int additionalSwitchesDueToDistance(int maxDist) throws Exception {
+        int r = 0;
+        for (Vertex v:graph.getVertexList()){
+            ArrayList<Double> t = this.getNodeCabling(v.getId());
+            for (double cable:t) r += cable/maxDist;
+        }
+        //every cable gets added twice
+        return r/2;
+    }
+
+    public int lonerCablesThan(int maxDist) throws Exception {
+        int r = 0;
+        for (Vertex v:graph.getVertexList()){
+            ArrayList<Double> t = this.getNodeCabling(v.getId());
+            for (double cable:t) if(cable>maxDist) r++;
+        }
+        //every cable gets added twice
+        return r/2;
+    }
+
 
 }

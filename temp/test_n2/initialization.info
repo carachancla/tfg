@@ -1,0 +1,9 @@
+Seed randomly chosen: FALSE
+Seed: 546854
+Port: ECN_TAIL_DROP(maxQueueSizeBytes=40000, ecnThresholdKBytes=15000)
+Network device intermediary: DEMO
+Network device: FORWARDER_SWITCH(numNodes=2)
+Link: PERFECT_SIMPLE_LINK(delayNs=500, bandwidthBitPerNs=10)
+Transport layer: DEMO
+Routing: SINGLE_FORWARD
+Flow planner: TRAFFIC_PAIR_LIST(flowSizeByte=1000000000, pairs=[(0, 1)])

@@ -1,0 +1,9 @@
+Src   Dst   Srvport  Utilized (ns)   Utilization
+0     1     YES      666401          0.07%
+2     3     YES      666401          0.07%
+4     5     YES      666401          0.07%
+6     7     YES      666401          0.07%
+1     0     YES      37728           0.00%
+3     2     YES      37728           0.00%
+5     4     YES      37728           0.00%
+7     6     YES      37728           0.00%
