@@ -129,14 +129,19 @@ class InfrastructureSelector {
      *
      * @return  Link generator
      */
+
     static LinkGenerator selectLinkGenerator() {
+        return selectLinkGenerator(true);
+    }
+    static LinkGenerator selectLinkGenerator(boolean isFirstLink) {
 
-        switch (Simulator.getConfiguration().getPropertyOrFail("link")) {
-
+        long delay = Simulator.getConfiguration().getLongPropertyOrFail(isFirstLink ? "link_delay_ns" : "hybrid_second_link_delay");
+        long bandwidth = Simulator.getConfiguration().getLongPropertyOrFail(isFirstLink ? "link_bandwidth_bit_per_ns" : "hybrid_second_link_bandwidth");
+        String link =isFirstLink ? (Simulator.getConfiguration().getPropertyOrFail("link")) : Simulator.getConfiguration().getPropertyOrFail("hybrid_second_link");
+        switch  (link){
             case "perfect_simple":
                 return new PerfectSimpleLinkGenerator(
-                        Simulator.getConfiguration().getLongPropertyOrFail("link_delay_ns"),
-                        Simulator.getConfiguration().getLongPropertyOrFail("link_bandwidth_bit_per_ns")
+                        delay,bandwidth
                 );
 
             default:
@@ -158,9 +163,13 @@ class InfrastructureSelector {
      *
      * @return  Output port generator
      */
-    static OutputPortGenerator selectOutputPortGenerator() {
+    static OutputPortGenerator selectOutputPortGenerator(){
+        return selectOutputPortGenerator(Simulator.getConfiguration().getPropertyOrFail("output_port"));
+    }
 
-        switch (Simulator.getConfiguration().getPropertyOrFail("output_port")) {
+    static OutputPortGenerator selectOutputPortGenerator(String outputPort) {
+
+        switch (outputPort) {
 
             case "ecn_tail_drop":
 

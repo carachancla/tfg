@@ -1,5 +1,6 @@
 package ch.ethz.systems.netbench.core.run.infrastructure;
 
+import PhysicallTopo.PhysicalLayout;
 import ch.ethz.systems.netbench.core.Simulator;
 import ch.ethz.systems.netbench.core.config.GraphDetails;
 import ch.ethz.systems.netbench.core.network.NetworkDevice;
@@ -35,6 +36,10 @@ public class BaseInitializer {
     private final LinkGenerator linkGenerator;
     private final TransportLayerGenerator transportLayerGenerator;
 
+    // hybrid_port
+    private OutputPortGenerator hybridPortGenerator;
+    private LinkGenerator hybridLinkGenerator;
+
     // Validation variables
     private int runningNodeId;
     private boolean infrastructureAlreadyCreated;
@@ -55,6 +60,12 @@ public class BaseInitializer {
         this.runningNodeId = 0;
         this.infrastructureAlreadyCreated = false;
         this.linkPairs = new ArrayList<>();
+    }
+
+
+    public void addHybridPort(OutputPortGenerator outputPortGenerator, LinkGenerator linkGenerator){
+        hybridPortGenerator = outputPortGenerator;
+        hybridLinkGenerator = linkGenerator;
     }
 
     /**
@@ -158,8 +169,23 @@ public class BaseInitializer {
         NetworkDevice devA = idToNetworkDevice.get(startVertexId);
         NetworkDevice devB = idToNetworkDevice.get(endVertexId);
 
+        OutputPort portAtoB = null;
+        try{
+            if(Simulator.getConfiguration().getBooleanPropertyWithDefault("long_to_wireless_port",false)){
+                PhysicalLayout physicalLayout = new PhysicalLayout();
+                physicalLayout.setGraph(Simulator.getConfiguration().getGraph(), Simulator.getConfiguration().getGraphDetails());
+                physicalLayout.readTopologyProperties(Simulator.getConfiguration().getPropertyOrFail("topology_properties_file"));
+                if(physicalLayout.calculateCableLenght(startVertexId, endVertexId)>Simulator.getConfiguration().getIntegerPropertyOrFail("max_cable_length")){
+                    portAtoB = hybridPortGenerator.generate(devA,devB,linkGenerator.generate(devA,devB));
+                    System.out.println("making port " + startVertexId + "->" + endVertexId + " wireless\n" + physicalLayout.calculateCableLenght(startVertexId, endVertexId));
+                }
+            }
+        }
+        catch (Exception e){
+            throw new IllegalArgumentException("Check physicall topoplogy configuration");
+        }
         // Add connection
-        OutputPort portAtoB = outputPortGenerator.generate(
+        if(portAtoB==null)portAtoB = outputPortGenerator.generate(
                 devA,
                 devB,
                 linkGenerator.generate(devA, devB)

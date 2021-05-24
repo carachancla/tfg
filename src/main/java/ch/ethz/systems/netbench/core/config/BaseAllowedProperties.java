@@ -110,4 +110,16 @@ public class BaseAllowedProperties {
 
     };
 
+    public static final String[] WIRELESS = new String[]{
+            //Allow Hybrid ports
+            "long_to_wireless_port",
+            "max_cable_length",
+            "topology_properties_file",
+            "enable_hybrid_ports",
+            "hybrid_second_port",
+            "hybrid_second_link",
+            "hybrid_second_link_delay",
+            "hybrid_second_link_bandwidth"
+    };
+
 }

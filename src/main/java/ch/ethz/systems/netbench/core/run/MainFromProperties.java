@@ -12,6 +12,8 @@ import ch.ethz.systems.netbench.core.log.SimulationLogger;
 import ch.ethz.systems.netbench.core.network.NetworkDevice;
 import ch.ethz.systems.netbench.core.network.TransportLayer;
 import ch.ethz.systems.netbench.core.run.infrastructure.BaseInitializer;
+import ch.ethz.systems.netbench.core.run.infrastructure.LinkGenerator;
+import ch.ethz.systems.netbench.core.run.infrastructure.OutputPortGenerator;
 import ch.ethz.systems.netbench.core.run.routing.RoutingPopulator;
 import ch.ethz.systems.netbench.core.run.traffic.TrafficPlanner;
 import ch.ethz.systems.netbench.core.utility.UnitConverter;
@@ -95,7 +97,8 @@ public class MainFromProperties {
                 BaseAllowedProperties.LOG,
                 BaseAllowedProperties.PROPERTIES_RUN,
                 BaseAllowedProperties.EXTENSION,
-                BaseAllowedProperties.EXPERIMENTAL
+                BaseAllowedProperties.EXPERIMENTAL,
+                BaseAllowedProperties.WIRELESS
         );
 
         // Dynamic overwrite of temporary config using arguments given from command line
@@ -153,6 +156,14 @@ public class MainFromProperties {
                 InfrastructureSelector.selectLinkGenerator(),
                 InfrastructureSelector.selectTransportLayerGenerator()
         );
+
+        if(Simulator.getConfiguration().getBooleanPropertyWithDefault("enable_hybrid_ports", false)){
+            String second_port = Simulator.getConfiguration().getPropertyOrFail("hybrid_second_port");
+            OutputPortGenerator second_portGen = InfrastructureSelector.selectOutputPortGenerator(second_port);
+            String second_link = Simulator.getConfiguration().getPropertyOrFail("hybrid_second_link");
+            LinkGenerator secondLinkGen = InfrastructureSelector.selectLinkGenerator(false);
+            initializer.addHybridPort(second_portGen, secondLinkGen);
+        }
 
         // 1.2) Generate the links from the topology between the nodes
         initializer.createInfrastructure();

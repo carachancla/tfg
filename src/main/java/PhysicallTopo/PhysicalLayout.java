@@ -195,5 +195,10 @@ public class PhysicalLayout {
         return r/2;
     }
 
+    public void setGraph(Graph g, GraphDetails gd){
+        this.graph = g;
+        this.graphDetails = gd;
+    }
+
 
 }

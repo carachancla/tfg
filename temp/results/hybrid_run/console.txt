@@ -1,0 +1,2476 @@
+Copying file "private/runs/W_1_trafficLimit/jellyfish_n128_d30_hybrid.properties" to run folder...
+Running command "cp private/runs/W_1_trafficLimit/jellyfish_n128_d30_hybrid.properties temp/results/hybrid_run"...
+... command has been executed (any output is shown above).
+Copying file "temp/results/physicalTopo/topologies/Jellyfish_128V_30deg.topology" to run folder using new file name "original_topology.txt"...
+Running command "cp temp/results/physicalTopo/topologies/Jellyfish_128V_30deg.topology temp/results/hybrid_run/original_topology.txt"...
+... command has been executed (any output is shown above).
+Extending topology file "temp/results/physicalTopo/topologies/Jellyfish_128V_30deg.topology" by adding 8 servers to each ToR.
+Writing to output topology file... done.
+Overriding property scenario_topology_file: "temp/results/physicalTopo/topologies/Jellyfish_128V_30deg.topology" (old) -> "temp/results/hybrid_run/extended_topology.txt" (new).
+
+INFRASTRUCTURE
+==================
+making port 53->552 wireless
+50.5
+making port 53->558 wireless
+51.0
+making port 54->563 wireless
+50.5
+making port 58->594 wireless
+52.0
+making port 58->595 wireless
+50.5
+making port 59->600 wireless
+54.0
+making port 59->601 wireless
+52.5
+making port 59->602 wireless
+51.0
+making port 59->606 wireless
+54.5
+making port 59->607 wireless
+53.0
+making port 60->609 wireless
+51.0
+making port 60->610 wireless
+52.5
+making port 60->611 wireless
+54.0
+making port 60->615 wireless
+51.5
+making port 61->616 wireless
+51.5
+making port 61->617 wireless
+53.0
+making port 61->621 wireless
+50.5
+making port 61->622 wireless
+52.0
+making port 61->623 wireless
+53.5
+making port 62->624 wireless
+51.0
+making port 62->628 wireless
+51.0
+making port 62->629 wireless
+52.5
+making port 62->630 wireless
+51.5
+making port 63->635 wireless
+51.5
+making port 63->636 wireless
+53.5
+making port 63->637 wireless
+52.0
+making port 63->638 wireless
+50.5
+making port 64->641 wireless
+50.5
+making port 64->642 wireless
+55.5
+making port 64->643 wireless
+54.0
+making port 64->644 wireless
+52.5
+making port 64->645 wireless
+51.0
+making port 64->647 wireless
+51.0
+making port 65->648 wireless
+57.5
+making port 65->649 wireless
+56.0
+making port 65->650 wireless
+54.5
+making port 65->651 wireless
+53.0
+making port 65->652 wireless
+51.5
+making port 65->654 wireless
+58.0
+making port 65->655 wireless
+56.5
+making port 66->656 wireless
+53.0
+making port 66->657 wireless
+54.5
+making port 66->658 wireless
+56.0
+making port 66->659 wireless
+57.5
+making port 66->660 wireless
+50.5
+making port 66->661 wireless
+52.0
+making port 66->662 wireless
+53.5
+making port 66->663 wireless
+55.0
+making port 67->664 wireless
+55.0
+making port 67->665 wireless
+56.5
+making port 67->666 wireless
+52.5
+making port 67->667 wireless
+51.0
+making port 67->668 wireless
+52.5
+making port 67->669 wireless
+54.0
+making port 67->670 wireless
+55.5
+making port 67->671 wireless
+57.0
+making port 68->672 wireless
+54.5
+making port 68->673 wireless
+53.0
+making port 68->674 wireless
+51.5
+making port 68->675 wireless
+53.0
+making port 68->676 wireless
+54.5
+making port 68->677 wireless
+56.0
+making port 68->678 wireless
+55.0
+making port 68->679 wireless
+53.5
+making port 69->680 wireless
+53.5
+making port 69->681 wireless
+52.0
+making port 69->682 wireless
+53.5
+making port 69->683 wireless
+55.0
+making port 69->684 wireless
+57.0
+making port 69->685 wireless
+55.5
+making port 69->686 wireless
+54.0
+making port 69->687 wireless
+52.5
+making port 70->688 wireless
+52.5
+making port 70->689 wireless
+54.0
+making port 70->690 wireless
+59.0
+making port 70->691 wireless
+57.5
+making port 70->692 wireless
+56.0
+making port 70->693 wireless
+54.5
+making port 70->694 wireless
+53.0
+making port 70->695 wireless
+54.5
+making port 71->696 wireless
+61.0
+making port 71->697 wireless
+59.5
+making port 71->698 wireless
+58.0
+making port 71->699 wireless
+56.5
+making port 71->700 wireless
+55.0
+making port 71->701 wireless
+53.5
+making port 71->702 wireless
+61.5
+making port 71->703 wireless
+60.0
+making port 72->704 wireless
+56.5
+making port 72->705 wireless
+58.0
+making port 72->706 wireless
+59.5
+making port 72->707 wireless
+61.0
+making port 72->708 wireless
+54.0
+making port 72->709 wireless
+55.5
+making port 72->710 wireless
+57.0
+making port 72->711 wireless
+58.5
+making port 73->712 wireless
+58.5
+making port 73->713 wireless
+60.0
+making port 73->714 wireless
+56.0
+making port 73->715 wireless
+54.5
+making port 73->716 wireless
+56.0
+making port 73->717 wireless
+57.5
+making port 73->718 wireless
+59.0
+making port 73->719 wireless
+60.5
+making port 74->720 wireless
+58.0
+making port 74->721 wireless
+56.5
+making port 74->722 wireless
+55.0
+making port 74->723 wireless
+56.5
+making port 74->724 wireless
+58.0
+making port 74->725 wireless
+59.5
+making port 74->726 wireless
+58.5
+making port 74->727 wireless
+57.0
+making port 75->728 wireless
+57.0
+making port 75->729 wireless
+55.5
+making port 75->730 wireless
+57.0
+making port 75->731 wireless
+58.5
+making port 75->732 wireless
+60.5
+making port 75->733 wireless
+59.0
+making port 75->734 wireless
+57.5
+making port 75->735 wireless
+56.0
+making port 76->736 wireless
+56.0
+making port 76->737 wireless
+57.5
+making port 76->738 wireless
+62.5
+making port 76->739 wireless
+61.0
+making port 76->740 wireless
+59.5
+making port 76->741 wireless
+58.0
+making port 76->742 wireless
+56.5
+making port 76->743 wireless
+58.0
+making port 77->744 wireless
+64.5
+making port 77->745 wireless
+63.0
+making port 77->746 wireless
+61.5
+making port 77->747 wireless
+60.0
+making port 77->748 wireless
+58.5
+making port 77->749 wireless
+57.0
+making port 77->750 wireless
+65.0
+making port 77->751 wireless
+63.5
+making port 78->752 wireless
+60.0
+making port 78->753 wireless
+61.5
+making port 78->754 wireless
+63.0
+making port 78->755 wireless
+64.5
+making port 78->756 wireless
+57.5
+making port 78->757 wireless
+59.0
+making port 78->758 wireless
+60.5
+making port 78->759 wireless
+62.0
+making port 79->760 wireless
+62.0
+making port 79->761 wireless
+63.5
+making port 79->762 wireless
+59.5
+making port 79->763 wireless
+58.0
+making port 79->764 wireless
+59.5
+making port 79->765 wireless
+61.0
+making port 79->766 wireless
+62.5
+making port 79->767 wireless
+64.0
+making port 80->768 wireless
+61.5
+making port 80->769 wireless
+60.0
+making port 80->770 wireless
+58.5
+making port 80->771 wireless
+60.0
+making port 80->772 wireless
+61.5
+making port 80->773 wireless
+63.0
+making port 80->774 wireless
+62.0
+making port 80->775 wireless
+60.5
+making port 81->776 wireless
+60.5
+making port 81->777 wireless
+59.0
+making port 81->778 wireless
+60.5
+making port 81->779 wireless
+62.0
+making port 81->780 wireless
+64.0
+making port 81->781 wireless
+62.5
+making port 81->782 wireless
+61.0
+making port 81->783 wireless
+59.5
+making port 82->784 wireless
+59.5
+making port 82->785 wireless
+61.0
+making port 82->786 wireless
+66.0
+making port 82->787 wireless
+64.5
+making port 82->788 wireless
+63.0
+making port 82->789 wireless
+61.5
+making port 82->790 wireless
+60.0
+making port 82->791 wireless
+61.5
+making port 83->792 wireless
+68.0
+making port 83->793 wireless
+66.5
+making port 83->794 wireless
+65.0
+making port 83->795 wireless
+63.5
+making port 83->796 wireless
+62.0
+making port 83->797 wireless
+60.5
+making port 83->798 wireless
+68.5
+making port 83->799 wireless
+67.0
+making port 84->800 wireless
+63.5
+making port 84->801 wireless
+65.0
+making port 84->802 wireless
+66.5
+making port 84->803 wireless
+68.0
+making port 84->804 wireless
+61.0
+making port 84->805 wireless
+62.5
+making port 84->806 wireless
+64.0
+making port 84->807 wireless
+65.5
+making port 85->808 wireless
+65.5
+making port 85->809 wireless
+67.0
+making port 85->810 wireless
+63.0
+making port 85->811 wireless
+61.5
+making port 85->812 wireless
+63.0
+making port 85->813 wireless
+64.5
+making port 85->814 wireless
+66.0
+making port 85->815 wireless
+67.5
+making port 86->816 wireless
+65.0
+making port 86->817 wireless
+63.5
+making port 86->818 wireless
+62.0
+making port 86->819 wireless
+63.5
+making port 86->820 wireless
+65.0
+making port 86->821 wireless
+66.5
+making port 86->822 wireless
+65.5
+making port 86->823 wireless
+64.0
+making port 87->824 wireless
+64.0
+making port 87->825 wireless
+62.5
+making port 87->826 wireless
+64.0
+making port 87->827 wireless
+65.5
+making port 87->828 wireless
+67.5
+making port 87->829 wireless
+66.0
+making port 87->830 wireless
+64.5
+making port 87->831 wireless
+63.0
+making port 88->832 wireless
+63.0
+making port 88->833 wireless
+64.5
+making port 88->834 wireless
+69.5
+making port 88->835 wireless
+68.0
+making port 88->836 wireless
+66.5
+making port 88->837 wireless
+65.0
+making port 88->838 wireless
+63.5
+making port 88->839 wireless
+65.0
+making port 89->840 wireless
+71.5
+making port 89->841 wireless
+70.0
+making port 89->842 wireless
+68.5
+making port 89->843 wireless
+67.0
+making port 89->844 wireless
+65.5
+making port 89->845 wireless
+64.0
+making port 89->846 wireless
+72.0
+making port 89->847 wireless
+70.5
+making port 90->848 wireless
+67.0
+making port 90->849 wireless
+68.5
+making port 90->850 wireless
+70.0
+making port 90->851 wireless
+71.5
+making port 90->852 wireless
+64.5
+making port 90->853 wireless
+66.0
+making port 90->854 wireless
+67.5
+making port 90->855 wireless
+69.0
+making port 91->856 wireless
+69.0
+making port 91->857 wireless
+70.5
+making port 91->858 wireless
+66.5
+making port 91->859 wireless
+65.0
+making port 91->860 wireless
+66.5
+making port 91->861 wireless
+68.0
+making port 91->862 wireless
+69.5
+making port 91->863 wireless
+71.0
+making port 92->864 wireless
+68.5
+making port 92->865 wireless
+67.0
+making port 92->866 wireless
+65.5
+making port 92->867 wireless
+67.0
+making port 92->868 wireless
+68.5
+making port 92->869 wireless
+70.0
+making port 92->870 wireless
+69.0
+making port 92->871 wireless
+67.5
+making port 93->872 wireless
+67.5
+making port 93->873 wireless
+66.0
+making port 93->874 wireless
+67.5
+making port 93->875 wireless
+69.0
+making port 93->876 wireless
+71.0
+making port 93->877 wireless
+69.5
+making port 93->878 wireless
+68.0
+making port 93->879 wireless
+66.5
+making port 94->880 wireless
+66.5
+making port 94->881 wireless
+68.0
+making port 94->882 wireless
+73.0
+making port 94->883 wireless
+71.5
+making port 94->884 wireless
+70.0
+making port 94->885 wireless
+68.5
+making port 94->886 wireless
+67.0
+making port 94->887 wireless
+68.5
+making port 95->888 wireless
+75.0
+making port 95->889 wireless
+73.5
+making port 95->890 wireless
+72.0
+making port 95->891 wireless
+70.5
+making port 95->892 wireless
+69.0
+making port 95->893 wireless
+67.5
+making port 95->894 wireless
+75.5
+making port 95->895 wireless
+74.0
+making port 96->896 wireless
+70.5
+making port 96->897 wireless
+72.0
+making port 96->898 wireless
+73.5
+making port 96->899 wireless
+75.0
+making port 96->900 wireless
+68.0
+making port 96->901 wireless
+69.5
+making port 96->902 wireless
+71.0
+making port 96->903 wireless
+72.5
+making port 97->904 wireless
+72.5
+making port 97->905 wireless
+74.0
+making port 97->906 wireless
+70.0
+making port 97->907 wireless
+68.5
+making port 97->908 wireless
+70.0
+making port 97->909 wireless
+71.5
+making port 97->910 wireless
+73.0
+making port 97->911 wireless
+74.5
+making port 98->912 wireless
+72.0
+making port 98->913 wireless
+70.5
+making port 98->914 wireless
+69.0
+making port 98->915 wireless
+70.5
+making port 98->916 wireless
+72.0
+making port 98->917 wireless
+73.5
+making port 98->918 wireless
+72.5
+making port 98->919 wireless
+71.0
+making port 99->920 wireless
+71.0
+making port 99->921 wireless
+69.5
+making port 99->922 wireless
+71.0
+making port 99->923 wireless
+72.5
+making port 99->924 wireless
+74.5
+making port 99->925 wireless
+73.0
+making port 99->926 wireless
+71.5
+making port 99->927 wireless
+70.0
+making port 100->928 wireless
+70.0
+making port 100->929 wireless
+71.5
+making port 100->930 wireless
+76.5
+making port 100->931 wireless
+75.0
+making port 100->932 wireless
+73.5
+making port 100->933 wireless
+72.0
+making port 100->934 wireless
+70.5
+making port 100->935 wireless
+72.0
+making port 101->936 wireless
+78.5
+making port 101->937 wireless
+77.0
+making port 101->938 wireless
+75.5
+making port 101->939 wireless
+74.0
+making port 101->940 wireless
+72.5
+making port 101->941 wireless
+71.0
+making port 101->942 wireless
+79.0
+making port 101->943 wireless
+77.5
+making port 102->944 wireless
+74.0
+making port 102->945 wireless
+75.5
+making port 102->946 wireless
+77.0
+making port 102->947 wireless
+78.5
+making port 102->948 wireless
+71.5
+making port 102->949 wireless
+73.0
+making port 102->950 wireless
+74.5
+making port 102->951 wireless
+76.0
+making port 103->952 wireless
+76.0
+making port 103->953 wireless
+77.5
+making port 103->954 wireless
+73.5
+making port 103->955 wireless
+72.0
+making port 103->956 wireless
+73.5
+making port 103->957 wireless
+75.0
+making port 103->958 wireless
+76.5
+making port 103->959 wireless
+78.0
+making port 104->960 wireless
+75.5
+making port 104->961 wireless
+74.0
+making port 104->962 wireless
+72.5
+making port 104->963 wireless
+74.0
+making port 104->964 wireless
+75.5
+making port 104->965 wireless
+77.0
+making port 104->966 wireless
+76.0
+making port 104->967 wireless
+74.5
+making port 105->968 wireless
+74.5
+making port 105->969 wireless
+73.0
+making port 105->970 wireless
+74.5
+making port 105->971 wireless
+76.0
+making port 105->972 wireless
+78.0
+making port 105->973 wireless
+76.5
+making port 105->974 wireless
+75.0
+making port 105->975 wireless
+73.5
+making port 106->976 wireless
+73.5
+making port 106->977 wireless
+75.0
+making port 106->978 wireless
+80.0
+making port 106->979 wireless
+78.5
+making port 106->980 wireless
+77.0
+making port 106->981 wireless
+75.5
+making port 106->982 wireless
+74.0
+making port 106->983 wireless
+75.5
+making port 107->984 wireless
+82.0
+making port 107->985 wireless
+80.5
+making port 107->986 wireless
+79.0
+making port 107->987 wireless
+77.5
+making port 107->988 wireless
+76.0
+making port 107->989 wireless
+74.5
+making port 107->990 wireless
+82.5
+making port 107->991 wireless
+81.0
+making port 108->992 wireless
+77.5
+making port 108->993 wireless
+79.0
+making port 108->994 wireless
+80.5
+making port 108->995 wireless
+82.0
+making port 108->996 wireless
+75.0
+making port 108->997 wireless
+76.5
+making port 108->998 wireless
+78.0
+making port 108->999 wireless
+79.5
+making port 109->1000 wireless
+79.5
+making port 109->1001 wireless
+81.0
+making port 109->1002 wireless
+77.0
+making port 109->1003 wireless
+75.5
+making port 109->1004 wireless
+77.0
+making port 109->1005 wireless
+78.5
+making port 109->1006 wireless
+80.0
+making port 109->1007 wireless
+81.5
+making port 110->1008 wireless
+79.0
+making port 110->1009 wireless
+77.5
+making port 110->1010 wireless
+76.0
+making port 110->1011 wireless
+77.5
+making port 110->1012 wireless
+79.0
+making port 110->1013 wireless
+80.5
+making port 110->1014 wireless
+79.5
+making port 110->1015 wireless
+78.0
+making port 111->1016 wireless
+78.0
+making port 111->1017 wireless
+76.5
+making port 111->1018 wireless
+78.0
+making port 111->1019 wireless
+79.5
+making port 111->1020 wireless
+81.5
+making port 111->1021 wireless
+80.0
+making port 111->1022 wireless
+78.5
+making port 111->1023 wireless
+77.0
+making port 112->1024 wireless
+77.0
+making port 112->1025 wireless
+78.5
+making port 112->1026 wireless
+83.5
+making port 112->1027 wireless
+82.0
+making port 112->1028 wireless
+80.5
+making port 112->1029 wireless
+79.0
+making port 112->1030 wireless
+77.5
+making port 112->1031 wireless
+79.0
+making port 113->1032 wireless
+85.5
+making port 113->1033 wireless
+84.0
+making port 113->1034 wireless
+82.5
+making port 113->1035 wireless
+81.0
+making port 113->1036 wireless
+79.5
+making port 113->1037 wireless
+78.0
+making port 113->1038 wireless
+86.0
+making port 113->1039 wireless
+84.5
+making port 114->1040 wireless
+81.0
+making port 114->1041 wireless
+82.5
+making port 114->1042 wireless
+84.0
+making port 114->1043 wireless
+85.5
+making port 114->1044 wireless
+78.5
+making port 114->1045 wireless
+80.0
+making port 114->1046 wireless
+81.5
+making port 114->1047 wireless
+83.0
+making port 115->1048 wireless
+83.0
+making port 115->1049 wireless
+84.5
+making port 115->1050 wireless
+80.5
+making port 115->1051 wireless
+79.0
+making port 115->1052 wireless
+80.5
+making port 115->1053 wireless
+82.0
+making port 115->1054 wireless
+83.5
+making port 115->1055 wireless
+85.0
+making port 116->1056 wireless
+82.5
+making port 116->1057 wireless
+81.0
+making port 116->1058 wireless
+79.5
+making port 116->1059 wireless
+81.0
+making port 116->1060 wireless
+82.5
+making port 116->1061 wireless
+84.0
+making port 116->1062 wireless
+83.0
+making port 116->1063 wireless
+81.5
+making port 117->1064 wireless
+81.5
+making port 117->1065 wireless
+80.0
+making port 117->1066 wireless
+81.5
+making port 117->1067 wireless
+83.0
+making port 117->1068 wireless
+85.0
+making port 117->1069 wireless
+83.5
+making port 117->1070 wireless
+82.0
+making port 117->1071 wireless
+80.5
+making port 118->1072 wireless
+80.5
+making port 118->1073 wireless
+82.0
+making port 118->1074 wireless
+87.0
+making port 118->1075 wireless
+85.5
+making port 118->1076 wireless
+84.0
+making port 118->1077 wireless
+82.5
+making port 118->1078 wireless
+81.0
+making port 118->1079 wireless
+82.5
+making port 119->1080 wireless
+89.0
+making port 119->1081 wireless
+87.5
+making port 119->1082 wireless
+86.0
+making port 119->1083 wireless
+84.5
+making port 119->1084 wireless
+83.0
+making port 119->1085 wireless
+81.5
+making port 119->1086 wireless
+89.5
+making port 119->1087 wireless
+88.0
+making port 120->1088 wireless
+84.5
+making port 120->1089 wireless
+86.0
+making port 120->1090 wireless
+87.5
+making port 120->1091 wireless
+89.0
+making port 120->1092 wireless
+82.0
+making port 120->1093 wireless
+83.5
+making port 120->1094 wireless
+85.0
+making port 120->1095 wireless
+86.5
+making port 121->1096 wireless
+86.5
+making port 121->1097 wireless
+88.0
+making port 121->1098 wireless
+84.0
+making port 121->1099 wireless
+82.5
+making port 121->1100 wireless
+84.0
+making port 121->1101 wireless
+85.5
+making port 121->1102 wireless
+87.0
+making port 121->1103 wireless
+88.5
+making port 122->1104 wireless
+86.0
+making port 122->1105 wireless
+84.5
+making port 122->1106 wireless
+83.0
+making port 122->1107 wireless
+84.5
+making port 122->1108 wireless
+86.0
+making port 122->1109 wireless
+87.5
+making port 122->1110 wireless
+86.5
+making port 122->1111 wireless
+85.0
+making port 123->1112 wireless
+85.0
+making port 123->1113 wireless
+83.5
+making port 123->1114 wireless
+85.0
+making port 123->1115 wireless
+86.5
+making port 123->1116 wireless
+88.5
+making port 123->1117 wireless
+87.0
+making port 123->1118 wireless
+85.5
+making port 123->1119 wireless
+84.0
+making port 124->1120 wireless
+84.0
+making port 124->1121 wireless
+85.5
+making port 124->1122 wireless
+90.5
+making port 124->1123 wireless
+89.0
+making port 124->1124 wireless
+87.5
+making port 124->1125 wireless
+86.0
+making port 124->1126 wireless
+84.5
+making port 124->1127 wireless
+86.0
+making port 125->1128 wireless
+92.5
+making port 125->1129 wireless
+91.0
+making port 125->1130 wireless
+89.5
+making port 125->1131 wireless
+88.0
+making port 125->1132 wireless
+86.5
+making port 125->1133 wireless
+85.0
+making port 125->1134 wireless
+93.0
+making port 125->1135 wireless
+91.5
+making port 126->1136 wireless
+88.0
+making port 126->1137 wireless
+89.5
+making port 126->1138 wireless
+91.0
+making port 126->1139 wireless
+92.5
+making port 126->1140 wireless
+85.5
+making port 126->1141 wireless
+87.0
+making port 126->1142 wireless
+88.5
+making port 126->1143 wireless
+90.0
+making port 127->1144 wireless
+90.0
+making port 127->1145 wireless
+91.5
+making port 127->1146 wireless
+87.5
+making port 127->1147 wireless
+86.0
+making port 127->1148 wireless
+87.5
+making port 127->1149 wireless
+89.0
+making port 127->1150 wireless
+90.5
+making port 127->1151 wireless
+92.0
+making port 552->53 wireless
+50.5
+making port 558->53 wireless
+51.0
+making port 563->54 wireless
+50.5
+making port 594->58 wireless
+52.0
+making port 595->58 wireless
+50.5
+making port 600->59 wireless
+54.0
+making port 601->59 wireless
+52.5
+making port 602->59 wireless
+51.0
+making port 606->59 wireless
+54.5
+making port 607->59 wireless
+53.0
+making port 609->60 wireless
+51.0
+making port 610->60 wireless
+52.5
+making port 611->60 wireless
+54.0
+making port 615->60 wireless
+51.5
+making port 616->61 wireless
+51.5
+making port 617->61 wireless
+53.0
+making port 621->61 wireless
+50.5
+making port 622->61 wireless
+52.0
+making port 623->61 wireless
+53.5
+making port 624->62 wireless
+51.0
+making port 628->62 wireless
+51.0
+making port 629->62 wireless
+52.5
+making port 630->62 wireless
+51.5
+making port 635->63 wireless
+51.5
+making port 636->63 wireless
+53.5
+making port 637->63 wireless
+52.0
+making port 638->63 wireless
+50.5
+making port 641->64 wireless
+50.5
+making port 642->64 wireless
+55.5
+making port 643->64 wireless
+54.0
+making port 644->64 wireless
+52.5
+making port 645->64 wireless
+51.0
+making port 647->64 wireless
+51.0
+making port 648->65 wireless
+57.5
+making port 649->65 wireless
+56.0
+making port 650->65 wireless
+54.5
+making port 651->65 wireless
+53.0
+making port 652->65 wireless
+51.5
+making port 654->65 wireless
+58.0
+making port 655->65 wireless
+56.5
+making port 656->66 wireless
+53.0
+making port 657->66 wireless
+54.5
+making port 658->66 wireless
+56.0
+making port 659->66 wireless
+57.5
+making port 660->66 wireless
+50.5
+making port 661->66 wireless
+52.0
+making port 662->66 wireless
+53.5
+making port 663->66 wireless
+55.0
+making port 664->67 wireless
+55.0
+making port 665->67 wireless
+56.5
+making port 666->67 wireless
+52.5
+making port 667->67 wireless
+51.0
+making port 668->67 wireless
+52.5
+making port 669->67 wireless
+54.0
+making port 670->67 wireless
+55.5
+making port 671->67 wireless
+57.0
+making port 672->68 wireless
+54.5
+making port 673->68 wireless
+53.0
+making port 674->68 wireless
+51.5
+making port 675->68 wireless
+53.0
+making port 676->68 wireless
+54.5
+making port 677->68 wireless
+56.0
+making port 678->68 wireless
+55.0
+making port 679->68 wireless
+53.5
+making port 680->69 wireless
+53.5
+making port 681->69 wireless
+52.0
+making port 682->69 wireless
+53.5
+making port 683->69 wireless
+55.0
+making port 684->69 wireless
+57.0
+making port 685->69 wireless
+55.5
+making port 686->69 wireless
+54.0
+making port 687->69 wireless
+52.5
+making port 688->70 wireless
+52.5
+making port 689->70 wireless
+54.0
+making port 690->70 wireless
+59.0
+making port 691->70 wireless
+57.5
+making port 692->70 wireless
+56.0
+making port 693->70 wireless
+54.5
+making port 694->70 wireless
+53.0
+making port 695->70 wireless
+54.5
+making port 696->71 wireless
+61.0
+making port 697->71 wireless
+59.5
+making port 698->71 wireless
+58.0
+making port 699->71 wireless
+56.5
+making port 700->71 wireless
+55.0
+making port 701->71 wireless
+53.5
+making port 702->71 wireless
+61.5
+making port 703->71 wireless
+60.0
+making port 704->72 wireless
+56.5
+making port 705->72 wireless
+58.0
+making port 706->72 wireless
+59.5
+making port 707->72 wireless
+61.0
+making port 708->72 wireless
+54.0
+making port 709->72 wireless
+55.5
+making port 710->72 wireless
+57.0
+making port 711->72 wireless
+58.5
+making port 712->73 wireless
+58.5
+making port 713->73 wireless
+60.0
+making port 714->73 wireless
+56.0
+making port 715->73 wireless
+54.5
+making port 716->73 wireless
+56.0
+making port 717->73 wireless
+57.5
+making port 718->73 wireless
+59.0
+making port 719->73 wireless
+60.5
+making port 720->74 wireless
+58.0
+making port 721->74 wireless
+56.5
+making port 722->74 wireless
+55.0
+making port 723->74 wireless
+56.5
+making port 724->74 wireless
+58.0
+making port 725->74 wireless
+59.5
+making port 726->74 wireless
+58.5
+making port 727->74 wireless
+57.0
+making port 728->75 wireless
+57.0
+making port 729->75 wireless
+55.5
+making port 730->75 wireless
+57.0
+making port 731->75 wireless
+58.5
+making port 732->75 wireless
+60.5
+making port 733->75 wireless
+59.0
+making port 734->75 wireless
+57.5
+making port 735->75 wireless
+56.0
+making port 736->76 wireless
+56.0
+making port 737->76 wireless
+57.5
+making port 738->76 wireless
+62.5
+making port 739->76 wireless
+61.0
+making port 740->76 wireless
+59.5
+making port 741->76 wireless
+58.0
+making port 742->76 wireless
+56.5
+making port 743->76 wireless
+58.0
+making port 744->77 wireless
+64.5
+making port 745->77 wireless
+63.0
+making port 746->77 wireless
+61.5
+making port 747->77 wireless
+60.0
+making port 748->77 wireless
+58.5
+making port 749->77 wireless
+57.0
+making port 750->77 wireless
+65.0
+making port 751->77 wireless
+63.5
+making port 752->78 wireless
+60.0
+making port 753->78 wireless
+61.5
+making port 754->78 wireless
+63.0
+making port 755->78 wireless
+64.5
+making port 756->78 wireless
+57.5
+making port 757->78 wireless
+59.0
+making port 758->78 wireless
+60.5
+making port 759->78 wireless
+62.0
+making port 760->79 wireless
+62.0
+making port 761->79 wireless
+63.5
+making port 762->79 wireless
+59.5
+making port 763->79 wireless
+58.0
+making port 764->79 wireless
+59.5
+making port 765->79 wireless
+61.0
+making port 766->79 wireless
+62.5
+making port 767->79 wireless
+64.0
+making port 768->80 wireless
+61.5
+making port 769->80 wireless
+60.0
+making port 770->80 wireless
+58.5
+making port 771->80 wireless
+60.0
+making port 772->80 wireless
+61.5
+making port 773->80 wireless
+63.0
+making port 774->80 wireless
+62.0
+making port 775->80 wireless
+60.5
+making port 776->81 wireless
+60.5
+making port 777->81 wireless
+59.0
+making port 778->81 wireless
+60.5
+making port 779->81 wireless
+62.0
+making port 780->81 wireless
+64.0
+making port 781->81 wireless
+62.5
+making port 782->81 wireless
+61.0
+making port 783->81 wireless
+59.5
+making port 784->82 wireless
+59.5
+making port 785->82 wireless
+61.0
+making port 786->82 wireless
+66.0
+making port 787->82 wireless
+64.5
+making port 788->82 wireless
+63.0
+making port 789->82 wireless
+61.5
+making port 790->82 wireless
+60.0
+making port 791->82 wireless
+61.5
+making port 792->83 wireless
+68.0
+making port 793->83 wireless
+66.5
+making port 794->83 wireless
+65.0
+making port 795->83 wireless
+63.5
+making port 796->83 wireless
+62.0
+making port 797->83 wireless
+60.5
+making port 798->83 wireless
+68.5
+making port 799->83 wireless
+67.0
+making port 800->84 wireless
+63.5
+making port 801->84 wireless
+65.0
+making port 802->84 wireless
+66.5
+making port 803->84 wireless
+68.0
+making port 804->84 wireless
+61.0
+making port 805->84 wireless
+62.5
+making port 806->84 wireless
+64.0
+making port 807->84 wireless
+65.5
+making port 808->85 wireless
+65.5
+making port 809->85 wireless
+67.0
+making port 810->85 wireless
+63.0
+making port 811->85 wireless
+61.5
+making port 812->85 wireless
+63.0
+making port 813->85 wireless
+64.5
+making port 814->85 wireless
+66.0
+making port 815->85 wireless
+67.5
+making port 816->86 wireless
+65.0
+making port 817->86 wireless
+63.5
+making port 818->86 wireless
+62.0
+making port 819->86 wireless
+63.5
+making port 820->86 wireless
+65.0
+making port 821->86 wireless
+66.5
+making port 822->86 wireless
+65.5
+making port 823->86 wireless
+64.0
+making port 824->87 wireless
+64.0
+making port 825->87 wireless
+62.5
+making port 826->87 wireless
+64.0
+making port 827->87 wireless
+65.5
+making port 828->87 wireless
+67.5
+making port 829->87 wireless
+66.0
+making port 830->87 wireless
+64.5
+making port 831->87 wireless
+63.0
+making port 832->88 wireless
+63.0
+making port 833->88 wireless
+64.5
+making port 834->88 wireless
+69.5
+making port 835->88 wireless
+68.0
+making port 836->88 wireless
+66.5
+making port 837->88 wireless
+65.0
+making port 838->88 wireless
+63.5
+making port 839->88 wireless
+65.0
+making port 840->89 wireless
+71.5
+making port 841->89 wireless
+70.0
+making port 842->89 wireless
+68.5
+making port 843->89 wireless
+67.0
+making port 844->89 wireless
+65.5
+making port 845->89 wireless
+64.0
+making port 846->89 wireless
+72.0
+making port 847->89 wireless
+70.5
+making port 848->90 wireless
+67.0
+making port 849->90 wireless
+68.5
+making port 850->90 wireless
+70.0
+making port 851->90 wireless
+71.5
+making port 852->90 wireless
+64.5
+making port 853->90 wireless
+66.0
+making port 854->90 wireless
+67.5
+making port 855->90 wireless
+69.0
+making port 856->91 wireless
+69.0
+making port 857->91 wireless
+70.5
+making port 858->91 wireless
+66.5
+making port 859->91 wireless
+65.0
+making port 860->91 wireless
+66.5
+making port 861->91 wireless
+68.0
+making port 862->91 wireless
+69.5
+making port 863->91 wireless
+71.0
+making port 864->92 wireless
+68.5
+making port 865->92 wireless
+67.0
+making port 866->92 wireless
+65.5
+making port 867->92 wireless
+67.0
+making port 868->92 wireless
+68.5
+making port 869->92 wireless
+70.0
+making port 870->92 wireless
+69.0
+making port 871->92 wireless
+67.5
+making port 872->93 wireless
+67.5
+making port 873->93 wireless
+66.0
+making port 874->93 wireless
+67.5
+making port 875->93 wireless
+69.0
+making port 876->93 wireless
+71.0
+making port 877->93 wireless
+69.5
+making port 878->93 wireless
+68.0
+making port 879->93 wireless
+66.5
+making port 880->94 wireless
+66.5
+making port 881->94 wireless
+68.0
+making port 882->94 wireless
+73.0
+making port 883->94 wireless
+71.5
+making port 884->94 wireless
+70.0
+making port 885->94 wireless
+68.5
+making port 886->94 wireless
+67.0
+making port 887->94 wireless
+68.5
+making port 888->95 wireless
+75.0
+making port 889->95 wireless
+73.5
+making port 890->95 wireless
+72.0
+making port 891->95 wireless
+70.5
+making port 892->95 wireless
+69.0
+making port 893->95 wireless
+67.5
+making port 894->95 wireless
+75.5
+making port 895->95 wireless
+74.0
+making port 896->96 wireless
+70.5
+making port 897->96 wireless
+72.0
+making port 898->96 wireless
+73.5
+making port 899->96 wireless
+75.0
+making port 900->96 wireless
+68.0
+making port 901->96 wireless
+69.5
+making port 902->96 wireless
+71.0
+making port 903->96 wireless
+72.5
+making port 904->97 wireless
+72.5
+making port 905->97 wireless
+74.0
+making port 906->97 wireless
+70.0
+making port 907->97 wireless
+68.5
+making port 908->97 wireless
+70.0
+making port 909->97 wireless
+71.5
+making port 910->97 wireless
+73.0
+making port 911->97 wireless
+74.5
+making port 912->98 wireless
+72.0
+making port 913->98 wireless
+70.5
+making port 914->98 wireless
+69.0
+making port 915->98 wireless
+70.5
+making port 916->98 wireless
+72.0
+making port 917->98 wireless
+73.5
+making port 918->98 wireless
+72.5
+making port 919->98 wireless
+71.0
+making port 920->99 wireless
+71.0
+making port 921->99 wireless
+69.5
+making port 922->99 wireless
+71.0
+making port 923->99 wireless
+72.5
+making port 924->99 wireless
+74.5
+making port 925->99 wireless
+73.0
+making port 926->99 wireless
+71.5
+making port 927->99 wireless
+70.0
+making port 928->100 wireless
+70.0
+making port 929->100 wireless
+71.5
+making port 930->100 wireless
+76.5
+making port 931->100 wireless
+75.0
+making port 932->100 wireless
+73.5
+making port 933->100 wireless
+72.0
+making port 934->100 wireless
+70.5
+making port 935->100 wireless
+72.0
+making port 936->101 wireless
+78.5
+making port 937->101 wireless
+77.0
+making port 938->101 wireless
+75.5
+making port 939->101 wireless
+74.0
+making port 940->101 wireless
+72.5
+making port 941->101 wireless
+71.0
+making port 942->101 wireless
+79.0
+making port 943->101 wireless
+77.5
+making port 944->102 wireless
+74.0
+making port 945->102 wireless
+75.5
+making port 946->102 wireless
+77.0
+making port 947->102 wireless
+78.5
+making port 948->102 wireless
+71.5
+making port 949->102 wireless
+73.0
+making port 950->102 wireless
+74.5
+making port 951->102 wireless
+76.0
+making port 952->103 wireless
+76.0
+making port 953->103 wireless
+77.5
+making port 954->103 wireless
+73.5
+making port 955->103 wireless
+72.0
+making port 956->103 wireless
+73.5
+making port 957->103 wireless
+75.0
+making port 958->103 wireless
+76.5
+making port 959->103 wireless
+78.0
+making port 960->104 wireless
+75.5
+making port 961->104 wireless
+74.0
+making port 962->104 wireless
+72.5
+making port 963->104 wireless
+74.0
+making port 964->104 wireless
+75.5
+making port 965->104 wireless
+77.0
+making port 966->104 wireless
+76.0
+making port 967->104 wireless
+74.5
+making port 968->105 wireless
+74.5
+making port 969->105 wireless
+73.0
+making port 970->105 wireless
+74.5
+making port 971->105 wireless
+76.0
+making port 972->105 wireless
+78.0
+making port 973->105 wireless
+76.5
+making port 974->105 wireless
+75.0
+making port 975->105 wireless
+73.5
+making port 976->106 wireless
+73.5
+making port 977->106 wireless
+75.0
+making port 978->106 wireless
+80.0
+making port 979->106 wireless
+78.5
+making port 980->106 wireless
+77.0
+making port 981->106 wireless
+75.5
+making port 982->106 wireless
+74.0
+making port 983->106 wireless
+75.5
+making port 984->107 wireless
+82.0
+making port 985->107 wireless
+80.5
+making port 986->107 wireless
+79.0
+making port 987->107 wireless
+77.5
+making port 988->107 wireless
+76.0
+making port 989->107 wireless
+74.5
+making port 990->107 wireless
+82.5
+making port 991->107 wireless
+81.0
+making port 992->108 wireless
+77.5
+making port 993->108 wireless
+79.0
+making port 994->108 wireless
+80.5
+making port 995->108 wireless
+82.0
+making port 996->108 wireless
+75.0
+making port 997->108 wireless
+76.5
+making port 998->108 wireless
+78.0
+making port 999->108 wireless
+79.5
+making port 1000->109 wireless
+79.5
+making port 1001->109 wireless
+81.0
+making port 1002->109 wireless
+77.0
+making port 1003->109 wireless
+75.5
+making port 1004->109 wireless
+77.0
+making port 1005->109 wireless
+78.5
+making port 1006->109 wireless
+80.0
+making port 1007->109 wireless
+81.5
+making port 1008->110 wireless
+79.0
+making port 1009->110 wireless
+77.5
+making port 1010->110 wireless
+76.0
+making port 1011->110 wireless
+77.5
+making port 1012->110 wireless
+79.0
+making port 1013->110 wireless
+80.5
+making port 1014->110 wireless
+79.5
+making port 1015->110 wireless
+78.0
+making port 1016->111 wireless
+78.0
+making port 1017->111 wireless
+76.5
+making port 1018->111 wireless
+78.0
+making port 1019->111 wireless
+79.5
+making port 1020->111 wireless
+81.5
+making port 1021->111 wireless
+80.0
+making port 1022->111 wireless
+78.5
+making port 1023->111 wireless
+77.0
+making port 1024->112 wireless
+77.0
+making port 1025->112 wireless
+78.5
+making port 1026->112 wireless
+83.5
+making port 1027->112 wireless
+82.0
+making port 1028->112 wireless
+80.5
+making port 1029->112 wireless
+79.0
+making port 1030->112 wireless
+77.5
+making port 1031->112 wireless
+79.0
+making port 1032->113 wireless
+85.5
+making port 1033->113 wireless
+84.0
+making port 1034->113 wireless
+82.5
+making port 1035->113 wireless
+81.0
+making port 1036->113 wireless
+79.5
+making port 1037->113 wireless
+78.0
+making port 1038->113 wireless
+86.0
+making port 1039->113 wireless
+84.5
+making port 1040->114 wireless
+81.0
+making port 1041->114 wireless
+82.5
+making port 1042->114 wireless
+84.0
+making port 1043->114 wireless
+85.5
+making port 1044->114 wireless
+78.5
+making port 1045->114 wireless
+80.0
+making port 1046->114 wireless
+81.5
+making port 1047->114 wireless
+83.0
+making port 1048->115 wireless
+83.0
+making port 1049->115 wireless
+84.5
+making port 1050->115 wireless
+80.5
+making port 1051->115 wireless
+79.0
+making port 1052->115 wireless
+80.5
+making port 1053->115 wireless
+82.0
+making port 1054->115 wireless
+83.5
+making port 1055->115 wireless
+85.0
+making port 1056->116 wireless
+82.5
+making port 1057->116 wireless
+81.0
+making port 1058->116 wireless
+79.5
+making port 1059->116 wireless
+81.0
+making port 1060->116 wireless
+82.5
+making port 1061->116 wireless
+84.0
+making port 1062->116 wireless
+83.0
+making port 1063->116 wireless
+81.5
+making port 1064->117 wireless
+81.5
+making port 1065->117 wireless
+80.0
+making port 1066->117 wireless
+81.5
+making port 1067->117 wireless
+83.0
+making port 1068->117 wireless
+85.0
+making port 1069->117 wireless
+83.5
+making port 1070->117 wireless
+82.0
+making port 1071->117 wireless
+80.5
+making port 1072->118 wireless
+80.5
+making port 1073->118 wireless
+82.0
+making port 1074->118 wireless
+87.0
+making port 1075->118 wireless
+85.5
+making port 1076->118 wireless
+84.0
+making port 1077->118 wireless
+82.5
+making port 1078->118 wireless
+81.0
+making port 1079->118 wireless
+82.5
+making port 1080->119 wireless
+89.0
+making port 1081->119 wireless
+87.5
+making port 1082->119 wireless
+86.0
+making port 1083->119 wireless
+84.5
+making port 1084->119 wireless
+83.0
+making port 1085->119 wireless
+81.5
+making port 1086->119 wireless
+89.5
+making port 1087->119 wireless
+88.0
+making port 1088->120 wireless
+84.5
+making port 1089->120 wireless
+86.0
+making port 1090->120 wireless
+87.5
+making port 1091->120 wireless
+89.0
+making port 1092->120 wireless
+82.0
+making port 1093->120 wireless
+83.5
+making port 1094->120 wireless
+85.0
+making port 1095->120 wireless
+86.5
+making port 1096->121 wireless
+86.5
+making port 1097->121 wireless
+88.0
+making port 1098->121 wireless
+84.0
+making port 1099->121 wireless
+82.5
+making port 1100->121 wireless
+84.0
+making port 1101->121 wireless
+85.5
+making port 1102->121 wireless
+87.0
+making port 1103->121 wireless
+88.5
+making port 1104->122 wireless
+86.0
+making port 1105->122 wireless
+84.5
+making port 1106->122 wireless
+83.0
+making port 1107->122 wireless
+84.5
+making port 1108->122 wireless
+86.0
+making port 1109->122 wireless
+87.5
+making port 1110->122 wireless
+86.5
+making port 1111->122 wireless
+85.0
+making port 1112->123 wireless
+85.0
+making port 1113->123 wireless
+83.5
+making port 1114->123 wireless
+85.0
+making port 1115->123 wireless
+86.5
+making port 1116->123 wireless
+88.5
+making port 1117->123 wireless
+87.0
+making port 1118->123 wireless
+85.5
+making port 1119->123 wireless
+84.0
+making port 1120->124 wireless
+84.0
+making port 1121->124 wireless
+85.5
+making port 1122->124 wireless
+90.5
+making port 1123->124 wireless
+89.0
+making port 1124->124 wireless
+87.5
+making port 1125->124 wireless
+86.0
+making port 1126->124 wireless
+84.5
+making port 1127->124 wireless
+86.0
+making port 1128->125 wireless
+92.5
+making port 1129->125 wireless
+91.0
+making port 1130->125 wireless
+89.5
+making port 1131->125 wireless
+88.0
+making port 1132->125 wireless
+86.5
+making port 1133->125 wireless
+85.0
+making port 1134->125 wireless
+93.0
+making port 1135->125 wireless
+91.5
+making port 1136->126 wireless
+88.0
+making port 1137->126 wireless
+89.5
+making port 1138->126 wireless
+91.0
+making port 1139->126 wireless
+92.5
+making port 1140->126 wireless
+85.5
+making port 1141->126 wireless
+87.0
+making port 1142->126 wireless
+88.5
+making port 1143->126 wireless
+90.0
+making port 1144->127 wireless
+90.0
+making port 1145->127 wireless
+91.5
+making port 1146->127 wireless
+87.5
+making port 1147->127 wireless
+86.0
+making port 1148->127 wireless
+87.5
+making port 1149->127 wireless
+89.0
+making port 1150->127 wireless
+90.5
+making port 1151->127 wireless
+92.0
+Finished creating infrastructure.
+
+ROUTING STATE
+==================
+Calculating shortest path lengths... done.
+Populating ECMP forward routing tables... 9.98263888888889%... 19.96527777777778%... 29.947916666666668%... 39.93055555555556%... 49.91319444444444%... 59.895833333333336%... 69.87847222222221%... 79.86111111111111%... 89.84375%... 99.82638888888889%... done.
+Finished routing state setup.
+
+TRAFFIC
+==================
+Generating all-to-all pair probabilities in 19.0% fraction 128 ToRs between their servers... done.
+Creating arrival plan... 10%... 20%... 30%... 40%... 50%... 60%... 70%... 80%... 90%... 100%... done.
+Poisson Arrival plan created.
+Number of flows created: 53762.
+Mean inter-arrival time: 1116078 (expectation: 1111111.1111111112)
+Finished generating traffic flow starts.
+
+ACTUAL RUN
+==================
+Starting simulation (total time: 60000000000ns);...
+Elapsed 0.01s simulation in 0.017s real (total progress: 0.017318395%).
+Elapsed 0.01s simulation in 0.005s real (total progress: 0.033502985%).
+Elapsed 0.01s simulation in 0.006s real (total progress: 0.05103150833333333%).
+Elapsed 0.01s simulation in 0.004s real (total progress: 0.06670638666666667%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 0.08351547333333334%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 0.10048949833333333%).
+Elapsed 0.01s simulation in 0.004s real (total progress: 0.11705701333333335%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 0.13339299333333332%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 0.15054750666666666%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 0.167442575%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 0.1839609%).
+Elapsed 0.01s simulation in 0.006s real (total progress: 0.20001086333333332%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 0.21738703%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 0.23461620666666666%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 0.25110775%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 0.26771919499999997%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 0.28336528166666664%).
+Elapsed 0.01s simulation in 0.004s real (total progress: 0.3001350383333333%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 0.31689318499999997%).
+Elapsed 0.01s simulation in 0.005s real (total progress: 0.334785665%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 0.35055755%).
+Elapsed 0.01s simulation in 0.006s real (total progress: 0.367679925%).
+Elapsed 0.01s simulation in 0.004s real (total progress: 0.383676535%).
+Elapsed 0.01s simulation in 0.004s real (total progress: 0.40073318500000005%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 0.42295012666666665%).
+Elapsed 0.01s simulation in 0.004s real (total progress: 0.4335897833333333%).
+Elapsed 0.01s simulation in 0.005s real (total progress: 0.4507462133333333%).
+Elapsed 0.01s simulation in 0.005s real (total progress: 0.4672303916666667%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 0.484026625%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 0.500043915%).
+Elapsed 0.01s simulation in 0.006s real (total progress: 0.5174985816666666%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 0.5336961866666666%).
+Elapsed 0.01s simulation in 0.008s real (total progress: 0.5508408783333333%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 0.566853865%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 0.58428864%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 0.6022598333333333%).
+Elapsed 0.01s simulation in 0.008s real (total progress: 0.6180951466666667%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 0.6334555616666667%).
+Elapsed 0.01s simulation in 0.006s real (total progress: 0.65034956%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 0.6672422516666667%).
+Elapsed 0.01s simulation in 0.022s real (total progress: 0.68411604%).
+Elapsed 0.01s simulation in 0.006s real (total progress: 0.7023322766666668%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 0.7166935633333333%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 0.7334251916666668%).
+Elapsed 0.01s simulation in 0.004s real (total progress: 0.75018052%).
+Elapsed 0.01s simulation in 0.004s real (total progress: 0.7719003716666667%).
+Elapsed 0.01s simulation in 0.006s real (total progress: 0.7833448866666667%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 0.8000918233333333%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 0.8176300933333334%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 0.8333476916666668%).
+Elapsed 0.01s simulation in 0.004s real (total progress: 0.8507873433333334%).
+Elapsed 0.01s simulation in 0.004s real (total progress: 0.8679410933333332%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 0.883806765%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 0.90019588%).
+Elapsed 0.01s simulation in 0.004s real (total progress: 0.9221667266666668%).
+Elapsed 0.01s simulation in 0.0s real (total progress: 0.936225995%).
+Elapsed 0.01s simulation in 0.006s real (total progress: 0.9501032183333334%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 0.9682440449999999%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 0.98434208%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 1.00148886%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 1.0167489766666666%).
+Elapsed 0.01s simulation in 0.004s real (total progress: 1.03467432%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 1.05041875%).
+Elapsed 0.01s simulation in 0.117s real (total progress: 1.0676100149999999%).
+Elapsed 0.01s simulation in 0.006s real (total progress: 1.0837443533333333%).
+Elapsed 0.01s simulation in 0.005s real (total progress: 1.101064845%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 1.116871255%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 1.1342474033333332%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 1.1507691983333335%).
+Elapsed 0.01s simulation in 0.004s real (total progress: 1.1670327783333334%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 1.1833385383333335%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 1.2002434533333333%).
+Elapsed 0.01s simulation in 0.005s real (total progress: 1.2171395983333333%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 1.2346440516666666%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 1.2510951399999999%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 1.2698071516666667%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 1.2871137116666667%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 1.3004264933333334%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 1.319630005%).
+Elapsed 0.01s simulation in 0.004s real (total progress: 1.33335715%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 1.35129954%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 1.36681391%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 1.3838248466666667%).
+Elapsed 0.01s simulation in 0.004s real (total progress: 1.4006569166666667%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 1.4177473666666667%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 1.4338796983333335%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 1.4508453466666666%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 1.4669910350000002%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 1.4841082166666666%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 1.500563425%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 1.5197838916666666%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 1.53353402%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 1.55080054%).
+Elapsed 0.01s simulation in 0.0s real (total progress: 1.5701183683333335%).
+Elapsed 0.01s simulation in 0.023s real (total progress: 1.5835748183333336%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 1.6000000566666666%).
+Elapsed 0.01s simulation in 0.035s real (total progress: 1.6170064566666666%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 1.63658847%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 1.65000022%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 1.6667629633333334%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 1.6834151033333336%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 1.7000361583333334%).
+Elapsed 0.01s simulation in 0.007s real (total progress: 1.7169104333333334%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 1.7346430949999998%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 1.7500716766666666%).
+Elapsed 0.01s simulation in 0.004s real (total progress: 1.7666911016666664%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 1.78449195%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 1.8003495200000001%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 1.8182665983333333%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 1.8337946716666669%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 1.8515788116666667%).
+Elapsed 0.01s simulation in 0.005s real (total progress: 1.8669250016666665%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 1.8835652766666666%).
+Elapsed 0.01s simulation in 0.005s real (total progress: 1.900881465%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 1.9173266766666666%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 1.9338320816666668%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 1.9512346933333333%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 1.9666667933333333%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 1.984849103333333%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 2.0014046233333334%).
+Elapsed 0.01s simulation in 0.005s real (total progress: 2.0182611400000003%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 2.041471425%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 2.0513715316666667%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 2.0671645733333333%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 2.08352246%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 2.10498698%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 2.1168952266666667%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 2.1342674316666668%).
+Elapsed 0.01s simulation in 0.006s real (total progress: 2.150144238333333%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 2.166970206666667%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 2.1849676049999998%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 2.2015212966666664%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 2.21725678%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 2.2344912816666667%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 2.2501527350000003%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 2.267120261666667%).
+Elapsed 0.01s simulation in 0.004s real (total progress: 2.2838232633333333%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 2.3005241433333334%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 2.3199533933333334%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 2.33533855%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 2.3505271283333333%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 2.3685942%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 2.3834870416666667%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 2.400417763333333%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 2.4172742216666667%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 2.4348121183333333%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 2.4517966983333332%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 2.4677398416666665%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 2.4846669366666667%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 2.5004525516666667%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 2.517521986666667%).
+Elapsed 0.01s simulation in 0.006s real (total progress: 2.5360364316666666%).
+Elapsed 0.01s simulation in 0.0s real (total progress: 2.550000008333333%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 2.5688242900000002%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 2.583358811666667%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 2.60086922%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 2.6178524299999997%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 2.634016755%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 2.65110809%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 2.670071245%).
+Elapsed 0.01s simulation in 0.0s real (total progress: 2.6839710266666668%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 2.7032053266666667%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 2.716717225%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 2.7334113983333337%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 2.7510229733333333%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 2.7671159666666667%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 2.783541895%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 2.800681075%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 2.8168252183333333%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 2.833471428333333%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 2.8502926566666664%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 2.8674733433333333%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 2.88781216%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 2.9008644066666665%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 2.9179449916666664%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 2.933859958333333%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 2.9500620533333333%).
+Elapsed 0.01s simulation in 0.006s real (total progress: 2.966675655%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 2.9837660516666666%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 3.0005003133333332%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 3.0167323583333334%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 3.039408936666667%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 3.05149502%).
+Elapsed 0.01s simulation in 0.044s real (total progress: 3.067740678333333%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 3.0833646766666667%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 3.1007009366666667%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 3.1180954966666667%).
+Elapsed 0.01s simulation in 0.005s real (total progress: 3.1344784483333332%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 3.150068475%).
+Elapsed 0.01s simulation in 0.005s real (total progress: 3.1667969516666665%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 3.184180403333333%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 3.2007895366666665%).
+Elapsed 0.01s simulation in 0.0s real (total progress: 3.2180997500000004%).
+Elapsed 0.01s simulation in 0.004s real (total progress: 3.2338734466666663%).
+Elapsed 0.01s simulation in 0.0s real (total progress: 3.25060565%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 3.271949285%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 3.2844746966666665%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 3.3046113533333332%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 3.316851158333333%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 3.3342536399999996%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 3.350224438333333%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 3.368283595%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 3.38334162%).
+Elapsed 0.01s simulation in 0.006s real (total progress: 3.4006745666666665%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 3.4191915699999997%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 3.4344916633333336%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 3.451044536666667%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 3.466765336666667%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 3.4838304%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 3.500561071666667%).
+Elapsed 0.01s simulation in 0.0s real (total progress: 3.5193859799999996%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 3.5342661150000003%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 3.550309606666667%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 3.5672304466666667%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 3.583641963333333%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 3.60059789%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 3.617151971666667%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 3.6345543399999998%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 3.650538355%).
+Elapsed 0.01s simulation in 0.0s real (total progress: 3.666696416666667%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 3.683668905%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 3.70029143%).
+Elapsed 0.01s simulation in 0.006s real (total progress: 3.716744561666667%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 3.7336862783333333%).
+Elapsed 0.01s simulation in 0.007s real (total progress: 3.7502200383333335%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 3.767684998333334%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 3.7835218216666666%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 3.8003373066666666%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 3.82079392%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 3.8335749016666663%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 3.8505505349999996%).
+Elapsed 0.01s simulation in 0.005s real (total progress: 3.867033981666667%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 3.8836630966666665%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 3.9012544083333336%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 3.91776094%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 3.934494748333334%).
+Elapsed 0.01s simulation in 0.004s real (total progress: 3.9524037883333336%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 3.9666948%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 3.9839567550000003%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 4.000275796666666%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 4.019320606666667%).
+Elapsed 0.01s simulation in 0.005s real (total progress: 4.03397554%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 4.050661825%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 4.067424828333333%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 4.084763388333333%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 4.100240985%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 4.118078578333333%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 4.133715511666667%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 4.1508895599999995%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 4.167175498333334%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 4.187855103333334%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 4.200065801666667%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 4.217407936666667%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 4.234178876666666%).
+Elapsed 0.01s simulation in 0.0s real (total progress: 4.250148921666667%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 4.2680897983333335%).
+Elapsed 0.01s simulation in 0.004s real (total progress: 4.283562641666667%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 4.300373341666667%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 4.316667141666667%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 4.33349192%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 4.3500587%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 4.367458336666666%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 4.38345195%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 4.400201415%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 4.417904356666667%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 4.434694255%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 4.45135272%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 4.466912828333333%).
+Elapsed 0.01s simulation in 0.004s real (total progress: 4.4833785116666665%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 4.50005606%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 4.517637466666667%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 4.534407335%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 4.550035645%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 4.566942143333334%).
+Elapsed 0.01s simulation in 0.0s real (total progress: 4.583527931666667%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 4.609390573333334%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 4.616666668333334%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 4.63417635%).
+Elapsed 0.01s simulation in 0.005s real (total progress: 4.653463063333333%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 4.666694461666666%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 4.684359595%).
+Elapsed 0.01s simulation in 0.0s real (total progress: 4.70049477%).
+Elapsed 0.01s simulation in 0.005s real (total progress: 4.716913045%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 4.73351011%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 4.750964416666666%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 4.7668487850000005%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 4.783333959999999%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 4.800086285%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 4.8181540316666664%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 4.833639555%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 4.850504805%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 4.8672054%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 4.884177451666667%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 4.900490345%).
+Elapsed 0.01s simulation in 0.001s real (total progress: 4.91728803%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 4.935646678333333%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 4.950270673333333%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 4.9676552633333335%).
+Elapsed 0.01s simulation in 0.002s real (total progress: 4.983476435%).
+Elapsed 0.01s simulation in 0.003s real (total progress: 5.000052921666667%).
