@@ -40,20 +40,17 @@ set style line 9 lt rgb "#666666" lw 1.2 pt 0
 
 #-----
 
-set output "output_1a_failcase_vlb_avg_fct.pdf"
+set output "output_1a_failcase_ecmp_avg_fct.pdf"
+#set xtics 0, 1, 5
 set format x "%.0fK"
 set xlabel "Load {/Symbol l} (flow-starts per second)"
 set ylabel "Average FCT (ms)"
 
-set xrange [0:2]
-set yrange [0:200]
+#set xrange [0:2500]
+#set yrange [0:250]
 set key font ",16"
 set key top left Left reverse
 #set key below Left reverse
 #set key tmargin
 
-plot    "data_1_failcase_ecmp_mean_fct_ms.txt" using ($2/1000):(stringcolumn(1) eq "full_fat_tree_k16" ? $3: 1/0) title "Wireless Jellyfish" smooth unique w lp ls 1, \
-        #"data_1_failcase_vlb_mean_fct_ms.txt" using ($2/1000):(stringcolumn(1) eq "xpander_n216_d11_ecmp" ? $3: 1/0) title "Xpander ECMP" smooth unique w lp ls 2, \
-        #"data_1_failcase_vlb_mean_fct_ms.txt" using ($2/1000):(stringcolumn(1) eq "xpander_n216_d11_vlb" ? $3: 1/0) title "Xpander VLB" smooth unique w lp ls 4, \
-
-
+plot    "data_1_failcase_ecmp_mean_fct_ms.txt" using 2:3 title "Jellyfish" smooth unique w lp ls 2

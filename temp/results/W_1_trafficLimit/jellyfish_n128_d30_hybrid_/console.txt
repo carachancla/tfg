@@ -1,0 +1,3177 @@
+Copying file "private/runs/W_1_trafficLimit/jellyfish_n128_d30_hybrid.properties" to run folder...
+Running command "cp private/runs/W_1_trafficLimit/jellyfish_n128_d30_hybrid.properties temp/results/W_1_trafficLimit/jellyfish_n128_d30_hybrid_"...
+... command has been executed (any output is shown above).
+Copying file "temp/results/physicalTopo/topologies/Jellyfish_128V_30deg.topology" to run folder using new file name "original_topology.txt"...
+Running command "cp temp/results/physicalTopo/topologies/Jellyfish_128V_30deg.topology temp/results/W_1_trafficLimit/jellyfish_n128_d30_hybrid_/original_topology.txt"...
+... command has been executed (any output is shown above).
+Extending topology file "temp/results/physicalTopo/topologies/Jellyfish_128V_30deg.topology" by adding 8 servers to each ToR.
+Writing to output topology file... done.
+Overriding property scenario_topology_file: "temp/results/physicalTopo/topologies/Jellyfish_128V_30deg.topology" (old) -> "temp/results/W_1_trafficLimit/jellyfish_n128_d30_hybrid_/extended_topology.txt" (new).
+
+INFRASTRUCTURE
+==================
+making port 53->552 wireless
+50.5
+making port 53->558 wireless
+51.0
+making port 54->563 wireless
+50.5
+making port 58->594 wireless
+52.0
+making port 58->595 wireless
+50.5
+making port 59->600 wireless
+54.0
+making port 59->601 wireless
+52.5
+making port 59->602 wireless
+51.0
+making port 59->606 wireless
+54.5
+making port 59->607 wireless
+53.0
+making port 60->609 wireless
+51.0
+making port 60->610 wireless
+52.5
+making port 60->611 wireless
+54.0
+making port 60->615 wireless
+51.5
+making port 61->616 wireless
+51.5
+making port 61->617 wireless
+53.0
+making port 61->621 wireless
+50.5
+making port 61->622 wireless
+52.0
+making port 61->623 wireless
+53.5
+making port 62->624 wireless
+51.0
+making port 62->628 wireless
+51.0
+making port 62->629 wireless
+52.5
+making port 62->630 wireless
+51.5
+making port 63->635 wireless
+51.5
+making port 63->636 wireless
+53.5
+making port 63->637 wireless
+52.0
+making port 63->638 wireless
+50.5
+making port 64->641 wireless
+50.5
+making port 64->642 wireless
+55.5
+making port 64->643 wireless
+54.0
+making port 64->644 wireless
+52.5
+making port 64->645 wireless
+51.0
+making port 64->647 wireless
+51.0
+making port 65->648 wireless
+57.5
+making port 65->649 wireless
+56.0
+making port 65->650 wireless
+54.5
+making port 65->651 wireless
+53.0
+making port 65->652 wireless
+51.5
+making port 65->654 wireless
+58.0
+making port 65->655 wireless
+56.5
+making port 66->656 wireless
+53.0
+making port 66->657 wireless
+54.5
+making port 66->658 wireless
+56.0
+making port 66->659 wireless
+57.5
+making port 66->660 wireless
+50.5
+making port 66->661 wireless
+52.0
+making port 66->662 wireless
+53.5
+making port 66->663 wireless
+55.0
+making port 67->664 wireless
+55.0
+making port 67->665 wireless
+56.5
+making port 67->666 wireless
+52.5
+making port 67->667 wireless
+51.0
+making port 67->668 wireless
+52.5
+making port 67->669 wireless
+54.0
+making port 67->670 wireless
+55.5
+making port 67->671 wireless
+57.0
+making port 68->672 wireless
+54.5
+making port 68->673 wireless
+53.0
+making port 68->674 wireless
+51.5
+making port 68->675 wireless
+53.0
+making port 68->676 wireless
+54.5
+making port 68->677 wireless
+56.0
+making port 68->678 wireless
+55.0
+making port 68->679 wireless
+53.5
+making port 69->680 wireless
+53.5
+making port 69->681 wireless
+52.0
+making port 69->682 wireless
+53.5
+making port 69->683 wireless
+55.0
+making port 69->684 wireless
+57.0
+making port 69->685 wireless
+55.5
+making port 69->686 wireless
+54.0
+making port 69->687 wireless
+52.5
+making port 70->688 wireless
+52.5
+making port 70->689 wireless
+54.0
+making port 70->690 wireless
+59.0
+making port 70->691 wireless
+57.5
+making port 70->692 wireless
+56.0
+making port 70->693 wireless
+54.5
+making port 70->694 wireless
+53.0
+making port 70->695 wireless
+54.5
+making port 71->696 wireless
+61.0
+making port 71->697 wireless
+59.5
+making port 71->698 wireless
+58.0
+making port 71->699 wireless
+56.5
+making port 71->700 wireless
+55.0
+making port 71->701 wireless
+53.5
+making port 71->702 wireless
+61.5
+making port 71->703 wireless
+60.0
+making port 72->704 wireless
+56.5
+making port 72->705 wireless
+58.0
+making port 72->706 wireless
+59.5
+making port 72->707 wireless
+61.0
+making port 72->708 wireless
+54.0
+making port 72->709 wireless
+55.5
+making port 72->710 wireless
+57.0
+making port 72->711 wireless
+58.5
+making port 73->712 wireless
+58.5
+making port 73->713 wireless
+60.0
+making port 73->714 wireless
+56.0
+making port 73->715 wireless
+54.5
+making port 73->716 wireless
+56.0
+making port 73->717 wireless
+57.5
+making port 73->718 wireless
+59.0
+making port 73->719 wireless
+60.5
+making port 74->720 wireless
+58.0
+making port 74->721 wireless
+56.5
+making port 74->722 wireless
+55.0
+making port 74->723 wireless
+56.5
+making port 74->724 wireless
+58.0
+making port 74->725 wireless
+59.5
+making port 74->726 wireless
+58.5
+making port 74->727 wireless
+57.0
+making port 75->728 wireless
+57.0
+making port 75->729 wireless
+55.5
+making port 75->730 wireless
+57.0
+making port 75->731 wireless
+58.5
+making port 75->732 wireless
+60.5
+making port 75->733 wireless
+59.0
+making port 75->734 wireless
+57.5
+making port 75->735 wireless
+56.0
+making port 76->736 wireless
+56.0
+making port 76->737 wireless
+57.5
+making port 76->738 wireless
+62.5
+making port 76->739 wireless
+61.0
+making port 76->740 wireless
+59.5
+making port 76->741 wireless
+58.0
+making port 76->742 wireless
+56.5
+making port 76->743 wireless
+58.0
+making port 77->744 wireless
+64.5
+making port 77->745 wireless
+63.0
+making port 77->746 wireless
+61.5
+making port 77->747 wireless
+60.0
+making port 77->748 wireless
+58.5
+making port 77->749 wireless
+57.0
+making port 77->750 wireless
+65.0
+making port 77->751 wireless
+63.5
+making port 78->752 wireless
+60.0
+making port 78->753 wireless
+61.5
+making port 78->754 wireless
+63.0
+making port 78->755 wireless
+64.5
+making port 78->756 wireless
+57.5
+making port 78->757 wireless
+59.0
+making port 78->758 wireless
+60.5
+making port 78->759 wireless
+62.0
+making port 79->760 wireless
+62.0
+making port 79->761 wireless
+63.5
+making port 79->762 wireless
+59.5
+making port 79->763 wireless
+58.0
+making port 79->764 wireless
+59.5
+making port 79->765 wireless
+61.0
+making port 79->766 wireless
+62.5
+making port 79->767 wireless
+64.0
+making port 80->768 wireless
+61.5
+making port 80->769 wireless
+60.0
+making port 80->770 wireless
+58.5
+making port 80->771 wireless
+60.0
+making port 80->772 wireless
+61.5
+making port 80->773 wireless
+63.0
+making port 80->774 wireless
+62.0
+making port 80->775 wireless
+60.5
+making port 81->776 wireless
+60.5
+making port 81->777 wireless
+59.0
+making port 81->778 wireless
+60.5
+making port 81->779 wireless
+62.0
+making port 81->780 wireless
+64.0
+making port 81->781 wireless
+62.5
+making port 81->782 wireless
+61.0
+making port 81->783 wireless
+59.5
+making port 82->784 wireless
+59.5
+making port 82->785 wireless
+61.0
+making port 82->786 wireless
+66.0
+making port 82->787 wireless
+64.5
+making port 82->788 wireless
+63.0
+making port 82->789 wireless
+61.5
+making port 82->790 wireless
+60.0
+making port 82->791 wireless
+61.5
+making port 83->792 wireless
+68.0
+making port 83->793 wireless
+66.5
+making port 83->794 wireless
+65.0
+making port 83->795 wireless
+63.5
+making port 83->796 wireless
+62.0
+making port 83->797 wireless
+60.5
+making port 83->798 wireless
+68.5
+making port 83->799 wireless
+67.0
+making port 84->800 wireless
+63.5
+making port 84->801 wireless
+65.0
+making port 84->802 wireless
+66.5
+making port 84->803 wireless
+68.0
+making port 84->804 wireless
+61.0
+making port 84->805 wireless
+62.5
+making port 84->806 wireless
+64.0
+making port 84->807 wireless
+65.5
+making port 85->808 wireless
+65.5
+making port 85->809 wireless
+67.0
+making port 85->810 wireless
+63.0
+making port 85->811 wireless
+61.5
+making port 85->812 wireless
+63.0
+making port 85->813 wireless
+64.5
+making port 85->814 wireless
+66.0
+making port 85->815 wireless
+67.5
+making port 86->816 wireless
+65.0
+making port 86->817 wireless
+63.5
+making port 86->818 wireless
+62.0
+making port 86->819 wireless
+63.5
+making port 86->820 wireless
+65.0
+making port 86->821 wireless
+66.5
+making port 86->822 wireless
+65.5
+making port 86->823 wireless
+64.0
+making port 87->824 wireless
+64.0
+making port 87->825 wireless
+62.5
+making port 87->826 wireless
+64.0
+making port 87->827 wireless
+65.5
+making port 87->828 wireless
+67.5
+making port 87->829 wireless
+66.0
+making port 87->830 wireless
+64.5
+making port 87->831 wireless
+63.0
+making port 88->832 wireless
+63.0
+making port 88->833 wireless
+64.5
+making port 88->834 wireless
+69.5
+making port 88->835 wireless
+68.0
+making port 88->836 wireless
+66.5
+making port 88->837 wireless
+65.0
+making port 88->838 wireless
+63.5
+making port 88->839 wireless
+65.0
+making port 89->840 wireless
+71.5
+making port 89->841 wireless
+70.0
+making port 89->842 wireless
+68.5
+making port 89->843 wireless
+67.0
+making port 89->844 wireless
+65.5
+making port 89->845 wireless
+64.0
+making port 89->846 wireless
+72.0
+making port 89->847 wireless
+70.5
+making port 90->848 wireless
+67.0
+making port 90->849 wireless
+68.5
+making port 90->850 wireless
+70.0
+making port 90->851 wireless
+71.5
+making port 90->852 wireless
+64.5
+making port 90->853 wireless
+66.0
+making port 90->854 wireless
+67.5
+making port 90->855 wireless
+69.0
+making port 91->856 wireless
+69.0
+making port 91->857 wireless
+70.5
+making port 91->858 wireless
+66.5
+making port 91->859 wireless
+65.0
+making port 91->860 wireless
+66.5
+making port 91->861 wireless
+68.0
+making port 91->862 wireless
+69.5
+making port 91->863 wireless
+71.0
+making port 92->864 wireless
+68.5
+making port 92->865 wireless
+67.0
+making port 92->866 wireless
+65.5
+making port 92->867 wireless
+67.0
+making port 92->868 wireless
+68.5
+making port 92->869 wireless
+70.0
+making port 92->870 wireless
+69.0
+making port 92->871 wireless
+67.5
+making port 93->872 wireless
+67.5
+making port 93->873 wireless
+66.0
+making port 93->874 wireless
+67.5
+making port 93->875 wireless
+69.0
+making port 93->876 wireless
+71.0
+making port 93->877 wireless
+69.5
+making port 93->878 wireless
+68.0
+making port 93->879 wireless
+66.5
+making port 94->880 wireless
+66.5
+making port 94->881 wireless
+68.0
+making port 94->882 wireless
+73.0
+making port 94->883 wireless
+71.5
+making port 94->884 wireless
+70.0
+making port 94->885 wireless
+68.5
+making port 94->886 wireless
+67.0
+making port 94->887 wireless
+68.5
+making port 95->888 wireless
+75.0
+making port 95->889 wireless
+73.5
+making port 95->890 wireless
+72.0
+making port 95->891 wireless
+70.5
+making port 95->892 wireless
+69.0
+making port 95->893 wireless
+67.5
+making port 95->894 wireless
+75.5
+making port 95->895 wireless
+74.0
+making port 96->896 wireless
+70.5
+making port 96->897 wireless
+72.0
+making port 96->898 wireless
+73.5
+making port 96->899 wireless
+75.0
+making port 96->900 wireless
+68.0
+making port 96->901 wireless
+69.5
+making port 96->902 wireless
+71.0
+making port 96->903 wireless
+72.5
+making port 97->904 wireless
+72.5
+making port 97->905 wireless
+74.0
+making port 97->906 wireless
+70.0
+making port 97->907 wireless
+68.5
+making port 97->908 wireless
+70.0
+making port 97->909 wireless
+71.5
+making port 97->910 wireless
+73.0
+making port 97->911 wireless
+74.5
+making port 98->912 wireless
+72.0
+making port 98->913 wireless
+70.5
+making port 98->914 wireless
+69.0
+making port 98->915 wireless
+70.5
+making port 98->916 wireless
+72.0
+making port 98->917 wireless
+73.5
+making port 98->918 wireless
+72.5
+making port 98->919 wireless
+71.0
+making port 99->920 wireless
+71.0
+making port 99->921 wireless
+69.5
+making port 99->922 wireless
+71.0
+making port 99->923 wireless
+72.5
+making port 99->924 wireless
+74.5
+making port 99->925 wireless
+73.0
+making port 99->926 wireless
+71.5
+making port 99->927 wireless
+70.0
+making port 100->928 wireless
+70.0
+making port 100->929 wireless
+71.5
+making port 100->930 wireless
+76.5
+making port 100->931 wireless
+75.0
+making port 100->932 wireless
+73.5
+making port 100->933 wireless
+72.0
+making port 100->934 wireless
+70.5
+making port 100->935 wireless
+72.0
+making port 101->936 wireless
+78.5
+making port 101->937 wireless
+77.0
+making port 101->938 wireless
+75.5
+making port 101->939 wireless
+74.0
+making port 101->940 wireless
+72.5
+making port 101->941 wireless
+71.0
+making port 101->942 wireless
+79.0
+making port 101->943 wireless
+77.5
+making port 102->944 wireless
+74.0
+making port 102->945 wireless
+75.5
+making port 102->946 wireless
+77.0
+making port 102->947 wireless
+78.5
+making port 102->948 wireless
+71.5
+making port 102->949 wireless
+73.0
+making port 102->950 wireless
+74.5
+making port 102->951 wireless
+76.0
+making port 103->952 wireless
+76.0
+making port 103->953 wireless
+77.5
+making port 103->954 wireless
+73.5
+making port 103->955 wireless
+72.0
+making port 103->956 wireless
+73.5
+making port 103->957 wireless
+75.0
+making port 103->958 wireless
+76.5
+making port 103->959 wireless
+78.0
+making port 104->960 wireless
+75.5
+making port 104->961 wireless
+74.0
+making port 104->962 wireless
+72.5
+making port 104->963 wireless
+74.0
+making port 104->964 wireless
+75.5
+making port 104->965 wireless
+77.0
+making port 104->966 wireless
+76.0
+making port 104->967 wireless
+74.5
+making port 105->968 wireless
+74.5
+making port 105->969 wireless
+73.0
+making port 105->970 wireless
+74.5
+making port 105->971 wireless
+76.0
+making port 105->972 wireless
+78.0
+making port 105->973 wireless
+76.5
+making port 105->974 wireless
+75.0
+making port 105->975 wireless
+73.5
+making port 106->976 wireless
+73.5
+making port 106->977 wireless
+75.0
+making port 106->978 wireless
+80.0
+making port 106->979 wireless
+78.5
+making port 106->980 wireless
+77.0
+making port 106->981 wireless
+75.5
+making port 106->982 wireless
+74.0
+making port 106->983 wireless
+75.5
+making port 107->984 wireless
+82.0
+making port 107->985 wireless
+80.5
+making port 107->986 wireless
+79.0
+making port 107->987 wireless
+77.5
+making port 107->988 wireless
+76.0
+making port 107->989 wireless
+74.5
+making port 107->990 wireless
+82.5
+making port 107->991 wireless
+81.0
+making port 108->992 wireless
+77.5
+making port 108->993 wireless
+79.0
+making port 108->994 wireless
+80.5
+making port 108->995 wireless
+82.0
+making port 108->996 wireless
+75.0
+making port 108->997 wireless
+76.5
+making port 108->998 wireless
+78.0
+making port 108->999 wireless
+79.5
+making port 109->1000 wireless
+79.5
+making port 109->1001 wireless
+81.0
+making port 109->1002 wireless
+77.0
+making port 109->1003 wireless
+75.5
+making port 109->1004 wireless
+77.0
+making port 109->1005 wireless
+78.5
+making port 109->1006 wireless
+80.0
+making port 109->1007 wireless
+81.5
+making port 110->1008 wireless
+79.0
+making port 110->1009 wireless
+77.5
+making port 110->1010 wireless
+76.0
+making port 110->1011 wireless
+77.5
+making port 110->1012 wireless
+79.0
+making port 110->1013 wireless
+80.5
+making port 110->1014 wireless
+79.5
+making port 110->1015 wireless
+78.0
+making port 111->1016 wireless
+78.0
+making port 111->1017 wireless
+76.5
+making port 111->1018 wireless
+78.0
+making port 111->1019 wireless
+79.5
+making port 111->1020 wireless
+81.5
+making port 111->1021 wireless
+80.0
+making port 111->1022 wireless
+78.5
+making port 111->1023 wireless
+77.0
+making port 112->1024 wireless
+77.0
+making port 112->1025 wireless
+78.5
+making port 112->1026 wireless
+83.5
+making port 112->1027 wireless
+82.0
+making port 112->1028 wireless
+80.5
+making port 112->1029 wireless
+79.0
+making port 112->1030 wireless
+77.5
+making port 112->1031 wireless
+79.0
+making port 113->1032 wireless
+85.5
+making port 113->1033 wireless
+84.0
+making port 113->1034 wireless
+82.5
+making port 113->1035 wireless
+81.0
+making port 113->1036 wireless
+79.5
+making port 113->1037 wireless
+78.0
+making port 113->1038 wireless
+86.0
+making port 113->1039 wireless
+84.5
+making port 114->1040 wireless
+81.0
+making port 114->1041 wireless
+82.5
+making port 114->1042 wireless
+84.0
+making port 114->1043 wireless
+85.5
+making port 114->1044 wireless
+78.5
+making port 114->1045 wireless
+80.0
+making port 114->1046 wireless
+81.5
+making port 114->1047 wireless
+83.0
+making port 115->1048 wireless
+83.0
+making port 115->1049 wireless
+84.5
+making port 115->1050 wireless
+80.5
+making port 115->1051 wireless
+79.0
+making port 115->1052 wireless
+80.5
+making port 115->1053 wireless
+82.0
+making port 115->1054 wireless
+83.5
+making port 115->1055 wireless
+85.0
+making port 116->1056 wireless
+82.5
+making port 116->1057 wireless
+81.0
+making port 116->1058 wireless
+79.5
+making port 116->1059 wireless
+81.0
+making port 116->1060 wireless
+82.5
+making port 116->1061 wireless
+84.0
+making port 116->1062 wireless
+83.0
+making port 116->1063 wireless
+81.5
+making port 117->1064 wireless
+81.5
+making port 117->1065 wireless
+80.0
+making port 117->1066 wireless
+81.5
+making port 117->1067 wireless
+83.0
+making port 117->1068 wireless
+85.0
+making port 117->1069 wireless
+83.5
+making port 117->1070 wireless
+82.0
+making port 117->1071 wireless
+80.5
+making port 118->1072 wireless
+80.5
+making port 118->1073 wireless
+82.0
+making port 118->1074 wireless
+87.0
+making port 118->1075 wireless
+85.5
+making port 118->1076 wireless
+84.0
+making port 118->1077 wireless
+82.5
+making port 118->1078 wireless
+81.0
+making port 118->1079 wireless
+82.5
+making port 119->1080 wireless
+89.0
+making port 119->1081 wireless
+87.5
+making port 119->1082 wireless
+86.0
+making port 119->1083 wireless
+84.5
+making port 119->1084 wireless
+83.0
+making port 119->1085 wireless
+81.5
+making port 119->1086 wireless
+89.5
+making port 119->1087 wireless
+88.0
+making port 120->1088 wireless
+84.5
+making port 120->1089 wireless
+86.0
+making port 120->1090 wireless
+87.5
+making port 120->1091 wireless
+89.0
+making port 120->1092 wireless
+82.0
+making port 120->1093 wireless
+83.5
+making port 120->1094 wireless
+85.0
+making port 120->1095 wireless
+86.5
+making port 121->1096 wireless
+86.5
+making port 121->1097 wireless
+88.0
+making port 121->1098 wireless
+84.0
+making port 121->1099 wireless
+82.5
+making port 121->1100 wireless
+84.0
+making port 121->1101 wireless
+85.5
+making port 121->1102 wireless
+87.0
+making port 121->1103 wireless
+88.5
+making port 122->1104 wireless
+86.0
+making port 122->1105 wireless
+84.5
+making port 122->1106 wireless
+83.0
+making port 122->1107 wireless
+84.5
+making port 122->1108 wireless
+86.0
+making port 122->1109 wireless
+87.5
+making port 122->1110 wireless
+86.5
+making port 122->1111 wireless
+85.0
+making port 123->1112 wireless
+85.0
+making port 123->1113 wireless
+83.5
+making port 123->1114 wireless
+85.0
+making port 123->1115 wireless
+86.5
+making port 123->1116 wireless
+88.5
+making port 123->1117 wireless
+87.0
+making port 123->1118 wireless
+85.5
+making port 123->1119 wireless
+84.0
+making port 124->1120 wireless
+84.0
+making port 124->1121 wireless
+85.5
+making port 124->1122 wireless
+90.5
+making port 124->1123 wireless
+89.0
+making port 124->1124 wireless
+87.5
+making port 124->1125 wireless
+86.0
+making port 124->1126 wireless
+84.5
+making port 124->1127 wireless
+86.0
+making port 125->1128 wireless
+92.5
+making port 125->1129 wireless
+91.0
+making port 125->1130 wireless
+89.5
+making port 125->1131 wireless
+88.0
+making port 125->1132 wireless
+86.5
+making port 125->1133 wireless
+85.0
+making port 125->1134 wireless
+93.0
+making port 125->1135 wireless
+91.5
+making port 126->1136 wireless
+88.0
+making port 126->1137 wireless
+89.5
+making port 126->1138 wireless
+91.0
+making port 126->1139 wireless
+92.5
+making port 126->1140 wireless
+85.5
+making port 126->1141 wireless
+87.0
+making port 126->1142 wireless
+88.5
+making port 126->1143 wireless
+90.0
+making port 127->1144 wireless
+90.0
+making port 127->1145 wireless
+91.5
+making port 127->1146 wireless
+87.5
+making port 127->1147 wireless
+86.0
+making port 127->1148 wireless
+87.5
+making port 127->1149 wireless
+89.0
+making port 127->1150 wireless
+90.5
+making port 127->1151 wireless
+92.0
+making port 552->53 wireless
+50.5
+making port 558->53 wireless
+51.0
+making port 563->54 wireless
+50.5
+making port 594->58 wireless
+52.0
+making port 595->58 wireless
+50.5
+making port 600->59 wireless
+54.0
+making port 601->59 wireless
+52.5
+making port 602->59 wireless
+51.0
+making port 606->59 wireless
+54.5
+making port 607->59 wireless
+53.0
+making port 609->60 wireless
+51.0
+making port 610->60 wireless
+52.5
+making port 611->60 wireless
+54.0
+making port 615->60 wireless
+51.5
+making port 616->61 wireless
+51.5
+making port 617->61 wireless
+53.0
+making port 621->61 wireless
+50.5
+making port 622->61 wireless
+52.0
+making port 623->61 wireless
+53.5
+making port 624->62 wireless
+51.0
+making port 628->62 wireless
+51.0
+making port 629->62 wireless
+52.5
+making port 630->62 wireless
+51.5
+making port 635->63 wireless
+51.5
+making port 636->63 wireless
+53.5
+making port 637->63 wireless
+52.0
+making port 638->63 wireless
+50.5
+making port 641->64 wireless
+50.5
+making port 642->64 wireless
+55.5
+making port 643->64 wireless
+54.0
+making port 644->64 wireless
+52.5
+making port 645->64 wireless
+51.0
+making port 647->64 wireless
+51.0
+making port 648->65 wireless
+57.5
+making port 649->65 wireless
+56.0
+making port 650->65 wireless
+54.5
+making port 651->65 wireless
+53.0
+making port 652->65 wireless
+51.5
+making port 654->65 wireless
+58.0
+making port 655->65 wireless
+56.5
+making port 656->66 wireless
+53.0
+making port 657->66 wireless
+54.5
+making port 658->66 wireless
+56.0
+making port 659->66 wireless
+57.5
+making port 660->66 wireless
+50.5
+making port 661->66 wireless
+52.0
+making port 662->66 wireless
+53.5
+making port 663->66 wireless
+55.0
+making port 664->67 wireless
+55.0
+making port 665->67 wireless
+56.5
+making port 666->67 wireless
+52.5
+making port 667->67 wireless
+51.0
+making port 668->67 wireless
+52.5
+making port 669->67 wireless
+54.0
+making port 670->67 wireless
+55.5
+making port 671->67 wireless
+57.0
+making port 672->68 wireless
+54.5
+making port 673->68 wireless
+53.0
+making port 674->68 wireless
+51.5
+making port 675->68 wireless
+53.0
+making port 676->68 wireless
+54.5
+making port 677->68 wireless
+56.0
+making port 678->68 wireless
+55.0
+making port 679->68 wireless
+53.5
+making port 680->69 wireless
+53.5
+making port 681->69 wireless
+52.0
+making port 682->69 wireless
+53.5
+making port 683->69 wireless
+55.0
+making port 684->69 wireless
+57.0
+making port 685->69 wireless
+55.5
+making port 686->69 wireless
+54.0
+making port 687->69 wireless
+52.5
+making port 688->70 wireless
+52.5
+making port 689->70 wireless
+54.0
+making port 690->70 wireless
+59.0
+making port 691->70 wireless
+57.5
+making port 692->70 wireless
+56.0
+making port 693->70 wireless
+54.5
+making port 694->70 wireless
+53.0
+making port 695->70 wireless
+54.5
+making port 696->71 wireless
+61.0
+making port 697->71 wireless
+59.5
+making port 698->71 wireless
+58.0
+making port 699->71 wireless
+56.5
+making port 700->71 wireless
+55.0
+making port 701->71 wireless
+53.5
+making port 702->71 wireless
+61.5
+making port 703->71 wireless
+60.0
+making port 704->72 wireless
+56.5
+making port 705->72 wireless
+58.0
+making port 706->72 wireless
+59.5
+making port 707->72 wireless
+61.0
+making port 708->72 wireless
+54.0
+making port 709->72 wireless
+55.5
+making port 710->72 wireless
+57.0
+making port 711->72 wireless
+58.5
+making port 712->73 wireless
+58.5
+making port 713->73 wireless
+60.0
+making port 714->73 wireless
+56.0
+making port 715->73 wireless
+54.5
+making port 716->73 wireless
+56.0
+making port 717->73 wireless
+57.5
+making port 718->73 wireless
+59.0
+making port 719->73 wireless
+60.5
+making port 720->74 wireless
+58.0
+making port 721->74 wireless
+56.5
+making port 722->74 wireless
+55.0
+making port 723->74 wireless
+56.5
+making port 724->74 wireless
+58.0
+making port 725->74 wireless
+59.5
+making port 726->74 wireless
+58.5
+making port 727->74 wireless
+57.0
+making port 728->75 wireless
+57.0
+making port 729->75 wireless
+55.5
+making port 730->75 wireless
+57.0
+making port 731->75 wireless
+58.5
+making port 732->75 wireless
+60.5
+making port 733->75 wireless
+59.0
+making port 734->75 wireless
+57.5
+making port 735->75 wireless
+56.0
+making port 736->76 wireless
+56.0
+making port 737->76 wireless
+57.5
+making port 738->76 wireless
+62.5
+making port 739->76 wireless
+61.0
+making port 740->76 wireless
+59.5
+making port 741->76 wireless
+58.0
+making port 742->76 wireless
+56.5
+making port 743->76 wireless
+58.0
+making port 744->77 wireless
+64.5
+making port 745->77 wireless
+63.0
+making port 746->77 wireless
+61.5
+making port 747->77 wireless
+60.0
+making port 748->77 wireless
+58.5
+making port 749->77 wireless
+57.0
+making port 750->77 wireless
+65.0
+making port 751->77 wireless
+63.5
+making port 752->78 wireless
+60.0
+making port 753->78 wireless
+61.5
+making port 754->78 wireless
+63.0
+making port 755->78 wireless
+64.5
+making port 756->78 wireless
+57.5
+making port 757->78 wireless
+59.0
+making port 758->78 wireless
+60.5
+making port 759->78 wireless
+62.0
+making port 760->79 wireless
+62.0
+making port 761->79 wireless
+63.5
+making port 762->79 wireless
+59.5
+making port 763->79 wireless
+58.0
+making port 764->79 wireless
+59.5
+making port 765->79 wireless
+61.0
+making port 766->79 wireless
+62.5
+making port 767->79 wireless
+64.0
+making port 768->80 wireless
+61.5
+making port 769->80 wireless
+60.0
+making port 770->80 wireless
+58.5
+making port 771->80 wireless
+60.0
+making port 772->80 wireless
+61.5
+making port 773->80 wireless
+63.0
+making port 774->80 wireless
+62.0
+making port 775->80 wireless
+60.5
+making port 776->81 wireless
+60.5
+making port 777->81 wireless
+59.0
+making port 778->81 wireless
+60.5
+making port 779->81 wireless
+62.0
+making port 780->81 wireless
+64.0
+making port 781->81 wireless
+62.5
+making port 782->81 wireless
+61.0
+making port 783->81 wireless
+59.5
+making port 784->82 wireless
+59.5
+making port 785->82 wireless
+61.0
+making port 786->82 wireless
+66.0
+making port 787->82 wireless
+64.5
+making port 788->82 wireless
+63.0
+making port 789->82 wireless
+61.5
+making port 790->82 wireless
+60.0
+making port 791->82 wireless
+61.5
+making port 792->83 wireless
+68.0
+making port 793->83 wireless
+66.5
+making port 794->83 wireless
+65.0
+making port 795->83 wireless
+63.5
+making port 796->83 wireless
+62.0
+making port 797->83 wireless
+60.5
+making port 798->83 wireless
+68.5
+making port 799->83 wireless
+67.0
+making port 800->84 wireless
+63.5
+making port 801->84 wireless
+65.0
+making port 802->84 wireless
+66.5
+making port 803->84 wireless
+68.0
+making port 804->84 wireless
+61.0
+making port 805->84 wireless
+62.5
+making port 806->84 wireless
+64.0
+making port 807->84 wireless
+65.5
+making port 808->85 wireless
+65.5
+making port 809->85 wireless
+67.0
+making port 810->85 wireless
+63.0
+making port 811->85 wireless
+61.5
+making port 812->85 wireless
+63.0
+making port 813->85 wireless
+64.5
+making port 814->85 wireless
+66.0
+making port 815->85 wireless
+67.5
+making port 816->86 wireless
+65.0
+making port 817->86 wireless
+63.5
+making port 818->86 wireless
+62.0
+making port 819->86 wireless
+63.5
+making port 820->86 wireless
+65.0
+making port 821->86 wireless
+66.5
+making port 822->86 wireless
+65.5
+making port 823->86 wireless
+64.0
+making port 824->87 wireless
+64.0
+making port 825->87 wireless
+62.5
+making port 826->87 wireless
+64.0
+making port 827->87 wireless
+65.5
+making port 828->87 wireless
+67.5
+making port 829->87 wireless
+66.0
+making port 830->87 wireless
+64.5
+making port 831->87 wireless
+63.0
+making port 832->88 wireless
+63.0
+making port 833->88 wireless
+64.5
+making port 834->88 wireless
+69.5
+making port 835->88 wireless
+68.0
+making port 836->88 wireless
+66.5
+making port 837->88 wireless
+65.0
+making port 838->88 wireless
+63.5
+making port 839->88 wireless
+65.0
+making port 840->89 wireless
+71.5
+making port 841->89 wireless
+70.0
+making port 842->89 wireless
+68.5
+making port 843->89 wireless
+67.0
+making port 844->89 wireless
+65.5
+making port 845->89 wireless
+64.0
+making port 846->89 wireless
+72.0
+making port 847->89 wireless
+70.5
+making port 848->90 wireless
+67.0
+making port 849->90 wireless
+68.5
+making port 850->90 wireless
+70.0
+making port 851->90 wireless
+71.5
+making port 852->90 wireless
+64.5
+making port 853->90 wireless
+66.0
+making port 854->90 wireless
+67.5
+making port 855->90 wireless
+69.0
+making port 856->91 wireless
+69.0
+making port 857->91 wireless
+70.5
+making port 858->91 wireless
+66.5
+making port 859->91 wireless
+65.0
+making port 860->91 wireless
+66.5
+making port 861->91 wireless
+68.0
+making port 862->91 wireless
+69.5
+making port 863->91 wireless
+71.0
+making port 864->92 wireless
+68.5
+making port 865->92 wireless
+67.0
+making port 866->92 wireless
+65.5
+making port 867->92 wireless
+67.0
+making port 868->92 wireless
+68.5
+making port 869->92 wireless
+70.0
+making port 870->92 wireless
+69.0
+making port 871->92 wireless
+67.5
+making port 872->93 wireless
+67.5
+making port 873->93 wireless
+66.0
+making port 874->93 wireless
+67.5
+making port 875->93 wireless
+69.0
+making port 876->93 wireless
+71.0
+making port 877->93 wireless
+69.5
+making port 878->93 wireless
+68.0
+making port 879->93 wireless
+66.5
+making port 880->94 wireless
+66.5
+making port 881->94 wireless
+68.0
+making port 882->94 wireless
+73.0
+making port 883->94 wireless
+71.5
+making port 884->94 wireless
+70.0
+making port 885->94 wireless
+68.5
+making port 886->94 wireless
+67.0
+making port 887->94 wireless
+68.5
+making port 888->95 wireless
+75.0
+making port 889->95 wireless
+73.5
+making port 890->95 wireless
+72.0
+making port 891->95 wireless
+70.5
+making port 892->95 wireless
+69.0
+making port 893->95 wireless
+67.5
+making port 894->95 wireless
+75.5
+making port 895->95 wireless
+74.0
+making port 896->96 wireless
+70.5
+making port 897->96 wireless
+72.0
+making port 898->96 wireless
+73.5
+making port 899->96 wireless
+75.0
+making port 900->96 wireless
+68.0
+making port 901->96 wireless
+69.5
+making port 902->96 wireless
+71.0
+making port 903->96 wireless
+72.5
+making port 904->97 wireless
+72.5
+making port 905->97 wireless
+74.0
+making port 906->97 wireless
+70.0
+making port 907->97 wireless
+68.5
+making port 908->97 wireless
+70.0
+making port 909->97 wireless
+71.5
+making port 910->97 wireless
+73.0
+making port 911->97 wireless
+74.5
+making port 912->98 wireless
+72.0
+making port 913->98 wireless
+70.5
+making port 914->98 wireless
+69.0
+making port 915->98 wireless
+70.5
+making port 916->98 wireless
+72.0
+making port 917->98 wireless
+73.5
+making port 918->98 wireless
+72.5
+making port 919->98 wireless
+71.0
+making port 920->99 wireless
+71.0
+making port 921->99 wireless
+69.5
+making port 922->99 wireless
+71.0
+making port 923->99 wireless
+72.5
+making port 924->99 wireless
+74.5
+making port 925->99 wireless
+73.0
+making port 926->99 wireless
+71.5
+making port 927->99 wireless
+70.0
+making port 928->100 wireless
+70.0
+making port 929->100 wireless
+71.5
+making port 930->100 wireless
+76.5
+making port 931->100 wireless
+75.0
+making port 932->100 wireless
+73.5
+making port 933->100 wireless
+72.0
+making port 934->100 wireless
+70.5
+making port 935->100 wireless
+72.0
+making port 936->101 wireless
+78.5
+making port 937->101 wireless
+77.0
+making port 938->101 wireless
+75.5
+making port 939->101 wireless
+74.0
+making port 940->101 wireless
+72.5
+making port 941->101 wireless
+71.0
+making port 942->101 wireless
+79.0
+making port 943->101 wireless
+77.5
+making port 944->102 wireless
+74.0
+making port 945->102 wireless
+75.5
+making port 946->102 wireless
+77.0
+making port 947->102 wireless
+78.5
+making port 948->102 wireless
+71.5
+making port 949->102 wireless
+73.0
+making port 950->102 wireless
+74.5
+making port 951->102 wireless
+76.0
+making port 952->103 wireless
+76.0
+making port 953->103 wireless
+77.5
+making port 954->103 wireless
+73.5
+making port 955->103 wireless
+72.0
+making port 956->103 wireless
+73.5
+making port 957->103 wireless
+75.0
+making port 958->103 wireless
+76.5
+making port 959->103 wireless
+78.0
+making port 960->104 wireless
+75.5
+making port 961->104 wireless
+74.0
+making port 962->104 wireless
+72.5
+making port 963->104 wireless
+74.0
+making port 964->104 wireless
+75.5
+making port 965->104 wireless
+77.0
+making port 966->104 wireless
+76.0
+making port 967->104 wireless
+74.5
+making port 968->105 wireless
+74.5
+making port 969->105 wireless
+73.0
+making port 970->105 wireless
+74.5
+making port 971->105 wireless
+76.0
+making port 972->105 wireless
+78.0
+making port 973->105 wireless
+76.5
+making port 974->105 wireless
+75.0
+making port 975->105 wireless
+73.5
+making port 976->106 wireless
+73.5
+making port 977->106 wireless
+75.0
+making port 978->106 wireless
+80.0
+making port 979->106 wireless
+78.5
+making port 980->106 wireless
+77.0
+making port 981->106 wireless
+75.5
+making port 982->106 wireless
+74.0
+making port 983->106 wireless
+75.5
+making port 984->107 wireless
+82.0
+making port 985->107 wireless
+80.5
+making port 986->107 wireless
+79.0
+making port 987->107 wireless
+77.5
+making port 988->107 wireless
+76.0
+making port 989->107 wireless
+74.5
+making port 990->107 wireless
+82.5
+making port 991->107 wireless
+81.0
+making port 992->108 wireless
+77.5
+making port 993->108 wireless
+79.0
+making port 994->108 wireless
+80.5
+making port 995->108 wireless
+82.0
+making port 996->108 wireless
+75.0
+making port 997->108 wireless
+76.5
+making port 998->108 wireless
+78.0
+making port 999->108 wireless
+79.5
+making port 1000->109 wireless
+79.5
+making port 1001->109 wireless
+81.0
+making port 1002->109 wireless
+77.0
+making port 1003->109 wireless
+75.5
+making port 1004->109 wireless
+77.0
+making port 1005->109 wireless
+78.5
+making port 1006->109 wireless
+80.0
+making port 1007->109 wireless
+81.5
+making port 1008->110 wireless
+79.0
+making port 1009->110 wireless
+77.5
+making port 1010->110 wireless
+76.0
+making port 1011->110 wireless
+77.5
+making port 1012->110 wireless
+79.0
+making port 1013->110 wireless
+80.5
+making port 1014->110 wireless
+79.5
+making port 1015->110 wireless
+78.0
+making port 1016->111 wireless
+78.0
+making port 1017->111 wireless
+76.5
+making port 1018->111 wireless
+78.0
+making port 1019->111 wireless
+79.5
+making port 1020->111 wireless
+81.5
+making port 1021->111 wireless
+80.0
+making port 1022->111 wireless
+78.5
+making port 1023->111 wireless
+77.0
+making port 1024->112 wireless
+77.0
+making port 1025->112 wireless
+78.5
+making port 1026->112 wireless
+83.5
+making port 1027->112 wireless
+82.0
+making port 1028->112 wireless
+80.5
+making port 1029->112 wireless
+79.0
+making port 1030->112 wireless
+77.5
+making port 1031->112 wireless
+79.0
+making port 1032->113 wireless
+85.5
+making port 1033->113 wireless
+84.0
+making port 1034->113 wireless
+82.5
+making port 1035->113 wireless
+81.0
+making port 1036->113 wireless
+79.5
+making port 1037->113 wireless
+78.0
+making port 1038->113 wireless
+86.0
+making port 1039->113 wireless
+84.5
+making port 1040->114 wireless
+81.0
+making port 1041->114 wireless
+82.5
+making port 1042->114 wireless
+84.0
+making port 1043->114 wireless
+85.5
+making port 1044->114 wireless
+78.5
+making port 1045->114 wireless
+80.0
+making port 1046->114 wireless
+81.5
+making port 1047->114 wireless
+83.0
+making port 1048->115 wireless
+83.0
+making port 1049->115 wireless
+84.5
+making port 1050->115 wireless
+80.5
+making port 1051->115 wireless
+79.0
+making port 1052->115 wireless
+80.5
+making port 1053->115 wireless
+82.0
+making port 1054->115 wireless
+83.5
+making port 1055->115 wireless
+85.0
+making port 1056->116 wireless
+82.5
+making port 1057->116 wireless
+81.0
+making port 1058->116 wireless
+79.5
+making port 1059->116 wireless
+81.0
+making port 1060->116 wireless
+82.5
+making port 1061->116 wireless
+84.0
+making port 1062->116 wireless
+83.0
+making port 1063->116 wireless
+81.5
+making port 1064->117 wireless
+81.5
+making port 1065->117 wireless
+80.0
+making port 1066->117 wireless
+81.5
+making port 1067->117 wireless
+83.0
+making port 1068->117 wireless
+85.0
+making port 1069->117 wireless
+83.5
+making port 1070->117 wireless
+82.0
+making port 1071->117 wireless
+80.5
+making port 1072->118 wireless
+80.5
+making port 1073->118 wireless
+82.0
+making port 1074->118 wireless
+87.0
+making port 1075->118 wireless
+85.5
+making port 1076->118 wireless
+84.0
+making port 1077->118 wireless
+82.5
+making port 1078->118 wireless
+81.0
+making port 1079->118 wireless
+82.5
+making port 1080->119 wireless
+89.0
+making port 1081->119 wireless
+87.5
+making port 1082->119 wireless
+86.0
+making port 1083->119 wireless
+84.5
+making port 1084->119 wireless
+83.0
+making port 1085->119 wireless
+81.5
+making port 1086->119 wireless
+89.5
+making port 1087->119 wireless
+88.0
+making port 1088->120 wireless
+84.5
+making port 1089->120 wireless
+86.0
+making port 1090->120 wireless
+87.5
+making port 1091->120 wireless
+89.0
+making port 1092->120 wireless
+82.0
+making port 1093->120 wireless
+83.5
+making port 1094->120 wireless
+85.0
+making port 1095->120 wireless
+86.5
+making port 1096->121 wireless
+86.5
+making port 1097->121 wireless
+88.0
+making port 1098->121 wireless
+84.0
+making port 1099->121 wireless
+82.5
+making port 1100->121 wireless
+84.0
+making port 1101->121 wireless
+85.5
+making port 1102->121 wireless
+87.0
+making port 1103->121 wireless
+88.5
+making port 1104->122 wireless
+86.0
+making port 1105->122 wireless
+84.5
+making port 1106->122 wireless
+83.0
+making port 1107->122 wireless
+84.5
+making port 1108->122 wireless
+86.0
+making port 1109->122 wireless
+87.5
+making port 1110->122 wireless
+86.5
+making port 1111->122 wireless
+85.0
+making port 1112->123 wireless
+85.0
+making port 1113->123 wireless
+83.5
+making port 1114->123 wireless
+85.0
+making port 1115->123 wireless
+86.5
+making port 1116->123 wireless
+88.5
+making port 1117->123 wireless
+87.0
+making port 1118->123 wireless
+85.5
+making port 1119->123 wireless
+84.0
+making port 1120->124 wireless
+84.0
+making port 1121->124 wireless
+85.5
+making port 1122->124 wireless
+90.5
+making port 1123->124 wireless
+89.0
+making port 1124->124 wireless
+87.5
+making port 1125->124 wireless
+86.0
+making port 1126->124 wireless
+84.5
+making port 1127->124 wireless
+86.0
+making port 1128->125 wireless
+92.5
+making port 1129->125 wireless
+91.0
+making port 1130->125 wireless
+89.5
+making port 1131->125 wireless
+88.0
+making port 1132->125 wireless
+86.5
+making port 1133->125 wireless
+85.0
+making port 1134->125 wireless
+93.0
+making port 1135->125 wireless
+91.5
+making port 1136->126 wireless
+88.0
+making port 1137->126 wireless
+89.5
+making port 1138->126 wireless
+91.0
+making port 1139->126 wireless
+92.5
+making port 1140->126 wireless
+85.5
+making port 1141->126 wireless
+87.0
+making port 1142->126 wireless
+88.5
+making port 1143->126 wireless
+90.0
+making port 1144->127 wireless
+90.0
+making port 1145->127 wireless
+91.5
+making port 1146->127 wireless
+87.5
+making port 1147->127 wireless
+86.0
+making port 1148->127 wireless
+87.5
+making port 1149->127 wireless
+89.0
+making port 1150->127 wireless
+90.5
+making port 1151->127 wireless
+92.0
+Finished creating infrastructure.
+
+ROUTING STATE
+==================
+Calculating shortest path lengths... done.
+Populating ECMP forward routing tables... 9.98263888888889%... 19.96527777777778%... 29.947916666666668%... 39.93055555555556%... 49.91319444444444%... 59.895833333333336%... 69.87847222222221%... 79.86111111111111%... 89.84375%... 99.82638888888889%... done.
+Finished routing state setup.
+
+TRAFFIC
+==================
+Generating all-to-all pair probabilities in 19.0% fraction 128 ToRs between their servers... done.
+Creating arrival plan... 10%... 20%... 30%... 40%... 50%... 60%... 70%... 80%... 90%... 100%... done.
+Poisson Arrival plan created.
+Number of flows created: 89795.
+Mean inter-arrival time: 111365 (expectation: 111111.11111111111)
+Finished generating traffic flow starts.
+
+ACTUAL RUN
+==================
+Starting simulation (total time: 10000000000ns);...
+Elapsed 0.01s simulation in 0.083s real (total progress: 0.10032813%).
+Elapsed 0.01s simulation in 0.033s real (total progress: 0.20018344999999999%).
+Elapsed 0.01s simulation in 0.037s real (total progress: 0.30041477%).
+Elapsed 0.01s simulation in 0.03s real (total progress: 0.40034368000000004%).
+Elapsed 0.01s simulation in 0.035s real (total progress: 0.50000649%).
+Elapsed 0.01s simulation in 0.029s real (total progress: 0.6008907%).
+Elapsed 0.01s simulation in 0.123s real (total progress: 0.70022064%).
+Elapsed 0.01s simulation in 0.035s real (total progress: 0.8017745700000001%).
+Elapsed 0.01s simulation in 0.021s real (total progress: 0.9003371%).
+Elapsed 0.01s simulation in 0.1s real (total progress: 1.00005346%).
+Elapsed 0.01s simulation in 0.044s real (total progress: 1.1000137700000001%).
+Elapsed 0.01s simulation in 0.042s real (total progress: 1.20000485%).
+Elapsed 0.01s simulation in 0.056s real (total progress: 1.3001764900000001%).
+Elapsed 0.01s simulation in 0.033s real (total progress: 1.40119716%).
+Elapsed 0.01s simulation in 0.042s real (total progress: 1.5002651900000001%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 1.6010138100000002%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 1.70008796%).
+Elapsed 0.01s simulation in 0.02s real (total progress: 1.80025195%).
+Elapsed 0.01s simulation in 0.083s real (total progress: 1.90007001%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 2.00037164%).
+Elapsed 0.01s simulation in 0.02s real (total progress: 2.1015925%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 2.20000862%).
+Elapsed 0.01s simulation in 0.02s real (total progress: 2.30000317%).
+Elapsed 0.01s simulation in 0.024s real (total progress: 2.40015539%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 2.50052327%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 2.60000148%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 2.70001568%).
+Elapsed 0.01s simulation in 0.021s real (total progress: 2.80027376%).
+Elapsed 0.01s simulation in 0.021s real (total progress: 2.90156701%).
+Elapsed 0.01s simulation in 0.023s real (total progress: 3.00073168%).
+Elapsed 0.01s simulation in 0.038s real (total progress: 3.10229918%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 3.20041022%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 3.30000168%).
+Elapsed 0.01s simulation in 0.022s real (total progress: 3.4004249799999995%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 3.50035381%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 3.60029361%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 3.70001019%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 3.80104535%).
+Elapsed 0.01s simulation in 0.029s real (total progress: 3.90016387%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 4.00051296%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 4.10000177%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 4.2003186%).
+Elapsed 0.01s simulation in 0.034s real (total progress: 4.30096252%).
+Elapsed 0.01s simulation in 0.045s real (total progress: 4.40000136%).
+Elapsed 0.01s simulation in 0.021s real (total progress: 4.50153747%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 4.6000099%).
+Elapsed 0.01s simulation in 0.138s real (total progress: 4.70000042%).
+Elapsed 0.01s simulation in 0.221s real (total progress: 4.80000002%).
+Elapsed 0.01s simulation in 0.044s real (total progress: 4.9000099%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 5.0000018100000005%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 5.10002822%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 5.20019876%).
+Elapsed 0.01s simulation in 0.023s real (total progress: 5.30069389%).
+Elapsed 0.01s simulation in 0.035s real (total progress: 5.40060864%).
+Elapsed 0.01s simulation in 0.023s real (total progress: 5.50014281%).
+Elapsed 0.01s simulation in 0.048s real (total progress: 5.6000001%).
+Elapsed 0.01s simulation in 0.077s real (total progress: 5.70002452%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 5.8000060300000005%).
+Elapsed 0.01s simulation in 0.086s real (total progress: 5.90000033%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 6.00009505%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 6.10013679%).
+Elapsed 0.01s simulation in 0.044s real (total progress: 6.20000004%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 6.3000009%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 6.40001696%).
+Elapsed 0.01s simulation in 0.031s real (total progress: 6.500304079999999%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 6.600759620000001%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 6.700705060000001%).
+Elapsed 0.01s simulation in 0.028s real (total progress: 6.80182592%).
+Elapsed 0.01s simulation in 0.02s real (total progress: 6.90000012%).
+Elapsed 0.01s simulation in 0.024s real (total progress: 7.00003871%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 7.10033706%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 7.2000331%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 7.30000009%).
+Elapsed 0.01s simulation in 0.022s real (total progress: 7.40078628%).
+Elapsed 0.01s simulation in 0.022s real (total progress: 7.501021369999999%).
+Elapsed 0.01s simulation in 0.03s real (total progress: 7.6000109600000005%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 7.70023344%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 7.80014358%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 7.90001084%).
+Elapsed 0.01s simulation in 0.133s real (total progress: 8.00000013%).
+Elapsed 0.01s simulation in 0.02s real (total progress: 8.100662100000001%).
+Elapsed 0.01s simulation in 0.049s real (total progress: 8.20000306%).
+Elapsed 0.01s simulation in 0.055s real (total progress: 8.300648019999999%).
+Elapsed 0.01s simulation in 0.023s real (total progress: 8.400650630000001%).
+Elapsed 0.01s simulation in 0.025s real (total progress: 8.50023774%).
+Elapsed 0.01s simulation in 0.083s real (total progress: 8.60039813%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 8.70001605%).
+Elapsed 0.01s simulation in 0.046s real (total progress: 8.80011352%).
+Elapsed 0.01s simulation in 0.02s real (total progress: 8.90104238%).
+Elapsed 0.01s simulation in 0.025s real (total progress: 9.00000337%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 9.10141727%).
+Elapsed 0.01s simulation in 0.021s real (total progress: 9.20046492%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 9.30023665%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 9.40014414%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 9.50182751%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 9.600456860000001%).
+Elapsed 0.01s simulation in 0.037s real (total progress: 9.70010417%).
+Elapsed 0.01s simulation in 0.028s real (total progress: 9.80008709%).
+Elapsed 0.01s simulation in 0.022s real (total progress: 9.90013912%).
+Elapsed 0.01s simulation in 0.024s real (total progress: 10.00009166%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 10.10010743%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 10.200000489999999%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 10.30000184%).
+Elapsed 0.01s simulation in 0.021s real (total progress: 10.40265789%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 10.5002452%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 10.600000430000001%).
+Elapsed 0.01s simulation in 0.024s real (total progress: 10.70334707%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 10.800635960000001%).
+Elapsed 0.01s simulation in 0.025s real (total progress: 10.9005613%).
+Elapsed 0.01s simulation in 0.026s real (total progress: 11.00000032%).
+Elapsed 0.01s simulation in 0.033s real (total progress: 11.1003328%).
+Elapsed 0.01s simulation in 0.025s real (total progress: 11.20161916%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 11.30010969%).
+Elapsed 0.01s simulation in 0.021s real (total progress: 11.400440940000001%).
+Elapsed 0.01s simulation in 0.029s real (total progress: 11.50005224%).
+Elapsed 0.01s simulation in 0.023s real (total progress: 11.60054287%).
+Elapsed 0.01s simulation in 0.024s real (total progress: 11.70000317%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 11.80030329%).
+Elapsed 0.01s simulation in 0.02s real (total progress: 11.90000279%).
+Elapsed 0.01s simulation in 0.021s real (total progress: 12.00099092%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 12.10000115%).
+Elapsed 0.01s simulation in 0.021s real (total progress: 12.20003126%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 12.30089521%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 12.400132560000001%).
+Elapsed 0.01s simulation in 0.02s real (total progress: 12.50044297%).
+Elapsed 0.01s simulation in 0.029s real (total progress: 12.600005059999999%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 12.700532680000002%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 12.800213799999998%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 12.90000172%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 13.0008873%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 13.100215740000001%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 13.20000696%).
+Elapsed 0.01s simulation in 0.021s real (total progress: 13.3000004%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 13.400005049999999%).
+Elapsed 0.01s simulation in 0.052s real (total progress: 13.5003137%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 13.60000461%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 13.700451390000001%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 13.800212689999999%).
+Elapsed 0.01s simulation in 0.027s real (total progress: 13.900000409999999%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 14.00022058%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 14.10069463%).
+Elapsed 0.01s simulation in 0.069s real (total progress: 14.20000167%).
+Elapsed 0.01s simulation in 0.144s real (total progress: 14.30000021%).
+Elapsed 0.01s simulation in 0.046s real (total progress: 14.40052734%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 14.500002649999999%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 14.600275139999999%).
+Elapsed 0.01s simulation in 0.025s real (total progress: 14.70027947%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 14.800001970000002%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 14.900276139999999%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 15.00046645%).
+Elapsed 0.01s simulation in 0.02s real (total progress: 15.100000529999999%).
+Elapsed 0.01s simulation in 0.058s real (total progress: 15.20000288%).
+Elapsed 0.01s simulation in 0.023s real (total progress: 15.300001960000001%).
+Elapsed 0.01s simulation in 0.079s real (total progress: 15.40000011%).
+Elapsed 0.01s simulation in 0.091s real (total progress: 15.500050700000001%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 15.60021245%).
+Elapsed 0.01s simulation in 0.037s real (total progress: 15.700041810000002%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 15.80041522%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 15.90140954%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 16.000738480000003%).
+Elapsed 0.01s simulation in 0.025s real (total progress: 16.100001759999998%).
+Elapsed 0.01s simulation in 0.023s real (total progress: 16.20015541%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 16.30005612%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 16.400012450000002%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 16.50036635%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 16.60027999%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 16.70004453%).
+Elapsed 0.01s simulation in 0.027s real (total progress: 16.80024105%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 16.90003112%).
+Elapsed 0.01s simulation in 0.061s real (total progress: 17.00041536%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 17.100099630000003%).
+Elapsed 0.01s simulation in 0.036s real (total progress: 17.20159597%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 17.300000009999998%).
+Elapsed 0.01s simulation in 0.024s real (total progress: 17.400041660000003%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 17.5022966%).
+Elapsed 0.01s simulation in 0.021s real (total progress: 17.60020539%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 17.70114813%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 17.80079688%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 17.90000032%).
+Elapsed 0.01s simulation in 0.025s real (total progress: 18.00046498%).
+Elapsed 0.01s simulation in 0.023s real (total progress: 18.10333993%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 18.20042893%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 18.30000001%).
+Elapsed 0.01s simulation in 0.024s real (total progress: 18.40060064%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 18.50012325%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 18.600032990000003%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 18.700370720000002%).
+Elapsed 0.01s simulation in 0.021s real (total progress: 18.80000245%).
+Elapsed 0.01s simulation in 0.026s real (total progress: 18.90000743%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 19.00088362%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 19.10010707%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 19.200124730000002%).
+Elapsed 0.01s simulation in 0.02s real (total progress: 19.30000526%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 19.40004655%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 19.5003024%).
+Elapsed 0.01s simulation in 0.034s real (total progress: 19.60016442%).
+Elapsed 0.01s simulation in 0.009s real (total progress: 19.70054054%).
+Elapsed 0.01s simulation in 0.008s real (total progress: 19.80000563%).
+Elapsed 0.01s simulation in 0.021s real (total progress: 19.900000170000002%).
+Elapsed 0.01s simulation in 0.076s real (total progress: 20.00034891%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 20.10205196%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 20.200204969999998%).
+Elapsed 0.01s simulation in 0.023s real (total progress: 20.30000005%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 20.4000789%).
+Elapsed 0.01s simulation in 0.105s real (total progress: 20.50031099%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 20.60216493%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 20.700003459999998%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 20.80220634%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 20.90093035%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 21.000070360000002%).
+Elapsed 0.01s simulation in 0.02s real (total progress: 21.10008652%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 21.2000078%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 21.300268550000002%).
+Elapsed 0.01s simulation in 0.056s real (total progress: 21.40000139%).
+Elapsed 0.01s simulation in 0.023s real (total progress: 21.50127635%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 21.60124476%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 21.700502320000002%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 21.80000006%).
+Elapsed 0.01s simulation in 0.023s real (total progress: 21.900641%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 22.00024827%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 22.10000043%).
+Elapsed 0.01s simulation in 0.024s real (total progress: 22.20021218%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 22.30013247%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 22.40054022%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 22.501886239999997%).
+Elapsed 0.01s simulation in 0.009s real (total progress: 22.60041146%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 22.70014981%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 22.80000335%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 22.90045578%).
+Elapsed 0.01s simulation in 0.023s real (total progress: 23.00000211%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 23.102193749999998%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 23.20048138%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 23.30162564%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 23.4006954%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 23.50038607%).
+Elapsed 0.01s simulation in 0.008s real (total progress: 23.60070582%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 23.70127996%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 23.80073184%).
+Elapsed 0.01s simulation in 0.029s real (total progress: 23.900062650000002%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 24.001743689999998%).
+Elapsed 0.01s simulation in 0.02s real (total progress: 24.10008737%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 24.20069515%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 24.3000041%).
+Elapsed 0.01s simulation in 0.02s real (total progress: 24.400000159999998%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 24.5000031%).
+Elapsed 0.01s simulation in 0.075s real (total progress: 24.60235691%).
+Elapsed 0.01s simulation in 0.04s real (total progress: 24.70000014%).
+Elapsed 0.01s simulation in 0.03s real (total progress: 24.80001591%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 24.90028276%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 25.00054779%).
+Elapsed 0.01s simulation in 0.024s real (total progress: 25.100000249999997%).
+Elapsed 0.01s simulation in 0.046s real (total progress: 25.2000399%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 25.300490240000002%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 25.40033116%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 25.500070270000002%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 25.60000007%).
+Elapsed 0.01s simulation in 0.021s real (total progress: 25.7001403%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 25.80010783%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 25.9002368%).
+Elapsed 0.01s simulation in 0.022s real (total progress: 26.00006443%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 26.100243579999997%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 26.20057289%).
+Elapsed 0.01s simulation in 0.051s real (total progress: 26.3000025%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 26.40000054%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 26.500075499999998%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 26.60069988%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 26.70017776%).
+Elapsed 0.01s simulation in 0.009s real (total progress: 26.800170890000004%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 26.90025401%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 27.000871580000002%).
+Elapsed 0.01s simulation in 0.052s real (total progress: 27.100001940000002%).
+Elapsed 0.01s simulation in 0.038s real (total progress: 27.200980279999996%).
+Elapsed 0.01s simulation in 0.031s real (total progress: 27.300003150000002%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 27.40002398%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 27.500449999999997%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 27.600217020000002%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 27.70022417%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 27.80086656%).
+Elapsed 0.01s simulation in 0.03s real (total progress: 27.900396830000002%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 28.00126602%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 28.10000225%).
+Elapsed 0.01s simulation in 0.037s real (total progress: 28.200167720000003%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 28.300000590000003%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 28.40040861%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 28.50009632%).
+Elapsed 0.01s simulation in 0.025s real (total progress: 28.60004153%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 28.7000026%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 28.80120424%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 28.900125180000003%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 29.000002060000003%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 29.100019189999998%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 29.200002409999996%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 29.300000320000002%).
+Elapsed 0.01s simulation in 0.02s real (total progress: 29.40024297%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 29.50014452%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 29.600631840000002%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 29.70095844%).
+Elapsed 0.01s simulation in 0.024s real (total progress: 29.800000129999997%).
+Elapsed 0.01s simulation in 0.023s real (total progress: 29.90041343%).
+Elapsed 0.01s simulation in 0.009s real (total progress: 30.000292020000003%).
+Elapsed 0.01s simulation in 0.029s real (total progress: 30.10012686%).
+Elapsed 0.01s simulation in 0.041s real (total progress: 30.200437909999998%).
+Elapsed 0.01s simulation in 0.022s real (total progress: 30.300333740000003%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 30.400314820000002%).
+Elapsed 0.01s simulation in 0.039s real (total progress: 30.50000008%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 30.60162074%).
+Elapsed 0.01s simulation in 0.054s real (total progress: 30.70000002%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 30.800328649999997%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 30.900439400000003%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 31.000698630000002%).
+Elapsed 0.01s simulation in 0.023s real (total progress: 31.10115511%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 31.20048725%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 31.30057583%).
+Elapsed 0.01s simulation in 0.028s real (total progress: 31.40237676%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 31.50049285%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 31.60105149%).
+Elapsed 0.01s simulation in 0.06s real (total progress: 31.70017087%).
+Elapsed 0.01s simulation in 0.024s real (total progress: 31.80000451%).
+Elapsed 0.01s simulation in 0.031s real (total progress: 31.900008619999998%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 32.00003377%).
+Elapsed 0.01s simulation in 0.04s real (total progress: 32.10055003%).
+Elapsed 0.01s simulation in 0.096s real (total progress: 32.20000178%).
+Elapsed 0.01s simulation in 0.036s real (total progress: 32.30000306%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 32.40209261%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 32.500251340000005%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 32.60003819%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 32.70071812%).
+Elapsed 0.01s simulation in 0.035s real (total progress: 32.800019559999996%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 32.90021452%).
+Elapsed 0.01s simulation in 0.049s real (total progress: 33.000000029999995%).
+Elapsed 0.01s simulation in 0.023s real (total progress: 33.1001707%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 33.2016231%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 33.30050495%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 33.40099284%).
+Elapsed 0.01s simulation in 0.026s real (total progress: 33.50000164%).
+Elapsed 0.01s simulation in 0.023s real (total progress: 33.60000015%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 33.70014146%).
+Elapsed 0.01s simulation in 0.026s real (total progress: 33.800267070000004%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 33.90044002%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 34.00009205%).
+Elapsed 0.01s simulation in 0.021s real (total progress: 34.10012639%).
+Elapsed 0.01s simulation in 0.074s real (total progress: 34.20014921%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 34.300088540000004%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 34.40000382%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 34.500388889999996%).
+Elapsed 0.01s simulation in 0.06s real (total progress: 34.60000144%).
+Elapsed 0.01s simulation in 0.148s real (total progress: 34.700000089999996%).
+Elapsed 0.01s simulation in 0.136s real (total progress: 34.80000365%).
+Elapsed 0.01s simulation in 0.095s real (total progress: 34.90000353%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 35.000607030000005%).
+Elapsed 0.01s simulation in 0.02s real (total progress: 35.10054357%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 35.20008943%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 35.30119391%).
+Elapsed 0.01s simulation in 0.03s real (total progress: 35.40000223%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 35.50112678%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 35.60000386%).
+Elapsed 0.01s simulation in 0.132s real (total progress: 35.70000023%).
+Elapsed 0.01s simulation in 0.104s real (total progress: 35.80000012%).
+Elapsed 0.01s simulation in 0.05s real (total progress: 35.90000079%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 36.00107502%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 36.100154%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 36.20019156%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 36.300193400000005%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 36.40000404%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 36.50029035%).
+Elapsed 0.01s simulation in 0.009s real (total progress: 36.60101534%).
+Elapsed 0.01s simulation in 0.027s real (total progress: 36.70085869%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 36.80024547%).
+Elapsed 0.01s simulation in 0.027s real (total progress: 36.9000013%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 37.00013584%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 37.100191620000004%).
+Elapsed 0.01s simulation in 0.027s real (total progress: 37.20000235%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 37.30055774%).
+Elapsed 0.01s simulation in 0.02s real (total progress: 37.40006431%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 37.500623239999996%).
+Elapsed 0.01s simulation in 0.021s real (total progress: 37.60045495%).
+Elapsed 0.01s simulation in 0.066s real (total progress: 37.70000102%).
+Elapsed 0.01s simulation in 0.054s real (total progress: 37.80048929%).
+Elapsed 0.01s simulation in 0.025s real (total progress: 37.90000518%).
+Elapsed 0.01s simulation in 0.074s real (total progress: 38.00000025%).
+Elapsed 0.01s simulation in 0.059s real (total progress: 38.10048412%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 38.20000163%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 38.30011789%).
+Elapsed 0.01s simulation in 0.152s real (total progress: 38.400000070000004%).
+Elapsed 0.01s simulation in 0.167s real (total progress: 38.500001499999996%).
+Elapsed 0.01s simulation in 0.07s real (total progress: 38.60037939%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 38.700004910000004%).
+Elapsed 0.01s simulation in 0.023s real (total progress: 38.80000457%).
+Elapsed 0.01s simulation in 0.021s real (total progress: 38.900003999999996%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 39.00004835%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 39.10023153%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 39.20005078%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 39.30000005%).
+Elapsed 0.01s simulation in 0.027s real (total progress: 39.40003111%).
+Elapsed 0.01s simulation in 0.096s real (total progress: 39.5000001%).
+Elapsed 0.01s simulation in 0.134s real (total progress: 39.60000136%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 39.700001150000006%).
+Elapsed 0.01s simulation in 0.02s real (total progress: 39.800553%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 39.90002309%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 40.00080853%).
+Elapsed 0.01s simulation in 0.022s real (total progress: 40.10106007%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 40.20004888%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 40.300450389999995%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 40.40000126%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 40.50016776%).
+Elapsed 0.01s simulation in 0.022s real (total progress: 40.60288634%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 40.701180640000004%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 40.80000887%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 40.90009571%).
+Elapsed 0.01s simulation in 0.02s real (total progress: 41.00024572%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 41.101319520000004%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 41.20082386%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 41.30021942%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 41.40182789%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 41.50069577%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 41.60222855%).
+Elapsed 0.01s simulation in 0.052s real (total progress: 41.70017191%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 41.80000231%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 41.90031674%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 42.00027443%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 42.10000025%).
+Elapsed 0.01s simulation in 0.029s real (total progress: 42.200040779999995%).
+Elapsed 0.01s simulation in 0.022s real (total progress: 42.30000026%).
+Elapsed 0.01s simulation in 0.033s real (total progress: 42.4000162%).
+Elapsed 0.01s simulation in 0.021s real (total progress: 42.50002476%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 42.60003316%).
+Elapsed 0.01s simulation in 0.008s real (total progress: 42.70010063%).
+Elapsed 0.01s simulation in 0.032s real (total progress: 42.80045115%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 42.90084144%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 43.000603129999995%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 43.100520190000005%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 43.20024193%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 43.30045428%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 43.40000047%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 43.500111540000006%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 43.60000193%).
+Elapsed 0.01s simulation in 0.023s real (total progress: 43.70053681%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 43.80155828%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 43.90052379%).
+Elapsed 0.01s simulation in 0.024s real (total progress: 44.000259879999994%).
+Elapsed 0.01s simulation in 0.028s real (total progress: 44.10000017%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 44.2023808%).
+Elapsed 0.01s simulation in 0.009s real (total progress: 44.30038256%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 44.400737649999996%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 44.50135512%).
+Elapsed 0.01s simulation in 0.03s real (total progress: 44.600130570000005%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 44.70035668%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 44.80005078%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 44.900738000000004%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 45.000004929999996%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 45.10004685%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 45.20000006%).
+Elapsed 0.01s simulation in 0.062s real (total progress: 45.30000117%).
+Elapsed 0.01s simulation in 0.035s real (total progress: 45.401027570000004%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 45.50005056%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 45.60000297%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 45.70000805%).
+Elapsed 0.01s simulation in 0.009s real (total progress: 45.800178%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 45.90071905%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 46.0001229%).
+Elapsed 0.01s simulation in 0.037s real (total progress: 46.10000272%).
+Elapsed 0.01s simulation in 0.128s real (total progress: 46.20000011%).
+Elapsed 0.01s simulation in 0.184s real (total progress: 46.300000149999995%).
+Elapsed 0.01s simulation in 0.179s real (total progress: 46.40000035%).
+Elapsed 0.01s simulation in 0.083s real (total progress: 46.50000003%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 46.60006861%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 46.7010593%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 46.80012877%).
+Elapsed 0.01s simulation in 0.024s real (total progress: 46.90168517%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 47.00101451%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 47.10059637%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 47.20021357%).
+Elapsed 0.01s simulation in 0.024s real (total progress: 47.30009535%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 47.40035979%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 47.50054522%).
+Elapsed 0.01s simulation in 0.021s real (total progress: 47.60098357%).
+Elapsed 0.01s simulation in 0.02s real (total progress: 47.70051059%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 47.80027505%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 47.90000028%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 48.000156319999995%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 48.10003397%).
+Elapsed 0.01s simulation in 0.067s real (total progress: 48.20000018%).
+Elapsed 0.01s simulation in 0.178s real (total progress: 48.30000022%).
+Elapsed 0.01s simulation in 0.187s real (total progress: 48.40000032%).
+Elapsed 0.01s simulation in 0.185s real (total progress: 48.50000002%).
+Elapsed 0.01s simulation in 0.172s real (total progress: 48.60000057%).
+Elapsed 0.01s simulation in 0.172s real (total progress: 48.700001050000004%).
+Elapsed 0.01s simulation in 0.163s real (total progress: 48.80000404%).
+Elapsed 0.01s simulation in 0.023s real (total progress: 48.900652789999995%).
+Elapsed 0.01s simulation in 0.038s real (total progress: 49.000000240000006%).
+Elapsed 0.01s simulation in 0.031s real (total progress: 49.100155089999994%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 49.20028741%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 49.30000217%).
+Elapsed 0.01s simulation in 0.201s real (total progress: 49.40000009%).
+Elapsed 0.01s simulation in 0.097s real (total progress: 49.50140352%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 49.600813849999994%).
+Elapsed 0.01s simulation in 0.028s real (total progress: 49.70031923%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 49.80000015%).
+Elapsed 0.01s simulation in 0.023s real (total progress: 49.90027304%).
+Elapsed 0.01s simulation in 0.025s real (total progress: 50.000900120000004%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 50.10000363%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 50.20043735%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 50.30040701%).
+Elapsed 0.01s simulation in 0.093s real (total progress: 50.40000380000001%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 50.50113382%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 50.60177959999999%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 50.70036347%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 50.800256180000005%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 50.9004573%).
+Elapsed 0.01s simulation in 0.024s real (total progress: 51.00090312%).
+Elapsed 0.01s simulation in 0.025s real (total progress: 51.100004399999996%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 51.200184709999995%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 51.30000077%).
+Elapsed 0.01s simulation in 0.021s real (total progress: 51.40034603%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 51.500312199999996%).
+Elapsed 0.01s simulation in 0.021s real (total progress: 51.600658720000006%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 51.70143638%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 51.80000536%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 51.90000027%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 52.0005196%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 52.10047679%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 52.20002298000001%).
+Elapsed 0.01s simulation in 0.009s real (total progress: 52.30187056%).
+Elapsed 0.01s simulation in 0.023s real (total progress: 52.40066854%).
+Elapsed 0.01s simulation in 0.02s real (total progress: 52.50128393%).
+Elapsed 0.01s simulation in 0.02s real (total progress: 52.60000101%).
+Elapsed 0.01s simulation in 0.02s real (total progress: 52.70018606%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 52.80114286999999%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 52.90021707%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 53.00000023%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 53.10030187%).
+Elapsed 0.01s simulation in 0.027s real (total progress: 53.200754139999994%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 53.300000970000006%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 53.40129565%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 53.5011306%).
+Elapsed 0.01s simulation in 0.009s real (total progress: 53.60046871%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 53.700648120000004%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 53.80020346%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 53.90051467%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 54.00029388000001%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 54.10022459%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 54.20013513000001%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 54.30085003000001%).
+Elapsed 0.01s simulation in 0.049s real (total progress: 54.40000019%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 54.50092633%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 54.60028746%).
+Elapsed 0.01s simulation in 0.03s real (total progress: 54.70137685%).
+Elapsed 0.01s simulation in 0.024s real (total progress: 54.80057524000001%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 54.90124768%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 55.00043646%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 55.10009554999999%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 55.20097771%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 55.30000004%).
+Elapsed 0.01s simulation in 0.022s real (total progress: 55.40075245%).
+Elapsed 0.01s simulation in 0.03s real (total progress: 55.50003717999999%).
+Elapsed 0.01s simulation in 0.02s real (total progress: 55.600004150000004%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 55.70046418%).
+Elapsed 0.01s simulation in 0.022s real (total progress: 55.80083863%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 55.90011015%).
+Elapsed 0.01s simulation in 0.024s real (total progress: 56.000374490000006%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 56.100429659999996%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 56.20178079%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 56.30028446000001%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 56.400307829999996%).
+Elapsed 0.01s simulation in 0.039s real (total progress: 56.50043738%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 56.60090726%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 56.70008781%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 56.80025785%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 56.90002567%).
+Elapsed 0.01s simulation in 0.027s real (total progress: 57.00356908999999%).
+Elapsed 0.01s simulation in 0.009s real (total progress: 57.10024951%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 57.20347156%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 57.300383870000005%).
+Elapsed 0.01s simulation in 0.028s real (total progress: 57.40001093%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 57.5010714%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 57.60091777%).
+Elapsed 0.01s simulation in 0.009s real (total progress: 57.70048789%).
+Elapsed 0.01s simulation in 0.031s real (total progress: 57.80000441000001%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 57.90020887%).
+Elapsed 0.01s simulation in 0.028s real (total progress: 58.00062857%).
+Elapsed 0.01s simulation in 0.031s real (total progress: 58.10000839%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 58.200035959999994%).
+Elapsed 0.01s simulation in 0.008s real (total progress: 58.300117740000005%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 58.40000005%).
+Elapsed 0.01s simulation in 0.021s real (total progress: 58.500200160000006%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 58.60047968999999%).
+Elapsed 0.01s simulation in 0.022s real (total progress: 58.7016255%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 58.80000047%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 58.9013766%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 59.00004969%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 59.10014789%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 59.2005934%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 59.30014578%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 59.400522730000006%).
+Elapsed 0.01s simulation in 0.034s real (total progress: 59.50001953%).
+Elapsed 0.01s simulation in 0.035s real (total progress: 59.60027809%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 59.700221590000005%).
+Elapsed 0.01s simulation in 0.032s real (total progress: 59.8000781%).
+Elapsed 0.01s simulation in 0.03s real (total progress: 59.900334789999995%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 60.0023566%).
+Elapsed 0.01s simulation in 0.04s real (total progress: 60.100000099999995%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 60.20062004%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 60.30002633%).
+Elapsed 0.01s simulation in 0.02s real (total progress: 60.40112502%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 60.50105584999999%).
+Elapsed 0.01s simulation in 0.025s real (total progress: 60.60025872%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 60.700001189999995%).
+Elapsed 0.01s simulation in 0.032s real (total progress: 60.80025832%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 60.90001508%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 61.001008840000004%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 61.10064923%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 61.200663629999994%).
+Elapsed 0.01s simulation in 0.009s real (total progress: 61.300651169999995%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 61.40022768%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 61.5004399%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 61.60004192%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 61.70006448000001%).
+Elapsed 0.01s simulation in 0.026s real (total progress: 61.80000031%).
+Elapsed 0.01s simulation in 0.026s real (total progress: 61.90103574%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 62.000000590000006%).
+Elapsed 0.01s simulation in 0.024s real (total progress: 62.10032071%).
+Elapsed 0.01s simulation in 0.043s real (total progress: 62.20000042%).
+Elapsed 0.01s simulation in 0.079s real (total progress: 62.30010521%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 62.400097200000005%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 62.500237430000006%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 62.600494819999994%).
+Elapsed 0.01s simulation in 0.023s real (total progress: 62.70000023%).
+Elapsed 0.01s simulation in 0.027s real (total progress: 62.800000219999994%).
+Elapsed 0.01s simulation in 0.031s real (total progress: 62.900002310000005%).
+Elapsed 0.01s simulation in 0.021s real (total progress: 63.000003140000004%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 63.100142680000005%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 63.20069779000001%).
+Elapsed 0.01s simulation in 0.049s real (total progress: 63.30000199%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 63.40002275%).
+Elapsed 0.01s simulation in 0.031s real (total progress: 63.50000406%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 63.603523790000004%).
+Elapsed 0.01s simulation in 0.009s real (total progress: 63.70014656000001%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 63.80064908999999%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 63.901751929999996%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 64.00014396%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 64.10056049%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 64.20009089%).
+Elapsed 0.01s simulation in 0.028s real (total progress: 64.30000002%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 64.40294388%).
+Elapsed 0.01s simulation in 0.084s real (total progress: 64.50000002%).
+Elapsed 0.01s simulation in 0.036s real (total progress: 64.60033498%).
+Elapsed 0.01s simulation in 0.103s real (total progress: 64.70000093%).
+Elapsed 0.01s simulation in 0.155s real (total progress: 64.80000229000001%).
+Elapsed 0.01s simulation in 0.155s real (total progress: 64.90000098%).
+Elapsed 0.01s simulation in 0.158s real (total progress: 65.00000038%).
+Elapsed 0.01s simulation in 0.115s real (total progress: 65.10067544%).
+Elapsed 0.01s simulation in 0.071s real (total progress: 65.20035858%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 65.30037802000001%).
+Elapsed 0.01s simulation in 0.053s real (total progress: 65.401759%).
+Elapsed 0.01s simulation in 0.022s real (total progress: 65.50039689%).
+Elapsed 0.01s simulation in 0.067s real (total progress: 65.60000001%).
+Elapsed 0.01s simulation in 0.057s real (total progress: 65.70000039%).
+Elapsed 0.01s simulation in 0.025s real (total progress: 65.80000206%).
+Elapsed 0.01s simulation in 0.022s real (total progress: 65.90044692%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 66.00066915000001%).
+Elapsed 0.01s simulation in 0.021s real (total progress: 66.10072872%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 66.20093992%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 66.30045036%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 66.40004094000001%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 66.50020591%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 66.60000141%).
+Elapsed 0.01s simulation in 0.038s real (total progress: 66.70000009%).
+Elapsed 0.01s simulation in 0.02s real (total progress: 66.80064644%).
+Elapsed 0.01s simulation in 0.009s real (total progress: 66.90046670999999%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 67.00057312999999%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 67.10032233999999%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 67.20037393%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 67.30125477%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 67.40085312000001%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 67.50083695%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 67.60085047%).
+Elapsed 0.01s simulation in 0.009s real (total progress: 67.70027802%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 67.800246%).
+Elapsed 0.01s simulation in 0.036s real (total progress: 67.90015249%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 68.00032741999999%).
+Elapsed 0.01s simulation in 0.022s real (total progress: 68.10011173%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 68.20016410999999%).
+Elapsed 0.01s simulation in 0.028s real (total progress: 68.30006804%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 68.40017983999999%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 68.50010531000001%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 68.60066096%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 68.70000229%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 68.8011169%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 68.90000048%).
+Elapsed 0.01s simulation in 0.045s real (total progress: 69.00054051%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 69.10007361%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 69.20058939%).
+Elapsed 0.01s simulation in 0.023s real (total progress: 69.30000421%).
+Elapsed 0.01s simulation in 0.02s real (total progress: 69.40028663999999%).
+Elapsed 0.01s simulation in 0.031s real (total progress: 69.50027634%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 69.60090137%).
+Elapsed 0.01s simulation in 0.142s real (total progress: 69.7000018%).
+Elapsed 0.01s simulation in 0.171s real (total progress: 69.80000006%).
+Elapsed 0.01s simulation in 0.169s real (total progress: 69.90000047%).
+Elapsed 0.01s simulation in 0.19s real (total progress: 70.00000181%).
+Elapsed 0.01s simulation in 0.169s real (total progress: 70.10000013%).
+Elapsed 0.01s simulation in 0.181s real (total progress: 70.20000007%).
+Elapsed 0.01s simulation in 0.188s real (total progress: 70.30000215999999%).
+Elapsed 0.01s simulation in 0.192s real (total progress: 70.40000048%).
+Elapsed 0.01s simulation in 0.228s real (total progress: 70.50000126%).
+Elapsed 0.01s simulation in 0.17s real (total progress: 70.60000302%).
+Elapsed 0.01s simulation in 0.174s real (total progress: 70.70000012%).
+Elapsed 0.01s simulation in 0.167s real (total progress: 70.80000015%).
+Elapsed 0.01s simulation in 0.227s real (total progress: 70.90000005%).
+Elapsed 0.01s simulation in 0.343s real (total progress: 71.00000024%).
+Elapsed 0.01s simulation in 0.333s real (total progress: 71.10000004%).
+Elapsed 0.01s simulation in 0.241s real (total progress: 71.20170079%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 71.30001908%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 71.40084606%).
+Elapsed 0.01s simulation in 0.02s real (total progress: 71.50000044%).
+Elapsed 0.01s simulation in 0.032s real (total progress: 71.60018017%).
+Elapsed 0.01s simulation in 0.033s real (total progress: 71.70078803999999%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 71.80159153%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 71.90126412%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 72.00000433%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 72.10089008%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 72.20000250000001%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 72.30031454%).
+Elapsed 0.01s simulation in 0.032s real (total progress: 72.40000221%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 72.50272286%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 72.60382391%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 72.70086425%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 72.80008351000001%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 72.9000001%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 73.00517442%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 73.10026005%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 73.20087699999999%).
+Elapsed 0.01s simulation in 0.038s real (total progress: 73.30039695%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 73.40007435%).
+Elapsed 0.01s simulation in 0.008s real (total progress: 73.50009958%).
+Elapsed 0.01s simulation in 0.025s real (total progress: 73.60024374000001%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 73.70119037%).
+Elapsed 0.01s simulation in 0.076s real (total progress: 73.8000026%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 73.90037612%).
+Elapsed 0.01s simulation in 0.021s real (total progress: 74.00026039000001%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 74.1007751%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 74.20181172%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 74.30000363%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 74.40022075%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 74.50104666%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 74.60003509%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 74.70074749%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 74.80073775%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 74.90000191%).
+Elapsed 0.01s simulation in 0.023s real (total progress: 75.0004411%).
+Elapsed 0.01s simulation in 0.042s real (total progress: 75.10000124%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 75.20000393000001%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 75.30005287%).
+Elapsed 0.01s simulation in 0.04s real (total progress: 75.40043132999999%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 75.50036842%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 75.60000027%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 75.7019088%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 75.80004982%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 75.90067044999999%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 76.00000005000001%).
+Elapsed 0.01s simulation in 0.028s real (total progress: 76.10003831%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 76.20017358999999%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 76.30113257%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 76.40043316%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 76.50016722000001%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 76.6003374%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 76.70073162%).
+Elapsed 0.01s simulation in 0.028s real (total progress: 76.80000004%).
+Elapsed 0.01s simulation in 0.092s real (total progress: 76.90000248%).
+Elapsed 0.01s simulation in 0.063s real (total progress: 77.00008031%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 77.10075463%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 77.20000364%).
+Elapsed 0.01s simulation in 0.031s real (total progress: 77.30041034%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 77.40036291%).
+Elapsed 0.01s simulation in 0.033s real (total progress: 77.50036863999999%).
+Elapsed 0.01s simulation in 0.021s real (total progress: 77.60013091%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 77.70000182%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 77.80000003%).
+Elapsed 0.01s simulation in 0.055s real (total progress: 77.90015747%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 78.0002133%).
+Elapsed 0.01s simulation in 0.029s real (total progress: 78.10000022%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 78.20091725%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 78.30008558%).
+Elapsed 0.01s simulation in 0.021s real (total progress: 78.40002722%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 78.50051084%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 78.60005796%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 78.70066419%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 78.80026891%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 78.90029649%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 79.00000467%).
+Elapsed 0.01s simulation in 0.009s real (total progress: 79.10003783%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 79.20080967999999%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 79.30000118%).
+Elapsed 0.01s simulation in 0.074s real (total progress: 79.40000008%).
+Elapsed 0.01s simulation in 0.105s real (total progress: 79.50033927999999%).
+Elapsed 0.01s simulation in 0.06s real (total progress: 79.60000026%).
+Elapsed 0.01s simulation in 0.027s real (total progress: 79.70085848000001%).
+Elapsed 0.01s simulation in 0.058s real (total progress: 79.80000128%).
+Elapsed 0.01s simulation in 0.092s real (total progress: 79.90029365%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 80.00056121%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 80.10060204%).
+Elapsed 0.01s simulation in 0.046s real (total progress: 80.20000381999999%).
+Elapsed 0.01s simulation in 0.026s real (total progress: 80.30000016999999%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 80.40128123%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 80.50025897%).
+Elapsed 0.01s simulation in 0.022s real (total progress: 80.60058623%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 80.7006868%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 80.80008873999999%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 80.90092167%).
+Elapsed 0.01s simulation in 0.07s real (total progress: 81.00000087%).
+Elapsed 0.01s simulation in 0.023s real (total progress: 81.10000451%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 81.20031163%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 81.30019123%).
+Elapsed 0.01s simulation in 0.022s real (total progress: 81.40012866000001%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 81.5004852%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 81.60008207%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 81.70066378%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 81.80091202%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 81.90010396000001%).
+Elapsed 0.01s simulation in 0.02s real (total progress: 82.000036%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 82.10021513%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 82.2000795%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 82.3000002%).
+Elapsed 0.01s simulation in 0.021s real (total progress: 82.40078582%).
+Elapsed 0.01s simulation in 0.021s real (total progress: 82.50045587%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 82.60004127%).
+Elapsed 0.01s simulation in 0.026s real (total progress: 82.70056836%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 82.80083933%).
+Elapsed 0.01s simulation in 0.02s real (total progress: 82.900001%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 83.00020163%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 83.10038274%).
+Elapsed 0.01s simulation in 0.027s real (total progress: 83.20041934%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 83.30023098%).
+Elapsed 0.01s simulation in 0.094s real (total progress: 83.40000254%).
+Elapsed 0.01s simulation in 0.033s real (total progress: 83.50010972%).
+Elapsed 0.01s simulation in 0.023s real (total progress: 83.60000524%).
+Elapsed 0.01s simulation in 0.029s real (total progress: 83.70000109%).
+Elapsed 0.01s simulation in 0.029s real (total progress: 83.80023682%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 83.90019326%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 84.00115615%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 84.10000517%).
+Elapsed 0.01s simulation in 0.048s real (total progress: 84.20000008000001%).
+Elapsed 0.01s simulation in 0.112s real (total progress: 84.30031212%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 84.40079815%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 84.50008325%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 84.60111938%).
+Elapsed 0.01s simulation in 0.008s real (total progress: 84.70088091%).
+Elapsed 0.01s simulation in 0.021s real (total progress: 84.80097987%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 84.90000529%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 85.00000018%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 85.10028358%).
+Elapsed 0.01s simulation in 0.033s real (total progress: 85.20074182%).
+Elapsed 0.01s simulation in 0.024s real (total progress: 85.3000026%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 85.40036615999999%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 85.50000139000001%).
+Elapsed 0.01s simulation in 0.026s real (total progress: 85.60042823%).
+Elapsed 0.01s simulation in 0.006s real (total progress: 85.70008222%).
+Elapsed 0.01s simulation in 0.021s real (total progress: 85.80008768%).
+Elapsed 0.01s simulation in 0.022s real (total progress: 85.90015478000001%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 86.00029183%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 86.1010559%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 86.20110041%).
+Elapsed 0.01s simulation in 0.02s real (total progress: 86.30005486%).
+Elapsed 0.01s simulation in 0.053s real (total progress: 86.4000001%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 86.5007018%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 86.60054466%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 86.7002502%).
+Elapsed 0.01s simulation in 0.19s real (total progress: 86.80000011999999%).
+Elapsed 0.01s simulation in 0.165s real (total progress: 86.90000007%).
+Elapsed 0.01s simulation in 0.133s real (total progress: 87.00063166000001%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 87.10014847000001%).
+Elapsed 0.01s simulation in 0.052s real (total progress: 87.2000038%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 87.30120373%).
+Elapsed 0.01s simulation in 0.041s real (total progress: 87.4000003%).
+Elapsed 0.01s simulation in 0.022s real (total progress: 87.50041752999999%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 87.60006991%).
+Elapsed 0.01s simulation in 0.021s real (total progress: 87.7010511%).
+Elapsed 0.01s simulation in 0.022s real (total progress: 87.80034533999999%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 87.90116883%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 88.00022095%).
+Elapsed 0.01s simulation in 0.022s real (total progress: 88.10023416%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 88.20000239%).
+Elapsed 0.01s simulation in 0.022s real (total progress: 88.30007236%).
+Elapsed 0.01s simulation in 0.066s real (total progress: 88.4000021%).
+Elapsed 0.01s simulation in 0.037s real (total progress: 88.50000131%).
+Elapsed 0.01s simulation in 0.029s real (total progress: 88.60072869999999%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 88.7000039%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 88.80025319%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 88.90024598000001%).
+Elapsed 0.01s simulation in 0.027s real (total progress: 89.00048384%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 89.10032767%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 89.20025557%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 89.30263325%).
+Elapsed 0.01s simulation in 0.13s real (total progress: 89.40000006%).
+Elapsed 0.01s simulation in 0.047s real (total progress: 89.50044633%).
+Elapsed 0.01s simulation in 0.028s real (total progress: 89.60094739%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 89.70208790000001%).
+Elapsed 0.01s simulation in 0.009s real (total progress: 89.80039024999999%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 89.90019433%).
+Elapsed 0.01s simulation in 0.04s real (total progress: 90.00043379%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 90.10002294%).
+Elapsed 0.01s simulation in 0.027s real (total progress: 90.20060163%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 90.30140096%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 90.40088292%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 90.50058251%).
+Elapsed 0.01s simulation in 0.039s real (total progress: 90.60090063%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 90.70131936%).
+Elapsed 0.01s simulation in 0.022s real (total progress: 90.80002467%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 90.90000865%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 91.00000593%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 91.10000258%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 91.20015185%).
+Elapsed 0.01s simulation in 0.026s real (total progress: 91.30074881%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 91.40000005%).
+Elapsed 0.01s simulation in 0.021s real (total progress: 91.50000327%).
+Elapsed 0.01s simulation in 0.026s real (total progress: 91.60000042%).
+Elapsed 0.01s simulation in 0.079s real (total progress: 91.70378235999999%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 91.80015777%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 91.90003973%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 92.00221047%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 92.10091981000001%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 92.20032703999999%).
+Elapsed 0.01s simulation in 0.009s real (total progress: 92.30016183000001%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 92.40049482%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 92.50000002%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 92.60035210000001%).
+Elapsed 0.01s simulation in 0.025s real (total progress: 92.70043239%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 92.80012855999999%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 92.90000534%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 93.0015847%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 93.10149883%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 93.20024201%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 93.30000122999999%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 93.40000151%).
+Elapsed 0.01s simulation in 0.056s real (total progress: 93.50076164%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 93.60003637999999%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 93.70016434%).
+Elapsed 0.01s simulation in 0.009s real (total progress: 93.80059266%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 93.90031605%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 94.00000073%).
+Elapsed 0.01s simulation in 0.022s real (total progress: 94.10114049%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 94.20033841%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 94.30107169%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 94.40023097%).
+Elapsed 0.01s simulation in 0.014s real (total progress: 94.50020045999999%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 94.60110615%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 94.70027839000001%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 94.80059605%).
+Elapsed 0.01s simulation in 0.032s real (total progress: 94.90031729%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 95.00141081%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 95.10030964%).
+Elapsed 0.01s simulation in 0.054s real (total progress: 95.20126348%).
+Elapsed 0.01s simulation in 0.02s real (total progress: 95.30007522%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 95.40000153%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 95.50002570000001%).
+Elapsed 0.01s simulation in 0.023s real (total progress: 95.60021179%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 95.70104466000001%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 95.80006986000001%).
+Elapsed 0.01s simulation in 0.026s real (total progress: 95.90030551999999%).
+Elapsed 0.01s simulation in 0.009s real (total progress: 96.00008219%).
+Elapsed 0.01s simulation in 0.026s real (total progress: 96.10132026%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 96.20006807%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 96.30023173%).
+Elapsed 0.01s simulation in 0.016s real (total progress: 96.40001543%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 96.50007997%).
+Elapsed 0.01s simulation in 0.099s real (total progress: 96.6000007%).
+Elapsed 0.01s simulation in 0.179s real (total progress: 96.70000041%).
+Elapsed 0.01s simulation in 0.196s real (total progress: 96.80000104999999%).
+Elapsed 0.01s simulation in 0.181s real (total progress: 96.90000132%).
+Elapsed 0.01s simulation in 0.033s real (total progress: 97.00000335%).
+Elapsed 0.01s simulation in 0.112s real (total progress: 97.10104376000001%).
+Elapsed 0.01s simulation in 0.008s real (total progress: 97.20005641%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 97.30000013%).
+Elapsed 0.01s simulation in 0.066s real (total progress: 97.40038423%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 97.50000032%).
+Elapsed 0.01s simulation in 0.015s real (total progress: 97.60052182%).
+Elapsed 0.01s simulation in 0.028s real (total progress: 97.70014459000001%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 97.80082576%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 97.90296066%).
+Elapsed 0.01s simulation in 0.019s real (total progress: 98.0001977%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 98.10102131000001%).
+Elapsed 0.01s simulation in 0.018s real (total progress: 98.20107856%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 98.30004522%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 98.40000279%).
+Elapsed 0.01s simulation in 0.007s real (total progress: 98.50057495%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 98.60071886%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 98.70025273%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 98.80001256999999%).
+Elapsed 0.01s simulation in 0.017s real (total progress: 98.90115974%).
+Elapsed 0.01s simulation in 0.013s real (total progress: 99.00033346000001%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 99.10000219%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 99.2019987%).
+Elapsed 0.01s simulation in 0.011s real (total progress: 99.30021371%).
+Elapsed 0.01s simulation in 0.021s real (total progress: 99.40018302%).
+Elapsed 0.01s simulation in 0.07s real (total progress: 99.50000017%).
+Elapsed 0.01s simulation in 0.105s real (total progress: 99.60000087%).
+Elapsed 0.01s simulation in 0.009s real (total progress: 99.70000775%).
+Elapsed 0.01s simulation in 0.01s real (total progress: 99.80019077%).
+Elapsed 0.01s simulation in 0.007s real (total progress: 99.90035174%).
+Elapsed 0.01s simulation in 0.012s real (total progress: 100.00185508999999%).
+Simulation finished (simulated 10.0s in a real-world time of 29.926s).

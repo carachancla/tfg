@@ -5,6 +5,7 @@ import ch.ethz.systems.netbench.core.config.BaseAllowedProperties;
 import ch.ethz.systems.netbench.core.config.NBProperties;
 import ch.ethz.systems.netbench.core.network.Link;
 import ch.ethz.systems.netbench.core.network.NetworkDevice;
+import ch.ethz.systems.netbench.ext.basic.PerfectSimpleLink;
 import ch.ethz.systems.netbench.ext.basic.TcpPacket;
 import ch.ethz.systems.netbench.ext.demo.DemoIntermediaryGenerator;
 import ch.ethz.systems.netbench.ext.ecmp.ForwarderSwitch;
@@ -335,7 +336,7 @@ public class WirelessOutputPortTest {
     @Test
     public void testGenerator() {
         WirelessPortGen generator = new WirelessPortGen(5000, 2000);
-        WirelessLink link = new WirelessLink(100, 200);
+        PerfectSimpleLink link = new PerfectSimpleLink(100, 200);
         when(networkDeviceA.getIdentifier()).thenReturn(77);
         when(networkDeviceB.getIdentifier()).thenReturn(88);
         WirelessPort port = (WirelessPort) generator.generate(networkDeviceA, networkDeviceB, link);

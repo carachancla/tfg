@@ -170,6 +170,7 @@ public class BaseInitializer {
         NetworkDevice devB = idToNetworkDevice.get(endVertexId);
 
         OutputPort portAtoB = null;
+        // make port with secondary option if cables are long and option is enabled
         try{
             if(Simulator.getConfiguration().getBooleanPropertyWithDefault("long_to_wireless_port",false)){
                 PhysicalLayout physicalLayout = new PhysicalLayout();
@@ -184,7 +185,7 @@ public class BaseInitializer {
         catch (Exception e){
             throw new IllegalArgumentException("Check physicall topoplogy configuration");
         }
-        // Add connection
+        // Add connection with default port option
         if(portAtoB==null)portAtoB = outputPortGenerator.generate(
                 devA,
                 devB,

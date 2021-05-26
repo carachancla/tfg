@@ -16876,3 +16876,51 @@ ANALYSIS
 Running command "python3 analysis/physicallTopoAnalysis/analyze_Wireless.py temp/results/W_1_trafficLimit/jellyfish_n128_d30_wireless__flows_2500_runtime_2s"...
 ... command has been executed (any output is shown above).
 Finished analysis.
+WARNING: property run_folder_name which is being overridden is not previously defined in the configuration.
+Overriding property run_folder_name: "NON-EXISTING" (old) -> "W_1_trafficLimit/jellyfish_n128_d30_hybrid__flows_200_runtime_s" (new).
+Overriding property traffic_lambda_flow_starts_per_s: "900" (old) -> "200" (new).
+Overriding property run_time_s: "60" (old) -> "" (new).
+Exception in thread "main" java.lang.NumberFormatException: empty String
+        at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
+        at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+        at java.base/java.lang.Double.parseDouble(Double.java:543)
+        at java.base/java.lang.Double.valueOf(Double.java:506)
+        at ch.ethz.systems.netbench.core.config.NBProperties.getDoublePropertyOrFail(NBProperties.java:229)
+        at ch.ethz.systems.netbench.core.run.MainFromProperties.determineRuntimeNs(MainFromProperties.java:130)
+        at ch.ethz.systems.netbench.core.run.MainFromProperties.main(MainFromProperties.java:41)
+WARNING: property run_folder_name which is being overridden is not previously defined in the configuration.
+Overriding property run_folder_name: "NON-EXISTING" (old) -> "W_1_trafficLimit/jellyfish_n128_d30_hybrid__flows_400_runtime_s" (new).
+Overriding property traffic_lambda_flow_starts_per_s: "900" (old) -> "400" (new).
+Overriding property run_time_s: "60" (old) -> "" (new).
+Exception in thread "main" java.lang.NumberFormatException: empty String
+        at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
+        at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+        at java.base/java.lang.Double.parseDouble(Double.java:543)
+        at java.base/java.lang.Double.valueOf(Double.java:506)
+        at ch.ethz.systems.netbench.core.config.NBProperties.getDoublePropertyOrFail(NBProperties.java:229)
+        at ch.ethz.systems.netbench.core.run.MainFromProperties.determineRuntimeNs(MainFromProperties.java:130)
+        at ch.ethz.systems.netbench.core.run.MainFromProperties.main(MainFromProperties.java:41)
+WARNING: property run_folder_name which is being overridden is not previously defined in the configuration.
+Overriding property run_folder_name: "NON-EXISTING" (old) -> "W_1_trafficLimit/jellyfish_n128_d30_hybrid__flows_200_runtime_s" (new).
+Overriding property traffic_lambda_flow_starts_per_s: "900" (old) -> "200" (new).
+Overriding property run_time_s: "60" (old) -> "" (new).
+Exception in thread "main" java.lang.NumberFormatException: empty String
+        at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
+        at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+        at java.base/java.lang.Double.parseDouble(Double.java:543)
+        at java.base/java.lang.Double.valueOf(Double.java:506)
+        at ch.ethz.systems.netbench.core.config.NBProperties.getDoublePropertyOrFail(NBProperties.java:229)
+        at ch.ethz.systems.netbench.core.run.MainFromProperties.determineRuntimeNs(MainFromProperties.java:130)
+        at ch.ethz.systems.netbench.core.run.MainFromProperties.main(MainFromProperties.java:41)
+WARNING: property run_folder_name which is being overridden is not previously defined in the configuration.
+Overriding property run_folder_name: "NON-EXISTING" (old) -> "W_1_trafficLimit/jellyfish_n128_d30_hybrid__flows_400_runtime_s" (new).
+Overriding property traffic_lambda_flow_starts_per_s: "900" (old) -> "400" (new).
+Overriding property run_time_s: "60" (old) -> "" (new).
+Exception in thread "main" java.lang.NumberFormatException: empty String
+        at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
+        at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+        at java.base/java.lang.Double.parseDouble(Double.java:543)
+        at java.base/java.lang.Double.valueOf(Double.java:506)
+        at ch.ethz.systems.netbench.core.config.NBProperties.getDoublePropertyOrFail(NBProperties.java:229)
+        at ch.ethz.systems.netbench.core.run.MainFromProperties.determineRuntimeNs(MainFromProperties.java:130)
+        at ch.ethz.systems.netbench.core.run.MainFromProperties.main(MainFromProperties.java:41)
