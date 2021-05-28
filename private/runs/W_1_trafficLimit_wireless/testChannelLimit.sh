@@ -13,8 +13,8 @@ netbechPath=tfg/
 #netbechPath=Desktop/tfg/tfg/
 runtime=50
 
-properties_file=private/runs/W_0_oneToOneTrafficLimit/jellyfish_n2_d1_wireless.properties
-run_folder=W_0_trafficLimit/jellyfish_n2_d1_wireless_flows_
+properties_file=private/runs/W_1_trafficLimit_wireless/jellyfish_n128_d30_wireless.properties
+run_folder=W_1_trafficLimit_wireless/jellyfish_n128_d30_wireless_flows_
 
 
 #runtime=`calc ${num_flows} / ${flows_per_s}`;
