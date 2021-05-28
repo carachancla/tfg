@@ -1,0 +1,27 @@
+Copying file "private/runs/W_0_oneToOneTrafficLimit/jellyfish_n2_d1_wireless.properties" to run folder...
+Running command "cp private/runs/W_0_oneToOneTrafficLimit/jellyfish_n2_d1_wireless.properties temp/results/W_0_oneToOneTrafficLimit/jellyfish_n2_d1_wireless_flows_10000_runtime_50s"...
+... command has been executed (any output is shown above).
+Copying file "temp/results/physicalTopo/topologies/Jellyfish_2V_1deg.topology" to run folder using new file name "original_topology.txt"...
+Running command "cp temp/results/physicalTopo/topologies/Jellyfish_2V_1deg.topology temp/results/W_0_oneToOneTrafficLimit/jellyfish_n2_d1_wireless_flows_10000_runtime_50s/original_topology.txt"...
+... command has been executed (any output is shown above).
+
+INFRASTRUCTURE
+==================
+Finished creating infrastructure.
+
+ROUTING STATE
+==================
+Calculating shortest path lengths... done.
+Populating ECMP forward routing tables... done.
+Finished routing state setup.
+
+TRAFFIC
+==================
+Exception in thread "main" ch.ethz.systems.netbench.core.config.exceptions.PropertyMissingException: [private/runs/W_0_oneToOneTrafficLimit/jellyfish_n2_d1_wireless.properties]: essential property "scenario_topology_extend_servers_per_tl_node" was not found in the configuration file.
+	at ch.ethz.systems.netbench.core.config.NBProperties.getPropertyOrFail(NBProperties.java:150)
+	at ch.ethz.systems.netbench.core.config.NBProperties.getIntegerPropertyOrFail(NBProperties.java:179)
+	at ch.ethz.systems.netbench.ext.poissontraffic.PoissonArrivalPlanner.setPairProbabilitiesAllToAllInFraction(PoissonArrivalPlanner.java:246)
+	at ch.ethz.systems.netbench.ext.poissontraffic.PoissonArrivalPlanner.<init>(PoissonArrivalPlanner.java:72)
+	at ch.ethz.systems.netbench.core.run.TrafficSelector.selectPlanner(TrafficSelector.java:116)
+	at ch.ethz.systems.netbench.core.run.MainFromProperties.planTraffic(MainFromProperties.java:209)
+	at ch.ethz.systems.netbench.core.run.MainFromProperties.main(MainFromProperties.java:55)

@@ -45,6 +45,13 @@ public class WirelessPort extends OutputPort {
     }
 
     // this to allow multiple targets on the port, targetId becomes unused.
+    /**
+     * Enqueue the given packet to wanted destiny.
+     * Drops it if the queue is full (tail drop).
+     *
+     * @param packet    Packet instance
+     * @param destId    Wireless receiver destiny
+     */
     public void enqueue(Packet packet, int destId) {
 
     // Convert to IP packet
@@ -88,7 +95,7 @@ public class WirelessPort extends OutputPort {
         }
     }
 
-    public void retryCollisionDispatch(Packet packet) { // collision happened retry collision
+    public void retryCollisionDispatch(Packet packet) { // collision happened retry sending
         CollisionDetSwitch detSwitch = (CollisionDetSwitch) super.getTargetDevice();
         if (!detSwitch.isMediumOccupied(this) & !link.doesNextTransmissionFail(packet.getSizeBit())) {
             Simulator.registerEvent(
@@ -98,7 +105,7 @@ public class WirelessPort extends OutputPort {
                             targetNetworkDevice
                     )
             );
-            waitingMedium =false;
+            waitingMedium = false;
             waitingMediumPacket = null;
         }
         else {
@@ -147,7 +154,7 @@ public class WirelessPort extends OutputPort {
 
     // collision handling failure
     protected void packetCollision(MacPacket mPacket){
-        if(collisionBackoffLevel<30)++collisionBackoffLevel;
+        if(collisionBackoffLevel<30)++collisionBackoffLevel; // avoid  integer overflow
         int backoffArc = (int) Math.pow(2,collisionBackoffLevel);
         int roundTripTime =(int) mPacket.getSourcePort().getLink().getDelayNs();
         int delay = (new Random().nextInt(backoffArc + 1) + 1) * roundTripTime;
@@ -160,7 +167,7 @@ public class WirelessPort extends OutputPort {
     // collision handling success
     protected void successfulTransmission(MacPacket macPacket){
         collisionBackoffLevel = 1;
-        //System.out.println("Succesfull transmission: " + macPacket.getSourceId());
+        //System.out.println("packet sent: " + macPacket.getSourceId() );
     }
 
 

@@ -53,7 +53,7 @@ class CollisionDetSwitch extends NetworkDevice {
             macPacket.getSourcePort().packetSent();
             freeMedium();
             macPacket.getSourcePort().successfulTransmission(macPacket);
-
+            //System.out.println("succes!!!!");
             logger.logSucces();
         }
         else{// a collision happened, wait for last packet to do collision protocol
@@ -61,6 +61,7 @@ class CollisionDetSwitch extends NetworkDevice {
                 for (MacPacket mPacket:waitCollisionQueue) {
                         mPacket.getSourcePort().packetCollision(mPacket);
                     }
+                //System.out.println("collsion!!!!");
                 waitCollisionQueue = new LinkedBlockingQueue<>();
                 freeMedium();
 
