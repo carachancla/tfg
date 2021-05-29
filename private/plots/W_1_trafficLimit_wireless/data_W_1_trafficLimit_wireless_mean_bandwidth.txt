@@ -1,0 +1,6 @@
+jellyfish_n128_d30_wireless_flows_20_runtime_30s	20	5.029041950334283e-05
+jellyfish_n128_d30_wireless_flows_40_runtime_30s	40	5.360017286818816e-05
+jellyfish_n128_d30_wireless_flows_5_runtime_30s	5	5.615197935710388e-05
+jellyfish_n128_d30_wireless_flows_100_runtime_30s	100	4.5846721392017365e-05
+jellyfish_n128_d30_wireless_flows_80_runtime_30s	80	4.281005278982099e-05
+jellyfish_n128_d30_wireless_flows_1_runtime_30s	1	5.051942061391241e-05

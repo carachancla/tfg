@@ -42,7 +42,7 @@ set style line 9 lt rgb "#666666" lw 1.2 pt 0
 
 set output "output_1a_failcase_ecmp_avg_fct.pdf"
 #set xtics 0, 1, 5
-set format x "%.0fK"
+set format x "%.0f"
 set xlabel "Load {/Symbol l} (flow-starts per second)"
 set ylabel "Average FCT (ms)"
 

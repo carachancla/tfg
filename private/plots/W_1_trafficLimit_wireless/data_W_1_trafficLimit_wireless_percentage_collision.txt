@@ -1,1 +1,6 @@
-ERROR: file ../../../temp/results/W_1_trafficLimit_wireless/jellyfish_n128_d30_wireless_flows_400_runtime_50s/analysis/channel_use.statistics does not exist
+jellyfish_n128_d30_wireless_flows_20_runtime_30s	20	0.28253608771009386
+jellyfish_n128_d30_wireless_flows_40_runtime_30s	40	0.28287397002700193
+jellyfish_n128_d30_wireless_flows_5_runtime_30s	5	0.28495402797549096
+jellyfish_n128_d30_wireless_flows_100_runtime_30s	100	0.2855115266162216
+jellyfish_n128_d30_wireless_flows_80_runtime_30s	80	0.2843471337471113
+jellyfish_n128_d30_wireless_flows_1_runtime_30s	1	0.2845628769214984
