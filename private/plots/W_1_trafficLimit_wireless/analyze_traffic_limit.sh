@@ -13,7 +13,7 @@ python ../../../analysis/multi_combine.py channel_usage channel_use.statistics .
 
 python ../../../analysis/multi_combine.py percentage_collision channel_use.statistics ../../../temp/results/${FOLDER_IN_RESULTS} flows actservers > data_${LABEL}_percentage_collision.txt
 
-python ../../../analysis/multi_combine.py all_throughput_median_Gbps flow_completion.statistics ../../../temp/results/${FOLDER_IN_RESULTS} flows actservers > data_${LABEL}_mean_bandwidth.txt
+python ../../../analysis/multi_combine.py all_num_unfinished_flows flow_completion.statistics ../../../temp/results/${FOLDER_IN_RESULTS} flows actservers > data_${LABEL}_mean_bandwidth.txt
 
 # Plot
 gnuplot plot_flow_mean_delay_Jellyfish.plt
