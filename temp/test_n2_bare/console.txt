@@ -22,4 +22,4 @@ Finished generating traffic flow starts.
 ACTUAL RUN
 ==================
 Starting simulation (total time: 50000ns);...
-Simulation finished (simulated 5.0E-5s in a real-world time of 0.002s).
+Simulation finished (simulated 5.0E-5s in a real-world time of 0.003s).

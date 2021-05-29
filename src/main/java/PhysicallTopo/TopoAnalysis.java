@@ -11,10 +11,8 @@ public class TopoAnalysis {
         File dir = new File("temp/results/physicalTopo/topologies");
         File[] files = dir.listFiles();
 
-        Vector<Integer> numV = new Vector<>();
-        Vector<Integer> degree = new Vector<>();
-        Vector<Integer> longCables = new Vector<>();
-        Vector<Integer> extraSwitch = new Vector<>();
+        Vector<Vector<Integer>> result = new Vector<>();
+
 
         for(File file:files){
             System.out.println("analysing file: " + file.getName());
@@ -22,26 +20,22 @@ public class TopoAnalysis {
             PhysicalLayout p = new PhysicalLayout();
             p.readGraph(file.getPath());
             p.readTopologyProperties("./example/Layouts/Test.layout");
+            Vector<Integer> temp = new Vector<>();
 
-            numV.add(p.graphDetails.getNumTors());
-            degree.add(p.graphDetails.getNumEdges() / numV.lastElement());
-            longCables.add(p.lonerCablesThan(100));
-            extraSwitch.add(p.additionalSwitchesDueToDistance(100));
+            temp.add(p.graphDetails.getNumTors());
+            temp.add(p.graphDetails.getNumEdges() / p.graphDetails.getNumTors());
+            temp.add(p.lonerCablesThan(100));
+            temp.add(p.additionalSwitchesDueToDistance(100));
+            result.add(temp);
 
         }
+        //System.out.println(result.toString().replace("[","").replace("], ","\n").replace("]]",""));
 
         File resultFile = new File("temp/results/physicalTopo/analysisResult");
-        resultFile.delete();
         resultFile.createNewFile();
-        resultFile.setWritable(true);
-        FileWriter fw = new FileWriter(resultFile);
-        fw.write(numV.toString().replace("[","").replace("]",""));
-        fw.write("\n");
-        fw.write(degree.toString().replace("[","").replace("]",""));
-        fw.write("\n");
-        fw.write(longCables.toString().replace("[","").replace("]",""));
-        fw.write("\n");
-        fw.write(extraSwitch.toString().replace("[","").replace("]",""));
+        FileWriter fw = new FileWriter(resultFile,false);
+        fw.write(result.toString().replace("[","").replace("], ","\n").replace("]]",""));
+        fw.flush();
         fw.close();
         System.out.println("Result writen on file");
 

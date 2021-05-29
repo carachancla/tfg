@@ -42,12 +42,12 @@ set style line 9 lt rgb "#666666" lw 1.2 pt 0
 
 set output "output_1_failcase_ecmp_mean_channel_use.pdf"
 #set xtics 0, 1, 5
-set format x "%.0fK"
+set format x "%.0f"
 set xlabel "Load {/Symbol l} (flow-starts per second)"
-set ylabel "Average FCT (ms)"
+set ylabel "Percentage channel used"
 
 #set xrange [0:2500]
-#set yrange [0:250]
+set yrange [0:1]
 set key font ",16"
 set key top left Left reverse
 #set key below Left reverse

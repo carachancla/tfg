@@ -1,1 +1,9 @@
-ERROR: file ../../../temp/results/W_0_oneToOneTrafficLimit/jellyfish_n2_d1_wireless_flows_700_runtime_50s/analysis/channel_use.statistics does not exist
+jellyfish_n2_d1_wireless_flows_700_runtime_50s	700	0.05666123
+jellyfish_n2_d1_wireless_flows_1000_runtime_50s	1000	0.080967695
+jellyfish_n2_d1_wireless_flows_2000_runtime_50s	2000	0.16302612
+jellyfish_n2_d1_wireless_flows_400_runtime_50s	400	0.032356385
+jellyfish_n2_d1_wireless_flows_200_runtime_50s	200	0.016183363
+jellyfish_n2_d1_wireless_flows_100_runtime_50s	100	0.008104661
+jellyfish_n2_d1_wireless_flows_4000_runtime_50s	4000	0.32863754
+jellyfish_n2_d1_wireless_flows_8000_runtime_50s	8000	0.6504558
+ERROR: file ../../../temp/results/W_0_oneToOneTrafficLimit/jellyfish_n2_d1_wireless_flows_10000_runtime_50s/analysis/channel_use.statistics does not exist

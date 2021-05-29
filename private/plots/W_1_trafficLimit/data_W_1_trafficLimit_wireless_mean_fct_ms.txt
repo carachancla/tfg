@@ -1,3 +1,0 @@
-jellyfish_n128_d30_wireless_flows_400_runtime_50s	400	0.9018707009266216
-jellyfish_n128_d30_wireless_flows_100_runtime_50s	100	0.49493088566279536
-ERROR: did not find combine property in run folder jellyfish_n128_d30_wireless_flows_1000_runtime_50s
