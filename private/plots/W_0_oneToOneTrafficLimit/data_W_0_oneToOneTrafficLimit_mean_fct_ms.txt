@@ -6,4 +6,3 @@ jellyfish_n2_d1_wireless_flows_200_runtime_50s	200	0.082088
 jellyfish_n2_d1_wireless_flows_100_runtime_50s	100	0.082347
 jellyfish_n2_d1_wireless_flows_4000_runtime_50s	4000	0.09587
 jellyfish_n2_d1_wireless_flows_8000_runtime_50s	8000	0.227416
-ERROR: file ../../../temp/results/W_0_oneToOneTrafficLimit/jellyfish_n2_d1_wireless_flows_10000_runtime_50s/analysis/flow_completion.statistics does not exist

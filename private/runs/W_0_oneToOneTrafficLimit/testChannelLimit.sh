@@ -18,42 +18,76 @@ run_folder=W_0_oneToOneTrafficLimit/jellyfish_n2_d1_wireless_flows_
 
 
 #runtime=`calc ${num_flows} / ${flows_per_s}`;
-
+wireless_port_access_mode=1-persistent
 flows_per_s=100
-cd ../../.. ;java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime}
+cd ../../.. ;java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}${flows_per_s}_runtime_${runtime}s${wireless_port_access_mode} traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=1-persistent
 exit
-ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime}"
+ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}${flows_per_s}_runtime_${runtime}s${wireless_port_access_mode} traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode}"
 
 flows_per_s=200
 #runtime=`calc ${num_flows} / ${flows_per_s}`;
-ssh ${machine} "cd ${netbechPath}; screen -L -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime}"
+ssh ${machine} "cd ${netbechPath}; screen -L -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}${flows_per_s}_runtime_${runtime}s${wireless_port_access_mode} traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode}"
 
 flows_per_s=400
 #runtime=`calc ${num_flows} / ${flows_per_s}`;
-ssh ${machine}  "cd ${netbechPath}; screen -L -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime}"
+ssh ${machine}  "cd ${netbechPath}; screen -L -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}${flows_per_s}_runtime_${runtime}s${wireless_port_access_mode} traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode}"
 
 flows_per_s=700
 #runtime=`calc ${num_flows} / ${flows_per_s}`;
-ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime}"
+ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}${flows_per_s}_runtime_${runtime}s${wireless_port_access_mode} traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode}"
 
 flows_per_s=1000
 #runtime=`calc ${num_flows} / ${flows_per_s}`;
-ssh ${machine}  "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime}"
+ssh ${machine}  "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}${flows_per_s}_runtime_${runtime}s${wireless_port_access_mode} traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode}"
 
 flows_per_s=2000
 #runtime=`calc ${num_flows} / ${flows_per_s}`;
-ssh ${machine}  "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime}"
+ssh ${machine}  "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}${flows_per_s}_runtime_${runtime}s${wireless_port_access_mode} traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode}"
 
 flows_per_s=4000
 #runtime=`calc ${num_flows} / ${flows_per_s}`;
-ssh ${machine}  "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime}"
+ssh ${machine}  "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}${flows_per_s}_runtime_${runtime}s${wireless_port_access_mode} traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode}"
 
 flows_per_s=8000
 #runtime=`calc ${num_flows} / ${flows_per_s}`;
-ssh ${machine}  "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime}"
+ssh ${machine}  "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}${flows_per_s}_runtime_${runtime}s${wireless_port_access_mode} traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode}"
 
-flows_per_s=10000
+
+################################################################
+################## test non-persisten acces mode ###############
+################################################################
+
+flows_per_s=100
+wireless_port_access_mode=non-persistent
+ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}${flows_per_s}_runtime_${runtime}s${wireless_port_access_mode} traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode}"
+
+flows_per_s=200
 #runtime=`calc ${num_flows} / ${flows_per_s}`;
-ssh ${machine}  "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime}"
+ssh ${machine} "cd ${netbechPath}; screen -L -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}${flows_per_s}_runtime_${runtime}s${wireless_port_access_mode} traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode}"
+
+flows_per_s=400
+#runtime=`calc ${num_flows} / ${flows_per_s}`;
+ssh ${machine}  "cd ${netbechPath}; screen -L -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}${flows_per_s}_runtime_${runtime}s${wireless_port_access_mode} traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode}"
+
+flows_per_s=700
+#runtime=`calc ${num_flows} / ${flows_per_s}`;
+ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}${flows_per_s}_runtime_${runtime}s${wireless_port_access_mode} traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode}"
+
+flows_per_s=1000
+#runtime=`calc ${num_flows} / ${flows_per_s}`;
+ssh ${machine}  "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}${flows_per_s}_runtime_${runtime}s${wireless_port_access_mode} traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode}"
+
+flows_per_s=2000
+#runtime=`calc ${num_flows} / ${flows_per_s}`;
+ssh ${machine}  "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}${flows_per_s}_runtime_${runtime}s${wireless_port_access_mode} traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode}"
+
+flows_per_s=4000
+#runtime=`calc ${num_flows} / ${flows_per_s}`;
+ssh ${machine}  "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}${flows_per_s}_runtime_${runtime}s${wireless_port_access_mode} traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode}"
+
+flows_per_s=8000
+#runtime=`calc ${num_flows} / ${flows_per_s}`;
+ssh ${machine}  "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}${flows_per_s}_runtime_${runtime}s${wireless_port_access_mode} traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode}"
+
 
 echo "runs initialized"

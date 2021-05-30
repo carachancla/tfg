@@ -22,14 +22,17 @@ public class WirelessPort extends OutputPort {
 
     NetworkDevice realTargetDevice;
 
+    String accesMode;
 
-    WirelessPort(NetworkDevice ownNetworkDevice, NetworkDevice targetNetworkDevice, CollisionDetSwitch collisionDetection, Link link, long maxQueueSizeBytes, long ecnThresholdKBytes) {
+
+    WirelessPort(NetworkDevice ownNetworkDevice, NetworkDevice targetNetworkDevice, CollisionDetSwitch collisionDetection, Link link, long maxQueueSizeBytes, long ecnThresholdKBytes, String accesMode) {
         super(ownNetworkDevice, targetNetworkDevice, link, new LinkedBlockingQueue<>());
         this.maxQueueSizeBits = maxQueueSizeBytes * 8L;
         this.ecnThresholdKBits = ecnThresholdKBytes * 8L;
 
         this.realTargetDevice = targetNetworkDevice;
         change_target(collisionDetection);
+        this.accesMode = accesMode;
 
     }
 
@@ -90,8 +93,17 @@ public class WirelessPort extends OutputPort {
             super.dispatch(packet);
         }
         else { // wait for medium to be free, then send
-            waitingMedium = true;
-            waitingMediumPacket = packet;
+            switch (accesMode){
+                case "1-persistent":
+                    waitingMedium = true;
+                    waitingMediumPacket = packet;
+                    break;
+                case "non-persistent":
+                    packetCollision((MacPacket) packet);
+                    break;
+                default:
+                    throw new IllegalArgumentException("wireless port access mode not permited");
+            }
         }
     }
 

@@ -189,7 +189,8 @@ class InfrastructureSelector {
             case "wireless_port":
                 return new WirelessPortGen(
                         Simulator.getConfiguration().getLongPropertyOrFail("output_port_max_queue_size_bytes"),
-                        Simulator.getConfiguration().getLongPropertyOrFail("output_port_ecn_threshold_k_bytes")
+                        Simulator.getConfiguration().getLongPropertyOrFail("output_port_ecn_threshold_k_bytes"),
+                        Simulator.getConfiguration().getPropertyOrFail("wireless_port_access_mode")
                 );
 
             case "unlimited":

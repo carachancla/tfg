@@ -66,7 +66,7 @@ public class WirelessOutputPortTest {
 
     @Test
     public void testFields() {
-        portGen = new WirelessPortGen(100 * packetSizeDataBytes, 40 * packetSizeDataBytes);
+        portGen = new WirelessPortGen(100 * packetSizeDataBytes, 40 * packetSizeDataBytes, "non-persistent");
         WirelessPort port = (WirelessPort) portGen.generate(sourceNetworkDevice, targetNetworkDevice, link);
         assertEquals(sourceNetworkDevice, port.getOwnDevice());
         assertEquals(targetNetworkDevice, port.getTargetDevice());
@@ -77,7 +77,7 @@ public class WirelessOutputPortTest {
 
     @Test
     public void testQueueing() {
-        portGen = new WirelessPortGen(100 * packetSizeDataBytes, 40 * packetSizeDataBytes);
+        portGen = new WirelessPortGen(100 * packetSizeDataBytes, 40 * packetSizeDataBytes, "non-persistent");
         reset(packet);
         when(packet.getSizeBit()).thenReturn(packetSizeDataBytes * 8L);
 
@@ -103,7 +103,7 @@ public class WirelessOutputPortTest {
         when(packet.getSizeBit()).thenReturn(packetSizeDataBytes * 8L);
 
         // Port with 100 packets and 40 packets ECN limit
-        portGen = new WirelessPortGen(100 * packetSizeDataBytes, 40 * packetSizeDataBytes);
+        portGen = new WirelessPortGen(100 * packetSizeDataBytes, 40 * packetSizeDataBytes, "non-persistent");
 
         WirelessPort port = (WirelessPort) portGen.generate(sourceNetworkDevice, targetNetworkDevice, link);
 
@@ -136,7 +136,7 @@ public class WirelessOutputPortTest {
         when(packet.getSizeBit()).thenReturn(packetSizeDataBytes * 8L);
 
         // Port with 100 packets and 40 packets ECN limit
-        portGen = new WirelessPortGen(100 * packetSizeDataBytes, 40 * packetSizeDataBytes);
+        portGen = new WirelessPortGen(100 * packetSizeDataBytes, 40 * packetSizeDataBytes, "non-persistent");
         WirelessPort port = (WirelessPort) portGen.generate(sourceNetworkDevice, targetNetworkDevice, link);
 
         // Queue two packets
@@ -167,7 +167,7 @@ public class WirelessOutputPortTest {
 
 
         // Port with 100 packets and 40 packets ECN limit
-        portGen = new WirelessPortGen(100 * packetSizeDataBytes, 40 * packetSizeDataBytes);
+        portGen = new WirelessPortGen(100 * packetSizeDataBytes, 40 * packetSizeDataBytes, "non-persistent");
         WirelessPort port = (WirelessPort) portGen.generate(sourceNetworkDevice, targetNetworkDevice, link);
 
         // Queue two packets
@@ -200,7 +200,7 @@ public class WirelessOutputPortTest {
 
 
         // Port with 100 packets and 40 packets ECN limit
-        portGen = new WirelessPortGen(100 * packetSizeDataBytes, 40 * packetSizeDataBytes);
+        portGen = new WirelessPortGen(100 * packetSizeDataBytes, 40 * packetSizeDataBytes, "non-persistent");
         WirelessPort port = (WirelessPort) portGen.generate(sourceNetworkDevice, targetNetworkDevice, link);
 
         // Queue two packets
@@ -231,7 +231,7 @@ public class WirelessOutputPortTest {
         when(packet.getSizeBit()).thenReturn(packetSizeDataBytes * 8L);
 
         // Port with 100 packets and 40 packets ECN limit
-        portGen = new WirelessPortGen(100 * packetSizeDataBytes, 40 * packetSizeDataBytes);
+        portGen = new WirelessPortGen(100 * packetSizeDataBytes, 40 * packetSizeDataBytes, "non-persistent");
         WirelessPort port = (WirelessPort) portGen.generate(sourceNetworkDevice, targetNetworkDevice, link);
 
         // Enqueue two packets
@@ -260,7 +260,7 @@ public class WirelessOutputPortTest {
         when(packet1.getSizeBit()).thenReturn(packetSizeDataBytes * 8L);
 
 
-        portGen = new WirelessPortGen(100 * packetSizeDataBytes, 40 * packetSizeDataBytes);
+        portGen = new WirelessPortGen(100 * packetSizeDataBytes, 40 * packetSizeDataBytes, "non-persistent");
         WirelessPort port1 = (WirelessPort) portGen.generate(sourceNetworkDevice, targetNetworkDevice, link);
 
         port1.enqueue(packet);
@@ -286,7 +286,7 @@ public class WirelessOutputPortTest {
         when(packet1.getSizeBit()).thenReturn(packetSizeDataBytes * 8L);
 
 
-        portGen = new WirelessPortGen(100 * packetSizeDataBytes, 40 * packetSizeDataBytes);
+        portGen = new WirelessPortGen(100 * packetSizeDataBytes, 40 * packetSizeDataBytes, "non-persistent");
         WirelessPort port1 = (WirelessPort) portGen.generate(sourceNetworkDevice, targetNetworkDevice, link);
         WirelessPort port2 = (WirelessPort) portGen.generate(targetNetworkDevice, sourceNetworkDevice, link);
 
@@ -311,7 +311,7 @@ public class WirelessOutputPortTest {
         when(packet1.getSizeBit()).thenReturn(packetSizeDataBytes * 8L);
 
 
-        portGen = new WirelessPortGen(100 * packetSizeDataBytes, 40 * packetSizeDataBytes);
+        portGen = new WirelessPortGen(100 * packetSizeDataBytes, 40 * packetSizeDataBytes, "non-persistent");
         WirelessPort port1 = (WirelessPort) portGen.generate(sourceNetworkDevice, targetNetworkDevice, link);
         WirelessPort port2 = (WirelessPort) portGen.generate(targetNetworkDevice, sourceNetworkDevice, link);
 
@@ -335,7 +335,7 @@ public class WirelessOutputPortTest {
 
     @Test
     public void testGenerator() {
-        WirelessPortGen generator = new WirelessPortGen(5000, 2000);
+        WirelessPortGen generator = new WirelessPortGen(5000, 2000, "non-persistent");
         PerfectSimpleLink link = new PerfectSimpleLink(100, 200);
         when(networkDeviceA.getIdentifier()).thenReturn(77);
         when(networkDeviceB.getIdentifier()).thenReturn(88);

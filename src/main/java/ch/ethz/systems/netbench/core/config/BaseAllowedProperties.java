@@ -119,7 +119,8 @@ public class BaseAllowedProperties {
             "hybrid_second_port",
             "hybrid_second_link",
             "hybrid_second_link_delay",
-            "hybrid_second_link_bandwidth"
+            "hybrid_second_link_bandwidth",
+            "wireless_port_access_mode"
     };
 
 }
