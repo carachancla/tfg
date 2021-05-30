@@ -53,4 +53,4 @@ set key top left Left reverse
 #set key below Left reverse
 #set key tmargin
 
-plot    "data_W_0_oneToOneTrafficLimit_mean_fct_ms.txt" using 2:3 title "Jellyfish" smooth unique w lp ls 2
+plot    "data_W_0_oneToOneTrafficLimit_mean_fct_ms.txt" using 2:(stringcolumn(1) eq "non-persistent" ? $3: 1/0) title "non-persistent" smooth unique w lp ls 2

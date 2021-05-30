@@ -1,9 +1,14 @@
-jellyfish_n2_d1_wireless_flows_700_runtime_50s	700	0.4802067355419495
-jellyfish_n2_d1_wireless_flows_1000_runtime_50s	1000	0.48172175980801324
-jellyfish_n2_d1_wireless_flows_2000_runtime_50s	2000	0.4861759642158322
-jellyfish_n2_d1_wireless_flows_400_runtime_50s	400	0.47900342675063007
-jellyfish_n2_d1_wireless_flows_200_runtime_50s	200	0.47798814682990864
-jellyfish_n2_d1_wireless_flows_100_runtime_50s	100	0.4783512220330628
-jellyfish_n2_d1_wireless_flows_4000_runtime_50s	4000	0.4941288573097149
-jellyfish_n2_d1_wireless_flows_8000_runtime_50s	8000	0.4958564146400057
-ERROR: file ../../../temp/results/W_0_oneToOneTrafficLimit/jellyfish_n2_d1_wireless_flows_10000_runtime_50s/analysis/channel_use.statistics does not exist
+non-persistent	100	0.49498762918568356
+non-persistent	700	0.20632961754109352
+non-persistent	200	0.4958393136480188
+1-persistent	200	0.49645410537887413
+1-persistent	1000	0.4994011406143285
+non-persistent	400	0.4670712382677138
+1-persistent	700	0.4978662142406806
+1-persistent	4000	0.507209935549944
+non-persistent	4000	0.46924856899281453
+1-persistent	100	0.495888235373289
+non-persistent	1000	0.4824766105946647
+1-persistent	400	0.4970115456823864
+1-persistent	2000	0.5029601001354116
+non-persistent	2000	0.41984229921973115
