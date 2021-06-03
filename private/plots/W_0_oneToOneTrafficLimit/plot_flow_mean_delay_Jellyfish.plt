@@ -43,8 +43,9 @@ set style line 9 lt rgb "#666666" lw 1.2 pt 0
 set output "output_1a_failcase_ecmp_avg_fct.pdf"
 #set xtics 0, 1, 5
 set format x "%.0f"
-set xlabel "Load {/Symbol l} (flow-starts per second)"
+set xlabel "Load (MB/s)"
 set ylabel "Average FCT (ms)"
+
 
 #set xrange [0:2500]
 #set yrange [0:250]
@@ -53,5 +54,8 @@ set key top left Left reverse
 #set key below Left reverse
 #set key tmargin
 
-plot    "data_W_0_oneToOneTrafficLimit_mean_fct_ms.txt" using 2:(stringcolumn(1) eq "jellyfish_n2_d1_wireless_mediumAccesMode_non-persistent" ? $3: 1/0) title "non-persistent" smooth unique w lp ls 2 ,\
-        "data_W_0_oneToOneTrafficLimit_mean_fct_ms.txt" using 2:(stringcolumn(1) eq "jellyfish_n2_d1_wireless_mediumAccesMode_1-persistent" ? $3: 1/0) title "1-persistent" smooth unique w lp ls 1
+#flow_size (MB/s)
+flow_size=0.1
+
+plot    "data_W_0_oneToOneTrafficLimit_mean_fct_ms.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n2_d1_wireless_mediumAccesMode_non-persistent" ? $3: 1/0) title "non-persistent" smooth unique w lp ls 2 ,\
+        "data_W_0_oneToOneTrafficLimit_mean_fct_ms.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n2_d1_wireless_mediumAccesMode_1-persistent" ? $3: 1/0) title "1-persistent" smooth unique w lp ls 1
