@@ -38,6 +38,7 @@ set style line 7 lt rgb "#e079be" lw 1.6 pt 6 ps 1
 set style line 8 lt rgb "#7d7d7d" lw 1.6 pt 7 ps 1
 set style line 9 lt rgb "#666666" lw 1.2 pt 0
 
+
 #-----
 
 set output "output_1a_failcase_mean_bandwidth.pdf"
@@ -46,6 +47,7 @@ set format x "%.0f"
 set xlabel "Load {/Symbol l} (flow-starts per second)"
 set ylabel "Average bandwidth (Gb/s)"
 
+
 #set xrange [0:2500]
 #set yrange [0:1]
 set key font ",16"
@@ -53,5 +55,5 @@ set key top left Left reverse
 #set key below Left reverse
 #set key tmargin
 
-plot    "data_W_0_oneToOneTrafficLimit_mean_bandwidth.txt" using 2:(stringcolumn(1) eq "non-persistent" ? $3: 1/0) title "non-persistent" smooth unique w lp ls 2, \
-        "data_W_0_oneToOneTrafficLimit_mean_bandwidth.txt" using 2:(stringcolumn(1) eq "1-persistent" ? $3: 1/0) title "1-persistent" smooth unique w lp ls 1
+plot    "data_W_0_oneToOneTrafficLimit_mean_bandwidth.txt" using ($2*45000/1000000):(stringcolumn(1) eq "jellyfish_n2_d1_wireless_mediumAccesMode_non-persistent" ? $3: 1/0) title "non-persistent" smooth unique w lp ls 2, \
+        "data_W_0_oneToOneTrafficLimit_mean_bandwidth.txt" using ($2*45000/1000000):(stringcolumn(1) eq "jellyfish_n2_d1_wireless_mediumAccesMode_1-persistent" ? $3: 1/0) title "1-persistent" smooth unique w lp ls 1

@@ -99,7 +99,7 @@ public class WirelessPort extends OutputPort {
                     waitingMediumPacket = packet;
                     break;
                 case "non-persistent":
-                    packetCollision((MacPacket) packet);
+                    packetCollision((MacPacket) packet, true);
                     break;
                 default:
                     throw new IllegalArgumentException("wireless port access mode not permited");
@@ -165,9 +165,14 @@ public class WirelessPort extends OutputPort {
 
 
     // collision handling failure
-    protected void packetCollision(MacPacket mPacket){
-        if(collisionBackoffLevel<30)++collisionBackoffLevel; // avoid  integer overflow
-        int backoffArc = (int) Math.pow(2,collisionBackoffLevel);
+    protected void packetCollision(MacPacket mPacket, boolean waitMedium){
+        int backoffArc = (int) Math.pow(2, collisionBackoffLevel);
+        if(!waitMedium) {
+            if (collisionBackoffLevel < 30) ++collisionBackoffLevel; // avoid  integer overflow
+        }
+        else {
+            backoffArc=Math.max(5, backoffArc);
+        }
         int roundTripTime =(int) mPacket.getSourcePort().getLink().getDelayNs();
         int delay = (new Random().nextInt(backoffArc + 1) + 1) * roundTripTime;
         //make sourcePort resend packet after a backoff delay

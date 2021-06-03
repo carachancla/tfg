@@ -44,7 +44,7 @@ set output "output_1a_failcase_mean_bandwidth.pdf"
 #set xtics 0, 1, 5
 set format x "%.0f"
 set xlabel "Load {/Symbol l} (flow-starts per second)"
-set ylabel "Average bandwidth (Gb/s)"
+set ylabel "Number of unfinished flows"
 
 #set xrange [0:2500]
 #set yrange [0:1]

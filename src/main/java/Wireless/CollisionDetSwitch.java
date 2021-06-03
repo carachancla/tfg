@@ -59,7 +59,7 @@ class CollisionDetSwitch extends NetworkDevice {
         else{// a collision happened, wait for last packet to do collision protocol
             if(waitPacketsCollided == 1) { //last packet that gets transmitted
                 for (MacPacket mPacket:waitCollisionQueue) {
-                        mPacket.getSourcePort().packetCollision(mPacket);
+                        mPacket.getSourcePort().packetCollision(mPacket, false);
                     }
                 //System.out.println("collsion!!!!");
                 waitCollisionQueue = new LinkedBlockingQueue<>();

@@ -47,10 +47,11 @@ set xlabel "Load {/Symbol l} (flow-starts per second)"
 set ylabel "Percentage of transimssion that are collissions"
 
 #set xrange [0:2500]
-set yrange [0:1]
+#set yrange [0:1]
 set key font ",16"
 set key top left Left reverse
 #set key below Left reverse
 #set key tmargin
 
-plot    "data_W_0_oneToOneTrafficLimit_percentage_collision.txt" using 2:(stringcolumn(1) eq "non-persistent" ? $3: 1/0) title "non-persistent" smooth unique w lp ls 2
+plot    "data_W_0_oneToOneTrafficLimit_percentage_collision.txt" using 2:(stringcolumn(1) eq "jellyfish_n2_d1_wireless_mediumAccesMode_non-persistent" ? $3: 1/0) title "non-persistent" smooth unique w lp ls 2 ,\
+        "data_W_0_oneToOneTrafficLimit_percentage_collision.txt" using 2:(stringcolumn(1) eq "jellyfish_n2_d1_wireless_mediumAccesMode_1-persistent" ? $3: 1/0) title "1-persistent" smooth unique w lp ls 1

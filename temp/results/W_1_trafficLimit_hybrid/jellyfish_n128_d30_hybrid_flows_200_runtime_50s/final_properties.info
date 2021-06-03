@@ -1,6 +1,7 @@
 traffic_lambda_flow_starts_per_s: "200"
 link_delay_ns: "10"
-seed: "8798237589"
+seed: "0"
+wireless_port_access_mode: "1-persistent"
 traffic_probabilities_active_fraction: "0.19"
 link: "perfect_simple"
 traffic_flow_size_dist: "pareto"

@@ -1,5 +1,5 @@
-channel_usage=0.008968128
-collsions=373719.0
+channel_usage=0.009301914
+collsions=423606.0
 num_channels=1
-packets_sent=760202.0
-percentage_collision=0.32958116129783294
+packets_sent=729772.0
+percentage_collision=0.3672742153916582

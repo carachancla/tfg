@@ -44,7 +44,7 @@ set output "number_of_cables_longer_than_100m.pdf"
 #set xtics 0, 1, 5
 set format x "%.0f"
 set xlabel "Network size"
-set ylabel "Cables longer than 100m"
+set ylabel "Cables longer than 100m %"
 
 #set xrange [0:2500]
 #set yrange [0:1]
@@ -53,4 +53,4 @@ set key top left Left reverse
 #set key below Left reverse
 #set key tmargin
 
-plot    "../../../temp/results/physicalTopo/analysisResult" using 1:3 title "Jellyfish" smooth unique w lp ls 1
+plot    "../../../temp/results/physicalTopo/analysisResult" using 1:($3 * 100/($1 * $2)) title "Jellyfish" smooth unique w lp ls 1
