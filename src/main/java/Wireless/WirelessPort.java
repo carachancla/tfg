@@ -56,36 +56,40 @@ public class WirelessPort extends OutputPort {
      * @param destId    Wireless receiver destiny
      */
     public void enqueue(Packet packet, int destId) {
+        // Convert to IP packet
+        IpHeader ipHeader = (IpHeader) packet;
+        MacPacket macPacket = new MacPacket(packet.getFlowId(), packet.getSizeBit(), this.getOwnDevice().getIdentifier(), destId, this, packet);
 
-    // Convert to IP packet
-    IpHeader ipHeader = (IpHeader) packet;
-    MacPacket macPacket = new MacPacket(packet.getFlowId(), packet.getSizeBit(), this.getOwnDevice().getIdentifier(), destId, this, packet);
-
-    // Mark congestion flag if size of the queue is too big
-    if (getBufferOccupiedBits() >= ecnThresholdKBits) {
-        ipHeader.markCongestionEncountered();
-    }
-
-
-    // Tail-drop enqueue
-    if (getBufferOccupiedBits() + ipHeader.getSizeBit() <= maxQueueSizeBits) {
-        guaranteedEnqueue(macPacket);
-    } else {
-        SimulationLogger.increaseStatisticCounter("PACKETS_DROPPED");
-        if (ipHeader.getSourceId() == this.getOwnId()) {
-            SimulationLogger.increaseStatisticCounter("PACKETS_DROPPED_AT_SOURCE");
+        // Mark congestion flag if size of the queue is too big
+        if (getBufferOccupiedBits() >= ecnThresholdKBits) {
+            ipHeader.markCongestionEncountered();
         }
-    }
+
+
+        // Tail-drop enqueue
+        if (getBufferOccupiedBits() + ipHeader.getSizeBit() <= maxQueueSizeBits) {
+            System.out.println(this.getOwnDevice().getIdentifier() + " -> " + this.getTargetId() + " guaranteed enqueued packet (" + getQueueSize() + ") + sending? " + waitingCollision + " waiting Medium? " + ((CollisionDetSwitch)super.getTargetDevice()).isMediumOccupied(this));
+            guaranteedEnqueue(macPacket);
+        } else {
+            SimulationLogger.increaseStatisticCounter("PACKETS_DROPPED");
+            if (ipHeader.getSourceId() == this.getOwnId()) {
+                SimulationLogger.increaseStatisticCounter("PACKETS_DROPPED_AT_SOURCE");
+                System.out.println(this.getOwnDevice().getIdentifier() + " -> " + this.getTargetId() + " Dropping packet");
+
+            }
+        }
 
     }
 
     @Override
     protected void dispatch(Packet packet){ // dispatching new packets
+        System.out.println(this.getOwnDevice().getIdentifier() + " -> " + this.getTargetId() + " Dispatching");
         CollisionDetSwitch detSwitch = (CollisionDetSwitch)super.getTargetDevice();
         if(waitingCollision){ //wait til PacketSent()
             waitingCollisionPacket = packet;
         }
         else if (!detSwitch.isMediumOccupied(this)){ //send packet start waiting for its collision
+            System.out.println(this.getOwnDevice().getIdentifier() + " -> " + this.getTargetId() + " Sending packet" + " at " + Simulator.getCurrentTime());
             waitingMediumPacket = null; // we sent the packet
             waitingCollisionPacket = null;
             waitingMedium = false;
@@ -93,17 +97,7 @@ public class WirelessPort extends OutputPort {
             super.dispatch(packet);
         }
         else { // wait for medium to be free, then send
-            switch (accesMode){
-                case "1-persistent":
-                    waitingMedium = true;
-                    waitingMediumPacket = packet;
-                    break;
-                case "non-persistent":
-                    packetCollision((MacPacket) packet, true);
-                    break;
-                default:
-                    throw new IllegalArgumentException("wireless port access mode not permited");
-            }
+            busyMedium(packet);
         }
     }
 
@@ -120,13 +114,28 @@ public class WirelessPort extends OutputPort {
             waitingMedium = false;
             waitingMediumPacket = null;
         }
-        else {
-            waitingMedium = true;
-            waitingMediumPacket = packet;
+        else { //medium is occupied wait till free medium
+            busyMedium(packet);
         }
     }
 
-    public void meduimFreed(){
+    private void busyMedium(Packet packet){
+        switch (accesMode){
+            case "1-persistent":
+                waitingMedium = true;
+                waitingMediumPacket = packet;
+                break;
+            case "non-persistent":
+                packetCollision((MacPacket) packet, true);
+                //System.out.println(this.getOwnDevice().getIdentifier() + " -> " + this.getTargetId() + " Waiting medium packet");
+                break;
+            default:
+                throw new IllegalArgumentException("wireless port access mode not permitted");
+        }
+    }
+
+    void meduimFreed(){
+        //applies on 1-persistent only
         if(waitingCollision & waitingMedium){
             retryCollisionDispatch(waitingMediumPacket);
         }
@@ -136,9 +145,16 @@ public class WirelessPort extends OutputPort {
         }
     }
 
-    public void packetSent(){///check if packet waiting
+    void packetSent(){///check if packet waiting
         waitingCollision = false;
+        System.out.println(this.getOwnDevice().getIdentifier() + " -> " + this.getTargetId() + " Successful transmission, more to send? " + waitingCollision + " queue: " + getQueueSize());
         if(waitingCollisionPacket != null)dispatch(waitingCollisionPacket);
+        else if(getQueueSize()!=0){
+            Packet packetFromQ = getQueue().poll();
+            decreaseBufferOccupiedBits(packetFromQ.getSizeBit());
+            dispatch(packetFromQ);
+        }
+        else isSending = false; // if there is nothing to send we can mark the link as free
     }
 
 
@@ -177,17 +193,14 @@ public class WirelessPort extends OutputPort {
         int delay = (new Random().nextInt(backoffArc + 1) + 1) * roundTripTime;
         //make sourcePort resend packet after a backoff delay
         Simulator.registerEvent(new MacDelayEvent(delay, mPacket));
-        //System.out.println("Delay packet from " + mPacket.getSourceId() + ": " + delay);
+        //System.out.println(this.getOwnDevice().getIdentifier() + " -> " + this.getTargetId() + " Retry sending after" + delay);
 
     }
 
     // collision handling success
     protected void successfulTransmission(MacPacket macPacket){
         collisionBackoffLevel = 1;
-        //System.out.println("packet sent: " + macPacket.getSourceId() );
     }
-
-
 
 
 

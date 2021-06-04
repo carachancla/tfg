@@ -50,8 +50,8 @@ class CollisionDetSwitch extends NetworkDevice {
             this.targetIdToOutputPort.get(macPacket.getDestId()).enqueue(macPacket.getPacketContent());
             waitCollisionQueue = new LinkedBlockingQueue<>();
             waitPacketsCollided = 0;
-            macPacket.getSourcePort().packetSent();
             freeMedium();
+            macPacket.getSourcePort().packetSent();
             macPacket.getSourcePort().successfulTransmission(macPacket);
             //System.out.println("succes!!!!");
             logger.logSucces();

@@ -18,7 +18,7 @@ import java.util.Queue;
 public abstract class OutputPort {
 
     // Internal state
-    private boolean isSending;          // True iff the output port is using the medium to send a packet
+    protected boolean isSending;          // True iff the output port is using the medium to send a packet
     private final Queue<Packet> queue;  // Current queue of packets to send
     private long bufferOccupiedBits;    // Amount of bits currently occupied of the buffer
 
