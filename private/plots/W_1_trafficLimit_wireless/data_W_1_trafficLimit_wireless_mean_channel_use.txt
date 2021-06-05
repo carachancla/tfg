@@ -1,6 +1,0 @@
-jellyfish_n128_d30_wireless_flows_10_runtime_50s	10	0.00263686
-jellyfish_n128_d30_wireless_flows_400_runtime_50s	400	0.15537296
-jellyfish_n128_d30_wireless_flows_50_runtime_50s	50	0.014820253
-jellyfish_n128_d30_wireless_flows_1000_runtime_50s	1000	0.83028275
-jellyfish_n128_d30_wireless_flows_200_runtime_50s	200	0.077791914
-jellyfish_n128_d30_wireless_flows_800_runtime_50s	800	0.78971404
