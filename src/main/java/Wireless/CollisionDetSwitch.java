@@ -64,7 +64,6 @@ class CollisionDetSwitch extends NetworkDevice {
                 //System.out.println("collsion!!!!");
                 waitCollisionQueue = new LinkedBlockingQueue<>();
                 freeMedium();
-
                 logger.logCollision();
             }
             --waitPacketsCollided;

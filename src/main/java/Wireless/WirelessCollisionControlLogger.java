@@ -33,11 +33,10 @@ public class WirelessCollisionControlLogger implements LoggerCallback {
     }
 
     public void logChannelUse(boolean use){
-        if(use==this.channelused)throw new IllegalArgumentException("Can't change stat to the smae state");
-
+        if(use==this.channelused)throw new IllegalArgumentException("Can't change stat to the same state");
 
         if(!use){
-            usedTime += Simulator.getCurrentTime() -laststatechange;
+            usedTime += Simulator.getCurrentTime() - laststatechange;
         }
         this.channelused = use;
         this.laststatechange = Simulator.getCurrentTime();
