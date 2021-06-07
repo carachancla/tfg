@@ -52,7 +52,7 @@ def analyze_channel_use():
         number_packets_sent = []
         percentage_collisions = []
 
-        print("Reading in flow completion log file...")
+        print("Reading in channel use file...")
 
         # Read in column lists
         for row in reader:
@@ -60,7 +60,10 @@ def analyze_channel_use():
             used_perecntage.append(float(row[1]))
             number_collisions.append(float(row[2]))
             number_packets_sent.append(float(row[3]))
-            percentage_collisions.append(float(row[2])/(float(row[3])+float(row[2])))
+            if float(row[2]) > 0:
+                percentage_collisions.append(float(row[2])/(float(row[3])+float(row[2])))
+            else:
+                percentage_collisions.append(0)
             if len(row) != 4:
                 print("Invalid row: ", row)
                 exit()

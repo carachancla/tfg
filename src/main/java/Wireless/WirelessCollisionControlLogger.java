@@ -56,7 +56,7 @@ public class WirelessCollisionControlLogger implements LoggerCallback {
     public void callBeforeClose() {
 
         try {
-            wirelessWritter.write(channelId + "," + (float)usedTime/Simulator.getCurrentTime() + "," + numberCollisions + "," + packetsSent);
+            wirelessWritter.write(channelId + "," + (float)usedTime/Simulator.getCurrentTime() + "," + numberCollisions + "," + packetsSent + '\n');
         }
         catch (IOException e){
             throw new LogFailureException(e);

@@ -57,5 +57,9 @@ set key top left Left reverse
 #flow_size (MB/s)
 flow_size=0.1
 
-plot    "data_W_1_trafficLimit_wireless_mean_fct_ms.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n2_d1_wireless_mediumAccesMode_non-persistent" ? $3: 1/0) title "non-persistent" smooth unique w lp ls 2 ,\
-        "data_W_1_trafficLimit_wireless_mean_fct_ms.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n2_d1_wireless_mediumAccesMode_1-persistent" ? $3: 1/0) title "1-persistent" smooth unique w lp ls 1
+plot    "data_W_1_trafficLimit_hybrid_mean_fct_ms.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_ethernet" ? $3: 1/0) title "no wireless" smooth unique w lp ls 2, \
+        "data_W_1_trafficLimit_hybrid_mean_fct_ms.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_hybrid_cableLength_15" ? $3: 1/0) title "cables shorter than 15m" smooth unique w lp ls 1, \
+        "data_W_1_trafficLimit_hybrid_mean_fct_ms.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_hybrid_cableLength_5" ? $3: 1/0) title "cables shorter than 5m" smooth unique w lp ls 3, \
+        "data_W_1_trafficLimit_hybrid_mean_fct_ms.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_hybrid_cableLength_40" ? $3: 1/0) title "cables shorter than 40m" smooth unique w lp ls 4, \
+        "data_W_1_trafficLimit_hybrid_mean_fct_ms.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_hybrid_cableLength_70" ? $3: 1/0) title "cables shorter than 70m" smooth unique w lp ls 5, \
+        "data_W_1_trafficLimit_hybrid_mean_fct_ms.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_hybrid_cableLength_90" ? $3: 1/0) title "cables shorter than 90m" smooth unique w lp ls 6

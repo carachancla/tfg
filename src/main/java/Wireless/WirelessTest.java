@@ -25,7 +25,7 @@ public class WirelessTest
 
         forwarderSwitch1 = caca.generate(0);
         forwarderSwitch2 = caca.generate(1);
-        wirelessPortGen = new WirelessPortGen(1000,1000, "1-persistent");
+        wirelessPortGen = new WirelessPortGen(1000,1000, "1-persistent", 1);
         wp1 = (WirelessPort) wirelessPortGen.generate(forwarderSwitch1,forwarderSwitch2, new PerfectSimpleLink(10, 100));
         wp2 = (WirelessPort) wirelessPortGen.generate(forwarderSwitch2, forwarderSwitch1, new PerfectSimpleLink(10, 100));
 

@@ -58,7 +58,7 @@ for f in sub_folders:
     full_file = run_folder_path + '/analysis/' + combine_property_file
     if not os.path.isfile(full_file):
         print("ERROR: file " + full_file + " does not exist")
-        exit()
+        continue
 
     # Open the desired file
     found = False

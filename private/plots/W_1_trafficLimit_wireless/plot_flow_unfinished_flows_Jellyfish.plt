@@ -57,5 +57,5 @@ set key top left Left reverse
 #flow_size (MB/s)
 flow_size=0.1
 
-plot    "data_W_1_trafficLimit_wireless_unfinished_flows.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n2_d1_wireless_mediumAccesMode_non-persistent" ? $3*100: 1/0) title "non-persistent" smooth unique w lp ls 2, \
-        "data_W_1_trafficLimit_wireless_unfinished_flows.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n2_d1_wireless_mediumAccesMode_1-persistent" ? $3*100: 1/0) title "1-persistent" smooth unique w lp ls 1
+plot    "data_W_1_trafficLimit_wireless_unfinished_flows.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_wireless_mediumAccesMode_non-persistent" ? $3*100: 1/0) title "non-persistent" smooth unique w lp ls 2, \
+        "data_W_1_trafficLimit_wireless_unfinished_flows.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_wireless_mediumAccesMode_1-persistent" ? $3*100: 1/0) title "1-persistent" smooth unique w lp ls 1

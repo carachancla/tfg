@@ -17,4 +17,6 @@ jellyfish_n2_d1_wireless_mediumAccesMode_non-persistent	3500	0.75557977
 jellyfish_n2_d1_wireless_mediumAccesMode_non-persistent	400	0.08039471
 jellyfish_n2_d1_wireless_mediumAccesMode_non-persistent	4000	0.855109
 jellyfish_n2_d1_wireless_mediumAccesMode_non-persistent	4500	0.9256072
+jellyfish_n2_d1_wireless_mediumAccesMode_non-persistent	6500	0.9901776
+jellyfish_n2_d1_wireless_mediumAccesMode_non-persistent	7000	0.98838574
 jellyfish_n2_d1_wireless_mediumAccesMode_non-persistent	700	0.14621735
