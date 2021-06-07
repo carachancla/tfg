@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env bash
 cd ..
 git add .
 git reset --hard
