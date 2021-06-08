@@ -35,6 +35,8 @@ class CollisionDetSwitch extends NetworkDevice {
 
     @Override
     public void receive(Packet genericPacket){ //wait bandwidth time before doing transnission
+        //System.out.println(genericPacket.getFlowId() + ", recieved, collsion state: " + collisionHappened);
+
         MacPacket mPacket = (MacPacket) genericPacket;
         if(!waitCollisionQueue.isEmpty())collisionHappened = true;
         else logger.logChannelUse(true);
@@ -47,17 +49,21 @@ class CollisionDetSwitch extends NetworkDevice {
 
     void endOfPacketTransmission(MacPacket macPacket){
         if(!collisionHappened){// no collision, transmit packet
+            //System.out.println(macPacket.getFlowId() + ", succesful transmission, collsion state: " + collisionHappened + ", " + waitCollisionQueue.size());
+
             this.targetIdToOutputPort.get(macPacket.getDestId()).enqueue(macPacket.getPacketContent());
             waitCollisionQueue = new LinkedBlockingQueue<>();
             waitPacketsCollided = 0;
             freeMedium();
             macPacket.getSourcePort().packetSent();
             macPacket.getSourcePort().successfulTransmission(macPacket);
-            //System.out.println("succes!!!!");
             logger.logSucces();
         }
         else{// a collision happened, wait for last packet to do collision protocol
+            //System.out.println(macPacket.getFlowId() + ",  a colision happened, collsion state: " + collisionHappened + ", " + waitCollisionQueue.size());
             if(waitPacketsCollided == 1) { //last packet that gets transmitted
+                //System.out.println(macPacket.getFlowId() + ",  last packet on colision, collsion state: " + collisionHappened + ", " + waitCollisionQueue.size());
+
                 for (MacPacket mPacket:waitCollisionQueue) {
                         mPacket.getSourcePort().packetCollision(mPacket, false);
                     }
