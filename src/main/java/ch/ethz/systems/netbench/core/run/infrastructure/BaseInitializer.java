@@ -176,7 +176,7 @@ public class BaseInitializer {
                 PhysicalLayout physicalLayout = new PhysicalLayout();
                 physicalLayout.setGraph(Simulator.getConfiguration().getGraph(), Simulator.getConfiguration().getGraphDetails());
                 physicalLayout.readTopologyProperties(Simulator.getConfiguration().getPropertyOrFail("topology_properties_file"));
-                if(physicalLayout.calculateCableLenght(startVertexId, endVertexId)>Simulator.getConfiguration().getIntegerPropertyOrFail("max_cable_length")){
+                if(!devA.isServer() && !devB.isServer() && physicalLayout.calculateCableLenght(startVertexId, endVertexId)>Simulator.getConfiguration().getIntegerPropertyOrFail("max_cable_length")){
                     portAtoB = hybridPortGenerator.generate(devA,devB,linkGenerator.generate(devA,devB));
                     System.out.println("making port " + startVertexId + "->" + endVertexId + " wireless\n" + physicalLayout.calculateCableLenght(startVertexId, endVertexId));
                 }

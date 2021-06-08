@@ -160,7 +160,6 @@ public class MainFromProperties {
         if(Simulator.getConfiguration().getBooleanPropertyWithDefault("enable_hybrid_ports", false)){
             String second_port = Simulator.getConfiguration().getPropertyOrFail("hybrid_second_port");
             OutputPortGenerator second_portGen = InfrastructureSelector.selectOutputPortGenerator(second_port);
-            String second_link = Simulator.getConfiguration().getPropertyOrFail("hybrid_second_link");
             LinkGenerator secondLinkGen = InfrastructureSelector.selectLinkGenerator(false);
             initializer.addHybridPort(second_portGen, secondLinkGen);
         }
