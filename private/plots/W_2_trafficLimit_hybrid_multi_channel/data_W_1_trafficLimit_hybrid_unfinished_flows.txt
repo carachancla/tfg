@@ -1,0 +1,23 @@
+ERROR: file ../../../temp/results/W_2_trafficLimit_hybrid_multi_channel/jellyfish_n128_d30_hybrid_cableLength_7_flows_3500_runtime_30s/analysis/flow_completion.statistics does not exist
+jellyfish_n128_d30_hybrid_cableLength_10	10000	1.0
+jellyfish_n128_d30_hybrid_cableLength_10	1000	1.0
+jellyfish_n128_d30_hybrid_cableLength_10	2500	1.0
+jellyfish_n128_d30_hybrid_cableLength_10	4000	1.0
+jellyfish_n128_d30_hybrid_cableLength_10	5000	1.0
+jellyfish_n128_d30_hybrid_cableLength_13	1000	1.0
+jellyfish_n128_d30_hybrid_cableLength_13	1500	1.0
+jellyfish_n128_d30_hybrid_cableLength_13	2500	1.0
+jellyfish_n128_d30_hybrid_cableLength_13	40000	0.999997501405
+jellyfish_n128_d30_hybrid_cableLength_15	10000	1.0
+jellyfish_n128_d30_hybrid_cableLength_15	2500	1.0
+jellyfish_n128_d30_hybrid_cableLength_15	40000	0.999999168118
+jellyfish_n128_d30_hybrid_cableLength_15	70000	0.999999523571
+jellyfish_n128_d30_hybrid_cableLength_5	1000	1.0
+jellyfish_n128_d30_hybrid_cableLength_5	2000	1.0
+jellyfish_n128_d30_hybrid_cableLength_5	4000	0.999966797264
+jellyfish_n128_d30_hybrid_cableLength_5	500	1.0
+jellyfish_n128_d30_hybrid_cableLength_5	6000	1.0
+jellyfish_n128_d30_hybrid_cableLength_7	1000	1.0
+jellyfish_n128_d30_hybrid_cableLength_7	2500	1.0
+jellyfish_n128_d30_hybrid_cableLength_7	3000	0.999700804503
+jellyfish_n128_d30_hybrid_cableLength_7	500	1.0

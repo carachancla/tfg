@@ -49,20 +49,22 @@ set ylabel "Average bandwidth (Gb/s)"
 
 
 #set xrange [0:2500]
-set yrange [0:10]
+#set yrange [0:10]
 set logscale x 2
 set key font ",16"
 set key top left Left reverse
 #set key below Left reverse
 #set key tmargin
+set key left bot
+
 
 #flow_size (MB/s)
 flow_size=0.1
 
 plot    "data_W_1_trafficLimit_hybrid_mean_bandwidth.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_ethernet" ? $3: 1/0) title "no wireless" smooth unique w lp ls 2, \
-        "data_W_1_trafficLimit_hybrid_mean_bandwidth.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_hybrid_cableLength_15" ? $3: 1/0) title "cables shorter than 15m" smooth unique w lp ls 1, \
-        "data_W_1_trafficLimit_hybrid_mean_bandwidth.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_hybrid_cableLength_5" ? $3: 1/0) title "cables shorter than 5m" smooth unique w lp ls 3, \
-        "data_W_1_trafficLimit_hybrid_mean_bandwidth.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_hybrid_cableLength_40" ? $3: 1/0) title "cables shorter than 40m" smooth unique w lp ls 4, \
-        "data_W_1_trafficLimit_hybrid_mean_bandwidth.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_hybrid_cableLength_70" ? $3: 1/0) title "cables shorter than 70m" smooth unique w lp ls 5, \
-        "data_W_1_trafficLimit_hybrid_mean_bandwidth.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_hybrid_cableLength_90" ? $3: 1/0) title "cables shorter than 90m" smooth unique w lp ls 6
+        "data_W_1_trafficLimit_hybrid_mean_bandwidth.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_hybrid_cableLength_5" ? $3: 1/0) title "1409 wireless ports" smooth unique w lp ls 1, \
+        "data_W_1_trafficLimit_hybrid_mean_bandwidth.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_hybrid_cableLength_7" ? $3: 1/0) title "984 wireless ports" smooth unique w lp ls 3, \
+        "data_W_1_trafficLimit_hybrid_mean_bandwidth.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_hybrid_cableLength_10" ? $3: 1/0) title "420 wireless ports" smooth unique w lp ls 4, \
+        "data_W_1_trafficLimit_hybrid_mean_bandwidth.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_hybrid_cableLength_13" ? $3: 1/0) title "103 wireless ports" smooth unique w lp ls 5, \
+        "data_W_1_trafficLimit_hybrid_mean_bandwidth.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_hybrid_cableLength_15" ? $3: 1/0) title "25 wireless ports" smooth unique w lp ls 6
 

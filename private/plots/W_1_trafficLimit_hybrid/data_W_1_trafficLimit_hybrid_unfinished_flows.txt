@@ -1,35 +1,39 @@
-ERROR: file ../../../temp/results/W_1_trafficLimit_hybrid/jellyfish_n128_d30_hybrid_cableLength_15_flows_3250_runtime_30s/analysis/flow_completion.statistics does not exist
-ERROR: file ../../../temp/results/W_1_trafficLimit_hybrid/jellyfish_n128_d30_hybrid_cableLength_40_flows_6000_runtime_30s/analysis/flow_completion.statistics does not exist
-jellyfish_n128_d30_ethernet	10000	0.999994001967
+ERROR: file ../../../temp/results/W_1_trafficLimit_hybrid/jellyfish_n128_d30_ethernet_flows_100000_runtime_50s/analysis/flow_completion.statistics does not exist
+ERROR: file ../../../temp/results/W_1_trafficLimit_hybrid/jellyfish_n128_d30_hybrid_cableLength_10_flows_4000_runtime_30s/analysis/flow_completion.statistics does not exist
+ERROR: file ../../../temp/results/W_1_trafficLimit_hybrid/jellyfish_n128_d30_hybrid_cableLength_13_flows_4000_runtime_30s/analysis/flow_completion.statistics does not exist
+ERROR: file ../../../temp/results/W_1_trafficLimit_hybrid/jellyfish_n128_d30_hybrid_cableLength_5_flows_1000_runtime_30s/analysis/flow_completion.statistics does not exist
+ERROR: file ../../../temp/results/W_1_trafficLimit_hybrid/jellyfish_n128_d30_hybrid_cableLength_5_flows_1500_runtime_30s/analysis/flow_completion.statistics does not exist
+ERROR: file ../../../temp/results/W_1_trafficLimit_hybrid/jellyfish_n128_d30_hybrid_cableLength_5_flows_2000_runtime_30s/analysis/flow_completion.statistics does not exist
+ERROR: file ../../../temp/results/W_1_trafficLimit_hybrid/jellyfish_n128_d30_hybrid_cableLength_5_flows_2250_runtime_30s/analysis/flow_completion.statistics does not exist
+ERROR: file ../../../temp/results/W_1_trafficLimit_hybrid/jellyfish_n128_d30_hybrid_cableLength_5_flows_500_runtime_30s/analysis/flow_completion.statistics does not exist
+ERROR: file ../../../temp/results/W_1_trafficLimit_hybrid/jellyfish_n128_d30_hybrid_cableLength_7_flows_500_runtime_30s/analysis/flow_completion.statistics does not exist
+jellyfish_n128_d30_ethernet	10000	0.999984005246
 jellyfish_n128_d30_ethernet	1500	1.0
-jellyfish_n128_d30_ethernet	3000	1.0
-jellyfish_n128_d30_ethernet	5000	1.0
+jellyfish_n128_d30_ethernet	3000	0.99999330257
+jellyfish_n128_d30_ethernet	50000	0.999981620629
+jellyfish_n128_d30_ethernet	5000	0.999991968904
 jellyfish_n128_d30_ethernet	500	1.0
-jellyfish_n128_d30_ethernet	7000	1.0
-jellyfish_n128_d30_hybrid_cableLength_15	1000	0.999966612133
-jellyfish_n128_d30_hybrid_cableLength_15	2500	1.0
-jellyfish_n128_d30_hybrid_cableLength_15	3000	1.0
-jellyfish_n128_d30_hybrid_cableLength_15	3150	0.999978873983
+jellyfish_n128_d30_ethernet	7000	0.999997140872
+jellyfish_n128_d30_ethernet	80000	0.999963371915
+jellyfish_n128_d30_hybrid_cableLength_10	1000	0.686202523196
+jellyfish_n128_d30_hybrid_cableLength_10	2500	0.397975893265
+jellyfish_n128_d30_hybrid_cableLength_10	5000	0.376256256256
+jellyfish_n128_d30_hybrid_cableLength_10	500	1.0
+jellyfish_n128_d30_hybrid_cableLength_10	8000	0.373515867559
+jellyfish_n128_d30_hybrid_cableLength_13	10000	0.809543235471
+jellyfish_n128_d30_hybrid_cableLength_13	1000	0.999899846431
+jellyfish_n128_d30_hybrid_cableLength_13	15000	0.80345119811
+jellyfish_n128_d30_hybrid_cableLength_13	2500	0.999973268822
+jellyfish_n128_d30_hybrid_cableLength_13	500	1.0
+jellyfish_n128_d30_hybrid_cableLength_13	7000	0.830838729968
+jellyfish_n128_d30_hybrid_cableLength_15	10000	0.999983342439
+jellyfish_n128_d30_hybrid_cableLength_15	1000	0.999966615477
+jellyfish_n128_d30_hybrid_cableLength_15	2500	0.999959965303
+jellyfish_n128_d30_hybrid_cableLength_15	40000	0.938599532851
+jellyfish_n128_d30_hybrid_cableLength_15	4000	0.999991655123
 jellyfish_n128_d30_hybrid_cableLength_15	500	1.0
-jellyfish_n128_d30_hybrid_cableLength_40	1000	1.0
-jellyfish_n128_d30_hybrid_cableLength_40	2500	1.0
-jellyfish_n128_d30_hybrid_cableLength_40	4000	1.0
-jellyfish_n128_d30_hybrid_cableLength_40	500	1.0
-jellyfish_n128_d30_hybrid_cableLength_40	5500	0.773111586552
-jellyfish_n128_d30_hybrid_cableLength_5	1000	1.0
-jellyfish_n128_d30_hybrid_cableLength_5	1500	1.0
-jellyfish_n128_d30_hybrid_cableLength_5	2000	0.794810656864
-jellyfish_n128_d30_hybrid_cableLength_5	2250	0.799300812768
-jellyfish_n128_d30_hybrid_cableLength_5	500	1.0
-jellyfish_n128_d30_hybrid_cableLength_70	10000	1.0
-jellyfish_n128_d30_hybrid_cableLength_70	1000	1.0
-jellyfish_n128_d30_hybrid_cableLength_70	2500	1.0
-jellyfish_n128_d30_hybrid_cableLength_70	4000	1.0
-jellyfish_n128_d30_hybrid_cableLength_70	500	1.0
-jellyfish_n128_d30_hybrid_cableLength_70	7000	1.0
-jellyfish_n128_d30_hybrid_cableLength_90	10000	1.0
-jellyfish_n128_d30_hybrid_cableLength_90	1000	1.0
-jellyfish_n128_d30_hybrid_cableLength_90	2500	1.0
-jellyfish_n128_d30_hybrid_cableLength_90	4000	0.999991646688
-jellyfish_n128_d30_hybrid_cableLength_90	500	1.0
-jellyfish_n128_d30_hybrid_cableLength_90	7000	1.0
+jellyfish_n128_d30_hybrid_cableLength_15	7000	0.999980922129
+jellyfish_n128_d30_hybrid_cableLength_7	1000	0.131507764234
+jellyfish_n128_d30_hybrid_cableLength_7	2500	0.113286788112
+jellyfish_n128_d30_hybrid_cableLength_7	3000	0.112900721021
+jellyfish_n128_d30_hybrid_cableLength_7	5000	0.108554036736

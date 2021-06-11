@@ -21,14 +21,10 @@ run_folder=W_2_trafficLimit_hybrid_multi_channel/jellyfish_n128_d30_hybrid
 
 wireless_port_access_mode=non-persistent
 max_cable_length=5
-flows_per_s=500
-cd ../../../;java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}
-exit
-
-ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}"
-
 flows_per_s=1000
-#runtime=`calc ${num_flows} / ${flows_per_s}`;
+#cd ../../../;java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}
+#exit
+
 ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}"
 
 flows_per_s=2000
@@ -39,7 +35,11 @@ flows_per_s=4000
 #runtime=`calc ${num_flows} / ${flows_per_s}`;
 ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}"
 
-flows_per_s=6000
+flows_per_s=8000
+#runtime=`calc ${num_flows} / ${flows_per_s}`;
+ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}"
+
+flows_per_s=16000
 #runtime=`calc ${num_flows} / ${flows_per_s}`;
 ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}"
 
@@ -47,42 +47,13 @@ ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${pro
 ####################
 #change cable length
 ####################
-max_cable_length=15
-
-flows_per_s=500
-#runtime=`calc ${num_flows} / ${flows_per_s}`;
-ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}"
+max_cable_length=7
 
 flows_per_s=1000
 #runtime=`calc ${num_flows} / ${flows_per_s}`;
 ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}"
 
-flows_per_s=2500
-#runtime=`calc ${num_flows} / ${flows_per_s}`;
-ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}"
-
-flows_per_s=3000
-#runtime=`calc ${num_flows} / ${flows_per_s}`;
-ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}"
-
-flows_per_s=3500
-#runtime=`calc ${num_flows} / ${flows_per_s}`;
-ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}"
-
-
-####################
-#change cable length
-####################
-max_cable_length=40
-flows_per_s=1000
-#runtime=`calc ${num_flows} / ${flows_per_s}`;
-ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}"
-
-flows_per_s=2500
-#runtime=`calc ${num_flows} / ${flows_per_s}`;
-ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}"
-
-flows_per_s=4000
+flows_per_s=2000
 #runtime=`calc ${num_flows} / ${flows_per_s}`;
 ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}"
 
@@ -90,7 +61,11 @@ flows_per_s=5000
 #runtime=`calc ${num_flows} / ${flows_per_s}`;
 ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}"
 
-flows_per_s=6000
+flows_per_s=10000
+#runtime=`calc ${num_flows} / ${flows_per_s}`;
+ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}"
+
+flows_per_s=25000
 #runtime=`calc ${num_flows} / ${flows_per_s}`;
 ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}"
 
@@ -98,12 +73,8 @@ ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${pro
 ####################
 #change cable length
 ####################
-max_cable_length=70
+max_cable_length=10
 flows_per_s=1000
-#runtime=`calc ${num_flows} / ${flows_per_s}`;
-ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}"
-
-flows_per_s=2500
 #runtime=`calc ${num_flows} / ${flows_per_s}`;
 ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}"
 
@@ -111,27 +82,56 @@ flows_per_s=4000
 #runtime=`calc ${num_flows} / ${flows_per_s}`;
 ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}"
 
-flows_per_s=7000
+flows_per_s=12000
+#runtime=`calc ${num_flows} / ${flows_per_s}`;
+ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}"
+
+flows_per_s=20000
+#runtime=`calc ${num_flows} / ${flows_per_s}`;
+ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}"
+
+flows_per_s=50000
+#runtime=`calc ${num_flows} / ${flows_per_s}`;
+ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}"
+
+
+####################
+#change cable length
+####################
+max_cable_length=13
+flows_per_s=1500
+#runtime=`calc ${num_flows} / ${flows_per_s}`;
+ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}"
+
+flows_per_s=10000
+#runtime=`calc ${num_flows} / ${flows_per_s}`;
+ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}"
+
+flows_per_s=20000
+#runtime=`calc ${num_flows} / ${flows_per_s}`;
+ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}"
+
+flows_per_s=50000
 #runtime=`calc ${num_flows} / ${flows_per_s}`;
 ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}"
 
 ####################
 #change cable length
 ####################
-max_cable_length=90
-flows_per_s=1000
-#runtime=`calc ${num_flows} / ${flows_per_s}`;
-ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}"
-
+max_cable_length=15
 flows_per_s=2500
 #runtime=`calc ${num_flows} / ${flows_per_s}`;
 ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}"
 
-flows_per_s=4000
+flows_per_s=10000
 #runtime=`calc ${num_flows} / ${flows_per_s}`;
 ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}"
 
-flows_per_s=7000
+flows_per_s=40000
+#runtime=`calc ${num_flows} / ${flows_per_s}`;
+ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}"
+
+flows_per_s=70000
 #runtime=`calc ${num_flows} / ${flows_per_s}`;
 ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}"
 

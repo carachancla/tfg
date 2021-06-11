@@ -11,7 +11,7 @@ netbechPath=tfg/
 
 #machine=127.127.127.127
 #netbechPath=Desktop/tfg/tfg/
-runtime=50
+runtime=30
 
 properties_file=private/runs/W_1_trafficLimit_hybrid/jellyfish_n128_d30_ethernet.properties
 run_folder=W_1_trafficLimit_hybrid/jellyfish_n128_d30_ethernet_flows_
