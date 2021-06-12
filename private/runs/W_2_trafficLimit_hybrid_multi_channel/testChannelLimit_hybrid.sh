@@ -21,11 +21,16 @@ run_folder=W_2_trafficLimit_hybrid_multi_channel/jellyfish_n128_d30_hybrid
 
 wireless_port_access_mode=non-persistent
 max_cable_length=5
-flows_per_s=1000
+flows_per_s=500
 #cd ../../../;java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}
 #exit
 
 ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}"
+
+flows_per_s=1000
+#runtime=`calc ${num_flows} / ${flows_per_s}`;
+ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}"
+
 
 flows_per_s=2000
 #runtime=`calc ${num_flows} / ${flows_per_s}`;
@@ -39,9 +44,6 @@ flows_per_s=8000
 #runtime=`calc ${num_flows} / ${flows_per_s}`;
 ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}"
 
-flows_per_s=16000
-#runtime=`calc ${num_flows} / ${flows_per_s}`;
-ssh ${machine} "cd ${netbechPath}; screen -d -m java -ea -jar NetBench.jar ${properties_file} run_folder_name=${run_folder}_cableLength_${max_cable_length}_flows_${flows_per_s}_runtime_${runtime}s traffic_lambda_flow_starts_per_s=${flows_per_s} run_time_s=${runtime} wireless_port_access_mode=${wireless_port_access_mode} max_cable_length=${max_cable_length}"
 
 
 ####################
