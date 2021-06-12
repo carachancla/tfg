@@ -48,16 +48,16 @@ set ylabel "Average FCT (ms)"
 
 
 #set xrange [0:2500]
-#set yrange [0:250]
+set yrange [0:2]
 set key font ",16"
 set key top left Left reverse
 #set key below Left reverse
 #set key tmargin
-
+set logscale x 2
 #flow_size (MB/s)
 flow_size=0.1
 
-plot    "data_W_1_trafficLimit_hybrid_mean_fct_ms.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_ethernet" ? $3: 1/0) title "no wireless" smooth unique w lp ls 2, \
+plot    "../W_1_trafficLimit_hybrid/data_W_1_trafficLimit_hybrid_mean_fct_ms.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_ethernet" ? $3: 1/0) title "no wireless" smooth unique w lp ls 2, \
         "data_W_1_trafficLimit_hybrid_mean_fct_ms.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_hybrid_cableLength_5" ? $3: 1/0) title "1409 wireless ports" smooth unique w lp ls 1, \
         "data_W_1_trafficLimit_hybrid_mean_fct_ms.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_hybrid_cableLength_7" ? $3: 1/0) title "984 wireless ports" smooth unique w lp ls 3, \
         "data_W_1_trafficLimit_hybrid_mean_fct_ms.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_hybrid_cableLength_10" ? $3: 1/0) title "420 wireless ports" smooth unique w lp ls 4, \
