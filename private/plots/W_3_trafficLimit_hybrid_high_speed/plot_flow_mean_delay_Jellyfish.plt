@@ -12,7 +12,7 @@ set style line 80 lt rgb "#808080"
 # Line style for grid
 set style line 81 lt 0  # dashed
 set style line 81 lt rgb "#cccccc"  # grey
-
+set logscale xy 2
 set grid back linestyle 81
 set border 3 back linestyle 80 # Remove border on top and right.  These
              # borders are useless and make it harder

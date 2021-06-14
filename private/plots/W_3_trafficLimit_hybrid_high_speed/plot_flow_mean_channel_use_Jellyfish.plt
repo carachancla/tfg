@@ -45,14 +45,14 @@ set output "output_1_failcase_ecmp_mean_channel_use.pdf"
 set format x "%.0f"
 set xlabel "Load (MB/s)"
 set ylabel "Percentage channel used (%)"
-
+set logscale x 2
 #set xrange [0:2500]
 #set yrange [0:1]
 set key font ",16"
 set key top left Left reverse
 #set key below Left reverse
 #set key tmargin
-set key right bot
+set key left top
 
 #flow_size (MB/s)
 flow_size=0.1
