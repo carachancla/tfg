@@ -3,7 +3,7 @@
 #############################
 # TINY ALL-TO-ALL FRACTION
 
-FOLDER_IN_RESULTS=W_2_trafficLimit_hybrid_multi_channel
+FOLDER_IN_RESULTS=W_4_trafficLimit_hybrid_multi_channel_10
 LABEL=W_1_trafficLimit_hybrid
 
 # Combine results
