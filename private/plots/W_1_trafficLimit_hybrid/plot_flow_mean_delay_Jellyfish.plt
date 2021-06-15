@@ -46,7 +46,7 @@ set format x "%.0f"
 set xlabel "Load (MB/s)"
 set ylabel "Average FCT (ms)"
 
-
+set logscale x 2
 #set xrange [0:2500]
 #set yrange [0:250]
 set key font ",16"
