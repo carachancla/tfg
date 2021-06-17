@@ -6,7 +6,7 @@ public class LayoutTest {
     public static void main(String Args[]) throws Exception {
         PhysicalLayout p = new PhysicalLayout();
         //p.readGraph("./example/topologies/xpander/xpander_n100_d10.topology");
-        p.readGraph("./temp/results/physicalTopo/topologies/Jellyfish_128V_30deg.topology");
+        p.readGraph("./temp/results/physicalTopo/topologies/Jellyfish_128V_5deg.topology");
         p.readTopologyProperties("./example/Layouts/Test.layout");
         /*System.out.println("Vertex List:" + p.graph.getVertexList());
         System.out.println("Num tors: " + p.graphDetails.getNumTors());
@@ -25,6 +25,6 @@ public class LayoutTest {
         System.out.println("Add switch: " + p.lonerCablesThan(10));
         System.out.println("Add switch: " + p.lonerCablesThan(13));
         System.out.println("Add switch: " + p.lonerCablesThan(15));
-
+        System.out.println(p.getTotalCabling());
     }
 }

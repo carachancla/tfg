@@ -21,7 +21,7 @@ set border 3 back linestyle 80 # Remove border on top and right.  These
 			      set xtics nomirror
 			      set ytics nomirror
 
-#set log x
+#set log xy
 #set mxtics 10    # Makes logscale look good.
 
 # Line styles: try to pick pleasing colors, rather
@@ -45,14 +45,16 @@ set output "number_of_cables_longer_than_100m.pdf"
 set format x "%.0fK"
 set format y "%.0f"
 set xlabel "Network size"
-set ylabel "Cables longer than 100m %"
+set ylabel "Cables longer than X %"
 
 #set xrange [0:2500]
 #set yrange [0:1]
-set logscale y 2
+#set logscale y 2
 set key font ",16"
-set key top left Left reverse
+set key bot right Left reverse
 #set key below Left reverse
 #set key tmargin
 
-plot    "../../../temp/results/physicalTopo/analysisResult" using ($1/1000):($3 * 100/($1 * $2)) title "Jellyfish" smooth unique w lp ls 1
+plot    "../../../temp/results/physicalTopo/analysisResult" using ($1/1000):($3 * 100/($1 * $2)) title "cables longer than 100m" smooth unique w lp ls 1 , \
+        "../../../temp/results/physicalTopo/analysisResult_50" using ($1/1000):($3 * 100/($1 * $2)) title "cables longer than 50m" smooth unique w lp ls 2, \
+        "../../../temp/results/physicalTopo/analysisResult_20" using ($1/1000):($3 * 100/($1 * $2)) title "cables longer than 20m" smooth unique w lp ls 3
