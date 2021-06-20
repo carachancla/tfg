@@ -68,13 +68,11 @@ public class WirelessPort extends OutputPort {
 
         // Tail-drop enqueue
         if (getBufferOccupiedBits() + ipHeader.getSizeBit() <= maxQueueSizeBits) {
-            //System.out.println(this.getOwnDevice().getIdentifier() + " -> " + this.getTargetId() + " guaranteed enqueued packet (" + getQueueSize() + ") + sending? " + waitingCollision + " waiting Medium? " + ((CollisionDetSwitch)super.getTargetDevice()).isMediumOccupied(this));
             guaranteedEnqueue(macPacket);
         } else {
             SimulationLogger.increaseStatisticCounter("PACKETS_DROPPED");
             if (ipHeader.getSourceId() == this.getOwnId()) {
                 SimulationLogger.increaseStatisticCounter("PACKETS_DROPPED_AT_SOURCE");
-                //System.out.println(this.getOwnDevice().getIdentifier() + " -> " + this.getTargetId() + " Dropping packet");
 
             }
         }
@@ -83,13 +81,11 @@ public class WirelessPort extends OutputPort {
 
     @Override
     protected void dispatch(Packet packet){ // dispatching new packets
-        //System.out.println(this.getOwnDevice().getIdentifier() + " -> " + this.getTargetId() + " Dispatching");
         CollisionDetSwitch detSwitch = (CollisionDetSwitch)super.getTargetDevice();
         if(waitingCollision){ //wait til PacketSent()
             waitingCollisionPacket = packet;
         }
         else if (!detSwitch.isMediumOccupied(this)){ //send packet start waiting for its collision
-            //System.out.println(this.getOwnDevice().getIdentifier() + " -> " + this.getTargetId() + " Sending packet" + " at " + Simulator.getCurrentTime());
             waitingMediumPacket = null; // we sent the packet
             waitingCollisionPacket = null;
             waitingMedium = false;
@@ -127,7 +123,6 @@ public class WirelessPort extends OutputPort {
                 break;
             case "non-persistent":
                 packetCollision((MacPacket) packet, true);
-                //System.out.println(this.getOwnDevice().getIdentifier() + " -> " + this.getTargetId() + " Waiting medium packet");
                 break;
             default:
                 throw new IllegalArgumentException("wireless port access mode not permitted");
@@ -147,7 +142,6 @@ public class WirelessPort extends OutputPort {
 
     void packetSent(){///check if packet waiting
         waitingCollision = false;
-        //System.out.println(this.getOwnDevice().getIdentifier() + " -> " + this.getTargetId() + " Successful transmission, more to send? " + waitingCollision + " queue: " + getQueueSize());
         if(waitingCollisionPacket != null)dispatch(waitingCollisionPacket);
         else if(getQueueSize()!=0){
             Packet packetFromQ = getQueue().poll();
@@ -193,7 +187,6 @@ public class WirelessPort extends OutputPort {
         int delay = (new Random().nextInt(backoffArc + 1) + 1) * roundTripTime;
         //make sourcePort resend packet after a backoff delay
         Simulator.registerEvent(new MacDelayEvent(delay, mPacket));
-        //System.out.println(this.getOwnDevice().getIdentifier() + " -> " + this.getTargetId() + " Retry sending after" + delay);
 
     }
 
@@ -201,7 +194,6 @@ public class WirelessPort extends OutputPort {
     protected void successfulTransmission(MacPacket macPacket){
         collisionBackoffLevel = 1;
     }
-
 
 
 }

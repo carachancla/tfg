@@ -58,10 +58,9 @@ set logscale x 2
 #flow_size (MB/s)
 flow_size=0.1
 
-plot    "../W_1_trafficLimit_hybrid/data_W_1_trafficLimit_hybrid_unfinished_flows.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_ethernet" ? $3: 1/0) title "no wireless" smooth unique w lp ls 2, \
-        "data_W_1_trafficLimit_hybrid_unfinished_flows.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_hybrid_cableLength_5" ? $3: 1/0) title "1409 wireless ports" smooth unique w lp ls 1, \
-        "data_W_1_trafficLimit_hybrid_unfinished_flows.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_hybrid_cableLength_7" ? $3: 1/0) title "984 wireless ports" smooth unique w lp ls 3, \
-        "data_W_1_trafficLimit_hybrid_unfinished_flows.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_hybrid_cableLength_10" ? $3: 1/0) title "420 wireless ports" smooth unique w lp ls 4, \
-        "data_W_1_trafficLimit_hybrid_unfinished_flows.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_hybrid_cableLength_13" ? $3: 1/0) title "103 wireless ports" smooth unique w lp ls 5, \
-        "data_W_1_trafficLimit_hybrid_unfinished_flows.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_hybrid_cableLength_15" ? $3: 1/0) title "25 wireless ports" smooth unique w lp ls 6
+plot    "../W_1_trafficLimit_hybrid/data_W_1_trafficLimit_hybrid_unfinished_flows.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_ethernet" ? ($3*100): 1/0) title "no wireless" smooth unique w lp ls 2, \
+        "data_W_1_trafficLimit_hybrid_unfinished_flows.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_hybrid_cableLength_7" ? ($3*100): 1/0) title "402 wireless ports" smooth unique w lp ls 3, \
+        "data_W_1_trafficLimit_hybrid_unfinished_flows.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_hybrid_cableLength_10" ? ($3*100): 1/0) title "228 wireless ports" smooth unique w lp ls 4, \
+        "data_W_1_trafficLimit_hybrid_unfinished_flows.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_hybrid_cableLength_13" ? ($3*100): 1/0) title "110 wireless ports" smooth unique w lp ls 5, \
+        "data_W_1_trafficLimit_hybrid_unfinished_flows.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_hybrid_cableLength_15" ? ($3*100): 1/0) title "30 wireless ports" smooth unique w lp ls 6
 

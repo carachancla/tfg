@@ -66,5 +66,5 @@ plot    "data_W_1_trafficLimit_hybrid_mean_bandwidth.txt" using ($2*flow_size):(
         "data_W_1_trafficLimit_hybrid_mean_bandwidth.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_hybrid_cableLength_7" ? $3: 1/0) title "984 wireless ports" smooth unique w lp ls 3, \
         "data_W_1_trafficLimit_hybrid_mean_bandwidth.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_hybrid_cableLength_10" ? $3: 1/0) title "420 wireless ports" smooth unique w lp ls 4, \
         "data_W_1_trafficLimit_hybrid_mean_bandwidth.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_hybrid_cableLength_13" ? $3: 1/0) title "103 wireless ports" smooth unique w lp ls 5, \
-        "data_W_1_trafficLimit_hybrid_mean_bandwidth.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_hybrid_cableLength_15" ? $3: 1/0) title "25 wireless ports" smooth unique w lp ls 6
+        "data_W_1_trafficLimit_hybrid_mean_bandwidth.txt" using ($2*flow_size):(stringcolumn(1) eq "jellyfish_n128_d30_hybrid_cableLength_15" ? $3: 1/0) title "30 wireless ports" smooth unique w lp ls 6
 

@@ -16,10 +16,7 @@ jellyfish_n128_d30_ethernet	500	0.185484
 jellyfish_n128_d30_ethernet	7000	0.190576
 jellyfish_n128_d30_ethernet	80000	0.303319
 jellyfish_n128_d30_hybrid_cableLength_10	1000	0.25025
-jellyfish_n128_d30_hybrid_cableLength_10	2500	0.2032295
-jellyfish_n128_d30_hybrid_cableLength_10	5000	0.202611
 jellyfish_n128_d30_hybrid_cableLength_10	500	0.26811
-jellyfish_n128_d30_hybrid_cableLength_10	8000	0.216736
 jellyfish_n128_d30_hybrid_cableLength_13	10000	0.203618
 jellyfish_n128_d30_hybrid_cableLength_13	1000	0.189346
 jellyfish_n128_d30_hybrid_cableLength_13	15000	0.2171945

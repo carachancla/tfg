@@ -21,4 +21,3 @@ jellyfish_n128_d30_hybrid_cableLength_5	500	0.2690027184704532
 jellyfish_n128_d30_hybrid_cableLength_7	1000	0.293856595892795
 jellyfish_n128_d30_hybrid_cableLength_7	1500	0.21204613760051985
 jellyfish_n128_d30_hybrid_cableLength_7	2000	0.08540374056218444
-jellyfish_n128_d30_hybrid_cableLength_7	2500	0.2568718633454579

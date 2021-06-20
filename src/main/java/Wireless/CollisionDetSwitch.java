@@ -35,7 +35,6 @@ class CollisionDetSwitch extends NetworkDevice {
 
     @Override
     public void receive(Packet genericPacket){ //wait bandwidth time before doing transnission
-        //System.out.println(genericPacket.getFlowId() + ", recieved, collsion state: " + collisionHappened);
 
         MacPacket mPacket = (MacPacket) genericPacket;
         if(!waitCollisionQueue.isEmpty())collisionHappened = true;
@@ -48,9 +47,8 @@ class CollisionDetSwitch extends NetworkDevice {
 
 
     void endOfPacketTransmission(MacPacket macPacket){
-        if(!collisionHappened){// no collision, transmit packet
-            //System.out.println(macPacket.getFlowId() + ", succesful transmission, collsion state: " + collisionHappened + ", " + waitCollisionQueue.size());
 
+        if(!collisionHappened){// no collision, transmit packet
             this.targetIdToOutputPort.get(macPacket.getDestId()).enqueue(macPacket.getPacketContent());
             waitCollisionQueue = new LinkedBlockingQueue<>();
             waitPacketsCollided = 0;
@@ -60,14 +58,10 @@ class CollisionDetSwitch extends NetworkDevice {
             logger.logSucces();
         }
         else{// a collision happened, wait for last packet to do collision protocol
-            //System.out.println(macPacket.getFlowId() + ",  a colision happened, collsion state: " + collisionHappened + ", " + waitCollisionQueue.size());
             if(waitPacketsCollided == 1) { //last packet that gets transmitted
-                //System.out.println(macPacket.getFlowId() + ",  last packet on colision, collsion state: " + collisionHappened + ", " + waitCollisionQueue.size());
-
                 for (MacPacket mPacket:waitCollisionQueue) {
                         mPacket.getSourcePort().packetCollision(mPacket, false);
                     }
-                //System.out.println("collsion!!!!");
                 waitCollisionQueue = new LinkedBlockingQueue<>();
                 freeMedium();
                 logger.logCollision();
@@ -86,7 +80,6 @@ class CollisionDetSwitch extends NetworkDevice {
     public boolean isMediumOccupied(WirelessPort port) {
         boolean result = !(waitCollisionQueue.isEmpty());
         if(result)mediumRequests.offer(port);
-        //System.out.println("Meduim req Port: " + port.getOwnId() + ", " + result);
         return result;
     }
 

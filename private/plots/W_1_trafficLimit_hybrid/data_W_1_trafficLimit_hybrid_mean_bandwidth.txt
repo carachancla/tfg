@@ -8,6 +8,7 @@ ERROR: file ../../../temp/results/W_1_trafficLimit_hybrid/jellyfish_n128_d30_hyb
 ERROR: file ../../../temp/results/W_1_trafficLimit_hybrid/jellyfish_n128_d30_hybrid_cableLength_5_flows_500_runtime_30s/analysis/flow_completion.statistics does not exist
 ERROR: file ../../../temp/results/W_1_trafficLimit_hybrid/jellyfish_n128_d30_hybrid_cableLength_7_flows_500_runtime_30s/analysis/flow_completion.statistics does not exist
 jellyfish_n128_d30_ethernet	10000	0.4099696437130532
+jellyfish_n128_d30_ethernet	15000	0.4
 jellyfish_n128_d30_ethernet	1500	0.42299434623917553
 jellyfish_n128_d30_ethernet	3000	0.4221672758546549
 jellyfish_n128_d30_ethernet	50000	0.3393201641170557
@@ -16,10 +17,7 @@ jellyfish_n128_d30_ethernet	500	0.4260558718390044
 jellyfish_n128_d30_ethernet	7000	0.41501922947169556
 jellyfish_n128_d30_ethernet	80000	0.30045362076689175
 jellyfish_n128_d30_hybrid_cableLength_10	1000	0.3416872962158979
-jellyfish_n128_d30_hybrid_cableLength_10	2500	0.4041673384622779
-jellyfish_n128_d30_hybrid_cableLength_10	5000	0.40061375443007274
 jellyfish_n128_d30_hybrid_cableLength_10	500	0.32853829707962934
-jellyfish_n128_d30_hybrid_cableLength_10	8000	0.37531350125400503
 jellyfish_n128_d30_hybrid_cableLength_13	10000	0.39327309990828463
 jellyfish_n128_d30_hybrid_cableLength_13	1000	0.4111430403495856
 jellyfish_n128_d30_hybrid_cableLength_13	15000	0.37066051310119164
